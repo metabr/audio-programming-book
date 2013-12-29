@@ -1,0 +1,186 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA = {
+		activeBuildStyle = 4A9504CDFFE6A4B311CA0CBA;
+		activeExecutable = 2C0FB8BE0D434E0C00450BAA;
+		activeTarget = 8D1107260486CEB800E47090;
+		addToTargets = (
+			8D1107260486CEB800E47090,
+		);
+		codeSenseManager = 2C0FB8CB0D434E1300450BAA;
+		executables = (
+			2C0FB8BE0D434E0C00450BAA,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					133,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					63,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 222517208;
+			PBXWorkspaceStateSaveDate = 222517208;
+		};
+		perUserProjectItems = {
+			2C0FB9320D43574400450BAA = 2C0FB9320D43574400450BAA;
+			2C0FB9B10D43594600450BAA = 2C0FB9B10D43594600450BAA;
+		};
+		sourceControlManager = 2C0FB8CA0D434E1300450BAA;
+		userBuildSettings = {
+		};
+	};
+	2C0FB8BE0D434E0C00450BAA = {
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		configStateDict = {
+		};
+		cppStopOnCatchEnabled = 0;
+		cppStopOnThrowEnabled = 0;
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		isa = PBXExecutable;
+		libgmallocEnabled = 0;
+		name = HidToOSC;
+		shlibInfoDictList_v2 = (
+		);
+		sourceDirectories = (
+		);
+	};
+	2C0FB8CA0D434E1300450BAA = {
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		isa = PBXSourceControlManager;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	2C0FB8CB0D434E1300450BAA = {
+		indexTemplatePath = "";
+		isa = PBXCodeSenseManager;
+	};
+	2C0FB8CD0D43519100450BAA = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {459, 336}}";
+			sepNavSelRange = "{41, 28}";
+			sepNavVisRect = "{{0, 0}, {459, 186}}";
+			sepNavWindowFrame = "{{330, 110}, {878, 553}}";
+		};
+	};
+	2C0FB8CE0D43519100450BAA = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {734, 868}}";
+			sepNavSelRange = "{251, 117}";
+			sepNavVisRect = "{{0, 166}, {459, 186}}";
+			sepNavWindowFrame = "{{131, 119}, {878, 553}}";
+		};
+	};
+	2C0FB9220D43561100450BAA = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = AppControl.m;
+		path = /Users/ahujam/Desktop/wiimoteOSC0.5/classes/AppControl.m;
+		refType = 0;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 12460}}";
+			sepNavSelRange = "{15844, 0}";
+			sepNavVisRect = "{{0, 5950}, {839, 424}}";
+			sepNavWindowFrame = "{{186, 32}, {878, 553}}";
+		};
+	};
+	2C0FB9320D43574400450BAA = {
+		fRef = 2C0FB9220D43561100450BAA;
+		isa = PBXTextBookmark;
+		name = "AppControl.m: 445";
+		rLen = 0;
+		rLoc = 15844;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 15457;
+	};
+	2C0FB9B10D43594600450BAA = {
+		fRef = 2C0FB9B20D43594600450BAA;
+		isa = PBXTextBookmark;
+		name = "(null): 445";
+		rLen = 0;
+		rLoc = 15844;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 15457;
+	};
+	2C0FB9B20D43594600450BAA = {
+		isa = PBXFileReference;
+		name = AppControl.m;
+		path = /Users/ahujam/Desktop/wiimoteOSC0.5/classes/AppControl.m;
+		refType = 0;
+		sourceTree = "<absolute>";
+	};
+	8D1107260486CEB800E47090 = {
+		activeExec = 0;
+		executables = (
+			2C0FB8BE0D434E0C00450BAA,
+		);
+	};
+}

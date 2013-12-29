@@ -1,0 +1,242 @@
+/////////////////////////////////////////////
+// Spectral processing examples
+//
+// (c) V Lazzarini, 2005
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+// phase vocoder analysis/synthesis
+//////////////////////////////////////////////
+
+
+//#include "spec.h"
+//#include "fourier.h"
+#include <fftw3.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "pv.h"
+#include "globals.h"
+
+
+fftwf_complex *fftSpec;
+fftwf_plan forwardPlan, backwardPlan;
+float *tmpOut;
+bool ft = true;
+bool bt = true;
+
+
+
+int pva(float *input, float *window, float *output, 
+        int input_size, int fftsize, int hopsize, float sr){
+	
+	int posin, posout, i, k, mod;
+	float *sigframe, *specframe, *lastph;
+	float fac, scal, phi, mag, delta, pi = (float)twopi/2;
+	
+	sigframe = new float[fftsize];
+	specframe = new float[fftsize];
+	lastph = new float[fftsize/2];
+	lastph[0] = 0.f;
+	
+	fac = (float) (sr/(hopsize*twopi));
+	scal = (float) (twopi*hopsize/fftsize);
+	
+	for(posin=posout=0; posin < input_size; posin+=hopsize){
+		mod = posin%fftsize;
+		// window & rotate a signal frame
+		for(i=0; i < fftsize; i++) 
+			if(posin+i < input_size)
+				sigframe[(i+mod)%fftsize] = input[posin+i]*window[i];
+			else sigframe[(i+mod)%fftsize] = 0;
+		
+		// transform it
+		fft(sigframe, specframe, fftsize);
+		
+		// convert to PV output
+		for(i=2,k=0; i < fftsize; i+=2, k++){
+			
+			// rectangular to polar
+			mag = (float) sqrt(specframe[i]*specframe[i] + 
+							   specframe[i+1]*specframe[i+1]);  
+			phi = (float) atan2(specframe[i+1], specframe[i]);
+			// phase diffs
+			delta = phi - lastph[k];
+			lastph[k+1] = phi;
+			
+			// unwrap the difference, so it lies between -pi and pi
+			while(delta > pi) delta -= (float) twopi;
+			while(delta < -pi) delta += (float) twopi;
+			
+			// construct the amplitude-frequency pairs
+			specframe[i] = mag;
+			specframe[i+1] = (delta + k*scal)*fac;
+			
+		}
+		// output it
+		for(i=0; i < fftsize; i++, posout++)
+			output[posout] = specframe[i];
+		
+	}
+	delete[] sigframe;
+	delete[] specframe;
+	delete[] lastph;
+	
+	return posout;
+}
+
+int pvs(float* input, float* window, float* output,
+		int input_size, int fftsize, int hopsize, float sr){
+	
+	int posin, posout, k, i, output_size, mod;
+	float *sigframe, *specframe, *lastph;
+	float fac, scal, phi, mag, delta;
+	
+	sigframe = new float[fftsize];
+	specframe = new float[fftsize];
+	lastph = new float[fftsize/2];
+	
+	output_size = input_size*hopsize/fftsize;
+	
+	fac = (float) (hopsize*twopi/sr);
+	scal = sr/fftsize;
+	
+	for(posout=posin=0; posout < output_size; posout+=hopsize){ 
+		
+		// load in a spectral frame from input 
+		for(i=0; i < fftsize; i++, posin++)
+			specframe[i] = input[posin];
+		
+		// convert from PV input to DFT coordinates
+		for(i=2,k=1; i < fftsize; i+=2, k++){
+			delta = (specframe[i+1] - k*scal)*fac;
+			phi = lastph[k]+delta;
+			lastph[k] = phi;
+			mag = specframe[i];
+			
+			specframe[i] = (float) (mag*cos(phi));
+			specframe[i+1] = (float) (mag*sin(phi)); 
+			
+		}
+		// inverse-transform it
+		ifft(specframe, sigframe, fftsize);
+		
+		// unrotate and window it and overlap-add it
+		mod = posout%fftsize;
+		for(i=0; i < fftsize; i++)
+			if(posout+i < output_size)
+				output[posout+i] += sigframe[(i+mod)%fftsize]*window[i];
+	}
+	delete[] sigframe;
+	delete[] specframe;
+	delete[] lastph;
+	
+	return output_size;
+}
+
+
+void fft(float *in, float *out, int N)
+{
+	if(ft)
+	{
+		fftSpec = (fftwf_complex*) fftwf_malloc(sizeof(fftwf_complex) * (N/2) + 1);
+		forwardPlan = fftwf_plan_dft_r2c_1d(N, in, fftSpec, FFTW_ESTIMATE);
+		ft = false;		
+	}
+	
+	fftwf_execute(forwardPlan); 
+	
+	//now our fftSpec holds N/2+1 complex numbers. The [0] and [N/2] elements are purely real and we need to reformat them to suit the needs of the pva method
+	//also fftw computes an unnormalized fft so we need to normalize it
+	out[0] = fftSpec[0][0]/(float)N;
+	out[1] = fftSpec[N/2][0]/(float)N;
+	int i, k;
+	for(i=2, k=1; i < N; k++, i+=2) 
+	{
+		out[i] = fftSpec[k][0]/(float)N;
+		out[i+1] = fftSpec[k][1]/(float)N;
+	}
+	
+	//MUSS NOCH GEMACHT WERDEN!
+	//fftw_destroy_plan(p);
+	//fftw_free(fftSpec);
+}
+
+void fft_mag(float *in, float *out, int N)
+{
+	if(ft)
+	{
+		fftSpec = (fftwf_complex*) fftwf_malloc(sizeof(fftwf_complex) * (N/2) + 1);
+		forwardPlan = fftwf_plan_dft_r2c_1d(N, in, fftSpec, FFTW_ESTIMATE);
+		ft = false;		
+	}
+	
+	fftwf_execute(forwardPlan); 
+	
+	//now our fftSpec holds N/2+1 complex numbers. The [0] and [N/2] elements are purely real and we need to reformat them to suit the needs of the pva method
+	//also fftw computes an unnormalized fft so we need to normalize it
+	out[0] = sqrt(((fftSpec[0][0]/(float)N)*(fftSpec[0][0]/(float)N))+((fftSpec[0][1]/(float)N)*(fftSpec[0][1]/(float)N)));
+	out[1] = sqrt(((fftSpec[N/2][0]/(float)N)*(fftSpec[N/2][0]/(float)N))+((fftSpec[N/2][1]/(float)N)*(fftSpec[N/2][1]/(float)N)));
+	int i, k;
+	for(i=2, k=1; i < N; k++, i+=2) 
+	{
+		out[i] = sqrt(((fftSpec[k][0]/(float)N)*(fftSpec[k][0]/(float)N))+((fftSpec[k][1]/(float)N)*(fftSpec[k][1]/(float)N)));
+		out[i+1] = fftSpec[k][1]/(float)N;
+	}
+	
+	//MUSS NOCH GEMACHT WERDEN!
+	//fftw_destroy_plan(p);
+	//fftw_free(fftSpec);
+}
+
+
+void fft_test(float *in, float *out, int N)
+{
+	for(int i=0,k=0; k<N; i+=2, k++)
+	{
+		out[i]=out[i+1]=0.f;
+		for(int n =0; n < N; n++){
+			out[i] += in[n]*cos(k*n*twopi/N);
+			out[i+1]-= in[n]*sin(k*n*twopi/N);
+        }
+		out[i] /= N;
+		out[i+1] /= N;
+	}
+}
+
+
+
+void ifft(float *in, float *out, int N)
+{
+	if(bt)
+	{
+		//fftSpec = (fftwf_complex*) fftwf_malloc(sizeof(fftwf_complex) * (N/2) + 1);
+		tmpOut = (float *) malloc(sizeof(float) * 2 * (N/2) + 1);
+		backwardPlan = fftwf_plan_dft_c2r_1d(N, fftSpec, tmpOut, FFTW_ESTIMATE);
+		bt = false;		
+	}
+	
+	int i, k;
+	for(i = 2, k=1; i < N; k++, i+=2) 
+	{
+		fftSpec[k][0] = in[i];
+		fftSpec[k][1] = in[i+1];
+	}
+	fftSpec[0][0] = in[0];
+	fftSpec[N/2][0] = in[1];
+	
+	
+	fftwf_execute(backwardPlan); 
+	
+	for(i = 0; i < N; i++)
+	{
+		out[i] = tmpOut[i];
+	}
+		
+	//MUSS NOCH GEMACHT WERDEN!
+	//fftw_destroy_plan(p);
+	//fftw_free(fftSpec);
+	
+}
+
+

@@ -1,0 +1,68 @@
+TApp1
+v7
+r1
+cCheck dependencies
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/English.lproj/InfoPlist.strings
+c000000004A66D77800000000000000C6
+t1248253816
+s198
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/English.lproj/MainMenu.nib
+c000000004BF2421300000000000000AA
+t1274167827
+s170
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app
+t1248255032
+s102
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/Info.plist
+t1248254585
+s769
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/PkgInfo
+t1248254585
+s8
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1248254592
+s198
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/Resources/English.lproj/MainMenu.nib
+t1274167827
+s170
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/Resources/sample.wav
+t1248255023
+s44756
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/sample.wav
+c000000004A66DC08000000000000AED4
+t1248254984
+s44756
+
+NInfo.plist
+c000000004A66D778000000000000034A
+t1248253816
+s842
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies297698403#297698403#0(86"[BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'1(4@78"error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'297698403#18446744073709551615#0#0(1@0"0(0#1#0"7947009927035180032#0"0#
+
+CCopyStringsFile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
+
+CCpResource build/Debug/App1.app/Contents/Resources/sample.wav sample.wav
+r0
+
+CProcessInfoPlistFile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app/Contents/Info.plist Info.plist
+r0
+
+CStripNIB /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/English.lproj/MainMenu.nib
+r0
+
+CTouch /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App1/build/Debug/App1.app
+r0
+

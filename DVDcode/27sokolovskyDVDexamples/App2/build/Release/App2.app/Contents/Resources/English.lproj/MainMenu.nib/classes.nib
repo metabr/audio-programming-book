@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {open = id; play = id; stop = id; }; 
+            CLASS = playbackController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {animation = id; playButton = id; textField = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

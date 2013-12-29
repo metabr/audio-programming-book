@@ -1,0 +1,9 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo ./bwfilter ../../testvox.aif bwfilterHP.aif 1 1500 
+echo
+echo
+./bwfilter ../../testvox.aif bwfilterHP.aif 1 1500 
+echo
+echo
+

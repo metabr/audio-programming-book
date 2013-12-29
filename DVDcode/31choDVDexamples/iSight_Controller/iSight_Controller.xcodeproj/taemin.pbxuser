@@ -1,0 +1,177 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	256AC3F00F4B6AF500CF3369 /* iSight_Controller_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {754, 245}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 165}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Release;
+		activeExecutable = 9FACD1DC11DFF76200C4558A /* iSight_Controller */;
+		activeTarget = 8D1107260486CEB800E47090 /* iSight_Controller */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* iSight_Controller */,
+		);
+		codeSenseManager = 9FACA10111DFE1D00025F7FA /* Code sense */;
+		executables = (
+			9FACD1DC11DFF76200C4558A /* iSight_Controller */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 299890685;
+			PBXWorkspaceStateSaveDate = 299890685;
+		};
+		perUserProjectItems = {
+			9F7A08FE11DFF84200966C8D /* PlistBookmark */ = 9F7A08FE11DFF84200966C8D /* PlistBookmark */;
+			9FACA15711DFF5ED0025F7FA /* PBXTextBookmark */ = 9FACA15711DFF5ED0025F7FA /* PBXTextBookmark */;
+			9FACA15811DFF5ED0025F7FA /* PBXTextBookmark */ = 9FACA15811DFF5ED0025F7FA /* PBXTextBookmark */;
+			9FACA15911DFF5ED0025F7FA /* PBXTextBookmark */ = 9FACA15911DFF5ED0025F7FA /* PBXTextBookmark */;
+			9FACD1E711DFF77000C4558A /* PlistBookmark */ = 9FACD1E711DFF77000C4558A /* PlistBookmark */;
+		};
+		sourceControlManager = 9FACA10011DFE1D00025F7FA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* iSight_Controller */ = {
+		activeExec = 0;
+		executables = (
+			9FACD1DC11DFF76200C4558A /* iSight_Controller */,
+		);
+	};
+	9F7A08FE11DFF84200966C8D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* iSight_Controller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = "/Users/taemin/Desktop/Chapter 31/iSight_Controller/iSight_Controller-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9FACA10011DFE1D00025F7FA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	9FACA10111DFE1D00025F7FA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	9FACA12011DFF4550025F7FA /* iSight_Controller.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {544, 416}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 573}";
+		};
+	};
+	9FACA15711DFF5ED0025F7FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FACA12011DFF4550025F7FA /* iSight_Controller.h */;
+		name = "iSight_Controller.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 573;
+		vrLoc = 0;
+	};
+	9FACA15811DFF5ED0025F7FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* iSight_Controller_Prefix.pch */;
+		name = "iSight_Controller_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 165;
+		vrLoc = 0;
+	};
+	9FACA15911DFF5ED0025F7FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	9FACD1DC11DFF76200C4558A /* iSight_Controller */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = iSight_Controller;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	9FACD1E711DFF77000C4558A /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* iSight_Controller-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = "/Users/taemin/Desktop/Chapter 31/iSight_Controller/iSight_Controller-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+}

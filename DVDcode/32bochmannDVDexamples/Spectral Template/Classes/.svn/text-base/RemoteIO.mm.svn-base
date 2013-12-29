@@ -1,0 +1,361 @@
+//
+//  RemoteIO.m
+//  Spectral Template
+//
+//  Created by Johannes Bochmann on 15.04.09.
+//  Copyright 2009 JoboMusic GmbH. All rights reserved.
+//
+
+
+#import <AudioUnit/AudioUnit.h>
+#import "RemoteIO.h"
+#import "pv.h"
+//#include "spec.h"
+//#include "fourier.h"
+
+
+#define kOutputBus 0
+#define kInputBus 1
+
+//#define kTWOPI 6.283185307179586
+
+@implementation RemoteIO
+
+@synthesize inMemoryAudiofile;
+@synthesize channel1MagnitudeMatrix;
+
+AudioComponentInstance audioUnit;
+AudioStreamBasicDescription audioFormat;
+
+-(id)initWithFile:(NSString *)file {
+	
+	if ((self = [super init])) {
+        
+		//standart fft size of 1024 samples per fft frame
+		channel1InputSampleBuffer = (float *)malloc(sizeof(float) * FFT_FRAMESIZE);
+		channel2InputSampleBuffer = (float *)malloc(sizeof(float) * FFT_FRAMESIZE);
+		channel1OutputSampleBuffer = (float *)malloc(sizeof(float) * FFT_FRAMESIZE);
+		channel2OutputSampleBuffer = (float *)malloc(sizeof(float) * FFT_FRAMESIZE);
+		for(int j=0;j<FFT_FRAMESIZE;j++)
+		{
+			channel1OutputSampleBuffer[j] = 0.0;
+			channel2OutputSampleBuffer[j] = 0.0;
+		}
+		//the ouput is magnitude and phases interleaved
+		channel1MagnitudePhasesBuffer = (float *)malloc(sizeof(float) * FFT_FRAMESIZE * 4); //hopsize 256
+		channel2MagnitudePhasesBuffer = (float *)malloc(sizeof(float) * FFT_FRAMESIZE * 4);
+		
+		//our Matrix that holds the magnitudes of the first channel
+		channel1MagnitudeMatrix = (float **) malloc(sizeof(float)*MATRIX_COLUMNS);
+		for(int i = 0; i<MATRIX_COLUMNS; i++)
+		{
+			channel1MagnitudeMatrix[i] = (float *) malloc(sizeof(float)*(FFT_FRAMESIZE/2));
+		}
+		//initialize it with zero
+		for(int i = 0; i < MATRIX_COLUMNS; i++)
+		{
+			for(int j = 0; j<(FFT_FRAMESIZE/2); j++)
+			{
+				channel1MagnitudeMatrix[i][j] = 0.f;
+			}
+		}
+		
+		currentMatrixColumn = 0;
+		offset = 0.f;
+		highest= 0.f;
+		
+		currentInputSampleBufferIndex = 0;
+		//setup the window for the fft (I should probably do that in pv.cpp)
+		fftWindow = (float *)malloc(sizeof(float) * FFT_FRAMESIZE);
+		for(int i=0; i< FFT_FRAMESIZE; i++) fftWindow[i] = 0.5f - (float)(0.5*cos((double)i*twopi/(double)FFT_FRAMESIZE));
+		
+		mSpectrumAnalysis = SpectrumAnalysisCreate(FFT_FRAMESIZE);
+		mAudioBuffer = (int32_t*)malloc(sizeof(int32_t)*FFT_FRAMESIZE);	
+		mMagnitudeBuffer =  (int32_t*)malloc(sizeof(int32_t)*FFT_FRAMESIZE);	
+
+		
+		inMemoryAudiofile = [[InMemoryAudioFile alloc] init];
+		[inMemoryAudiofile open:file];
+    }
+    return self;
+}
+
+//converts value 0 to 65536
+-(float)convertInt16ToNormalizedFloat:(UInt16) input
+{
+	float output = (float)input;
+	output /= 65536.0;
+	output*=2.0;
+	output-=1.0;
+	//NSLog([NSString stringWithFormat:@"Sample float Value: %f\n", output]);
+	return output;
+}
+
+-(UInt16)convertNormalizedFloatToInt16:(float) input
+{
+	input += 1.0;
+	UInt16 output = (UInt16)(input * 32768.0); //multiply by half of output value because input is between 0.0 and 2.0
+	return output;
+}
+
+
+/* Parameters on entry to this function are :-
+ 
+ *inRefCon - used to store whatever you want, can use it to pass in a reference to an objectiveC class
+ i do this below to get at the InMemoryAudioFile object, the line below :
+ callbackStruct.inputProcRefCon = self;
+ in the initialiseAudio method sets this to "self" (i.e. this instantiation of RemoteIOPlayer).
+ This is a way to bridge between objectiveC and the straight C callback mechanism, another way
+ would be to use an "evil" global variable by just specifying one in theis file and setting it
+ to point to inMemoryAudiofile whenever it is set.
+ 
+ *inTimeStamp - the sample time stamp, can use it to find out sample time (the sound card time), or the host time
+ 
+ inBusnumber - the audio bus number, we are only using 1 so it is always 0 
+ 
+ inNumberFrames - the number of frames we need to fill. In this example, because of the way audioformat is
+ initialised below, a frame is a 32 bit number, comprised of two signed 16 bit samples.
+ 
+ *ioData - holds information about the number of audio buffers we need to fill as well as the audio buffers themselves */
+static OSStatus playbackCallback(void *inRefCon, 
+								 AudioUnitRenderActionFlags *ioActionFlags, 
+								 const AudioTimeStamp *inTimeStamp, 
+								 UInt32 inBusNumber, 
+								 UInt32 inNumberFrames, 
+								 AudioBufferList *ioData) {  
+	
+	
+	
+	//get a copy of the objectiveC class "self" we need this to get the next sample to fill the buffer
+	RemoteIO *remoteIO = (RemoteIO *)inRefCon;
+	
+	
+	//get the number of samples that need to be filled and perform fft in the case of this applictaion it is always 1024 samples per buffer(changable in audio session)
+	for (int i = 0 ; i < ioData->mNumberBuffers; i++){
+		
+		//int numberOfSamples = ioData->mBuffers[i].mDataByteSize;
+		//we want to find out how many samples we need to process since one sample is 16bit (= two bytes) 
+		//numberOfSamples /= 2.0;
+		//NSLog([NSString stringWithFormat:@"Samples read: %d\n", numberOfSamples]);
+		
+		//NSLog([NSString stringWithFormat:@"Number of frames: %d\n", inNumberFrames]);
+		
+		//each frame is a stereo sample pair
+		
+		AudioBuffer buffer = ioData->mBuffers[i];
+		
+		UInt16 *frameBuffer = (UInt16 *) buffer.mData;
+		
+		remoteIO->currentInputSampleBufferIndex = 0;
+		
+		// 1. read the stereo frame into two distinct sample buffers
+		for(int j = 0; j < (inNumberFrames); j++)
+		{
+	
+			//get the first sample of the frame
+			remoteIO->currentIntSample = remoteIO->mAudioBuffer[j] = [[remoteIO inMemoryAudiofile] getNextSample];
+			//convert it to float between -1. and 1. and save it in the buffer
+			remoteIO->channel1InputSampleBuffer[j] = [remoteIO convertInt16ToNormalizedFloat:remoteIO->currentIntSample];
+			//remoteIO->channel1InputSampleBuffer[j] = remoteIO->channel2InputSampleBuffer[j] = sin((twopi/(1024-remoteIO->offset))*j);//sin((twopi*1.0*(float)j)/512.);
+			
+			//get the second sample of the frame
+			remoteIO->currentIntSample = [[remoteIO inMemoryAudiofile] getNextSample];
+			//convert it to float between -1. and 1.	and save it in the buffer
+			//remoteIO->channel2InputSampleBuffer[j] = [remoteIO convertInt16ToNormalizedFloat:remoteIO->currentIntSample];
+		}	
+		
+		//2. do the transformation
+		//the MagnitudePhasesBuffer holds magnitude and phases pairs
+		//pva(remoteIO->channel1InputSampleBuffer, remoteIO->fftWindow, remoteIO->channel1MagnitudePhasesBuffer, 1024, FFT_FRAMESIZE, 256, 44100.0f);//we should load in the sample rate dynamically
+		//pva(remoteIO->channel1InputSampleBuffer, remoteIO->fftWindow, remoteIO->channel1MagnitudePhasesBuffer, 512, 512, 256, 441000.f);//we should load in the sample rate dynamically
+		
+		//fft_mag(remoteIO->channel1InputSampleBuffer, remoteIO->channel1MagnitudePhasesBuffer, 512);
+		
+		SpectrumAnalysisProcess(remoteIO->mSpectrumAnalysis, remoteIO->mAudioBuffer, remoteIO->mMagnitudeBuffer, true);	
+		
+		//fft_test(remoteIO->channel1InputSampleBuffer, remoteIO->channel1MagnitudePhasesBuffer, 512);
+		
+		//copy the magnitude values into our Matrix for display
+		remoteIO->channel1MagnitudeMatrix[remoteIO->currentMatrixColumn][0] = remoteIO->channel1MagnitudePhasesBuffer[0];
+		
+		if(fabs(remoteIO->channel1MagnitudePhasesBuffer[0]) > remoteIO->highest)
+		{
+			remoteIO->highest = fabs(remoteIO->channel1MagnitudePhasesBuffer[0]);
+			printf("highest%f\n ", remoteIO->highest);
+		}
+		
+		remoteIO->channel1MagnitudeMatrix[remoteIO->currentMatrixColumn][1] = remoteIO->channel1MagnitudePhasesBuffer[1];
+		
+		if(fabs(remoteIO->channel1MagnitudePhasesBuffer[1]) > remoteIO->highest)
+		{
+			remoteIO->highest = fabs(remoteIO->channel1MagnitudePhasesBuffer[1]);
+			printf("highest%f\n ", remoteIO->highest);
+		}
+		
+		int k, l;
+		for(k = 2, l = 2; k <FFT_FRAMESIZE/2; k++, l+=2)
+		{
+			remoteIO->channel1MagnitudeMatrix[remoteIO->currentMatrixColumn][k] = remoteIO->channel1MagnitudePhasesBuffer[l];
+			
+			if(fabs(remoteIO->channel1MagnitudePhasesBuffer[l]) > remoteIO->highest)
+			{
+				remoteIO->highest = fabs(remoteIO->channel1MagnitudePhasesBuffer[l]);
+				printf("highest%f\n ", remoteIO->highest);
+			}
+		}
+		
+		if(remoteIO->currentMatrixColumn < MATRIX_COLUMNS)
+		{
+			remoteIO->currentMatrixColumn++;
+		}
+		else
+		{
+			remoteIO->currentMatrixColumn = 0;
+		}
+		remoteIO->offset+= 1.0f;
+		
+		
+		//pvs(remoteIO->channel1MagnitudePhasesBuffer, remoteIO->fftWindow, remoteIO->channel1OutputSampleBuffer, 1024, FFT_FRAMESIZE, 256, 44100.0f);
+		//pvs(remoteIO->channel1MagnitudePhasesBuffer, remoteIO->fftWindow, remoteIO->channel1OutputSampleBuffer, 512, 512, 256, 441000.f);
+		
+		
+		//3. output it
+		remoteIO->currentInputSampleBufferIndex = 0;
+		for(int j = 0; j < (inNumberFrames * 2); j++)
+		{
+			frameBuffer[j] = [remoteIO convertNormalizedFloatToInt16:remoteIO->channel1InputSampleBuffer[remoteIO->currentInputSampleBufferIndex]];//[remoteIO convertNormalizedFloatToInt16:remoteIO->channel1OutputSampleBuffer[remoteIO->currentInputSampleBufferIndex]];
+			frameBuffer[++j] = [remoteIO convertNormalizedFloatToInt16:remoteIO->channel2InputSampleBuffer[remoteIO->currentInputSampleBufferIndex]];
+			remoteIO->currentInputSampleBufferIndex++;
+		}
+		
+		
+	}
+	
+	
+	
+	/*
+	//loop through all the buffers that need to be filled
+	for (int i = 0 ; i < ioData->mNumberBuffers; i++){
+		//get the buffer to be filled
+		AudioBuffer buffer = ioData->mBuffers[i];
+		
+		//if needed we can get the number of bytes that will fill the buffer using
+		// int numberOfSamples = ioData->mBuffers[i].mDataByteSize;
+		
+		//get the buffer and point to it as an UInt32 (as we will be filling it with 32 bit samples)
+		//if we wanted we could grab it as a 16 bit and put in the samples for left and right seperately
+		//but the loop below would be for(j = 0; j < inNumberFrames * 2; j++) as each frame is a 32 bit number
+		UInt16 *frameBuffer = (UInt16 *) buffer.mData;
+		
+		//loop through the buffer and fill the frames
+		for (int j = 0; j < (inNumberFrames * 2); j++){
+			// get NextPacket returns a 32 bit value, one frame.
+			frameBuffer[j] = [[remoteIO inMemoryAudiofile] getNextSample];
+			
+			frameBuffer[++j] = [[remoteIO inMemoryAudiofile] getNextSample];
+		}
+	}
+	//dodgy return :)
+	*/
+    return noErr;
+	
+}
+
+
+
+// Below code is a cut down version (for output only) of the code written by
+// Micheal "Code Fighter" Tyson (punch on Mike)
+// See http://michael.tyson.id.au/2008/11/04/using-remoteio-audio-unit/ for details
+-(void) initializeAudio{
+
+	OSStatus status;
+	
+	
+	// Describe audio component
+	AudioComponentDescription desc;
+	desc.componentType = kAudioUnitType_Output;
+	desc.componentSubType = kAudioUnitSubType_RemoteIO;
+	desc.componentFlags = 0;
+	desc.componentFlagsMask = 0;
+	desc.componentManufacturer = kAudioUnitManufacturer_Apple;
+	
+	// Get component
+	AudioComponent inputComponent = AudioComponentFindNext(NULL, &desc);
+	
+	// Get audio units
+	status = AudioComponentInstanceNew(inputComponent, &audioUnit);
+	
+	UInt32 flag = 1;
+	// Enable IO for playback
+	status = AudioUnitSetProperty(audioUnit, 
+								  kAudioOutputUnitProperty_EnableIO, 
+								  kAudioUnitScope_Output, 
+								  kOutputBus,
+								  &flag, 
+								  sizeof(flag));
+	
+	// Describe format
+	audioFormat.mSampleRate			= 44100.00;
+	audioFormat.mFormatID			= kAudioFormatLinearPCM;
+	audioFormat.mFormatFlags		= kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;
+	audioFormat.mFramesPerPacket	= 1;
+	audioFormat.mChannelsPerFrame	= 2;
+	audioFormat.mBitsPerChannel		= 16;
+	audioFormat.mBytesPerPacket		= 4;
+	audioFormat.mBytesPerFrame		= 4;
+	
+	//Apply format
+	status = AudioUnitSetProperty(audioUnit, 
+								  kAudioUnitProperty_StreamFormat, 
+								  kAudioUnitScope_Input, 
+								  kOutputBus, 
+								  &audioFormat, 
+								  sizeof(audioFormat));
+	
+	// Set up the playback  callback
+	AURenderCallbackStruct callbackStruct;
+	callbackStruct.inputProc = playbackCallback;
+	//set the reference to "self" this becomes *inRefCon in the playback callback
+	callbackStruct.inputProcRefCon = self;
+	
+	status = AudioUnitSetProperty(audioUnit, 
+								  kAudioUnitProperty_SetRenderCallback, 
+								  kAudioUnitScope_Global, 
+								  kOutputBus,
+								  &callbackStruct, 
+								  sizeof(callbackStruct));
+	
+	// Initialise
+	status = AudioUnitInitialize(audioUnit);
+	NSLog([NSString stringWithFormat:@"Audio Unit Initialize: %d"], status);
+
+
+}
+
+
+-(OSStatus)start{
+	
+	OSStatus status = AudioOutputUnitStart(audioUnit);
+	NSLog([NSString stringWithFormat:@"Audio Unit Start: %d"], status);
+	return status;
+}
+
+-(OSStatus)stop{
+	OSStatus status = AudioOutputUnitStop(audioUnit);
+	return status;
+}
+
+-(void)cleanUp{
+	
+	//hier noch all Buffer freen!
+	AudioOutputUnitStop(audioUnit);
+	AudioUnitUninitialize(audioUnit);
+	AudioComponentInstanceDispose(audioUnit	);
+	SpectrumAnalysisDestroy(mSpectrumAnalysis);
+	[inMemoryAudiofile dealloc];
+	[inMemoryAudiofile release];
+	[super dealloc];
+}
+
+
+@end

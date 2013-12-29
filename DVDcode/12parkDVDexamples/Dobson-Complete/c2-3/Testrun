@@ -1,0 +1,9 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo ./sfpan ../testvox.aif sfpan.aif testenv.txt
+echo
+echo
+./sfpan ../testvox.aif sfpan.aif testenv.txt
+echo
+echo
+

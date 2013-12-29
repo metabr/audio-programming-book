@@ -1,0 +1,10 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo  ./sfenv ../../testvox.aif sfenv.aif testenv.txt
+
+echo
+echo
+./sfenv ../../testvox.aif sfenv.aif testenv.txt
+echo
+echo
+

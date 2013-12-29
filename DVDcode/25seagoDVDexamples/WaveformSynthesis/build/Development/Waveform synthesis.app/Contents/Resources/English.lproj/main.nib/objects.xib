@@ -1,0 +1,544 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="64" name="allObjects">
+    <object class="IBCarbonSlider" id="229">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">5</int>
+      <ostype name="command">Hrm5</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">270 184 18 152 </string>
+      <string name="bounds">184 270 336 288 </string>
+    </object>
+    <object class="IBCarbonSlider" id="235">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">16</int>
+      <ostype name="command">Hm16</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">534 184 18 152 </string>
+      <string name="bounds">184 534 336 552 </string>
+    </object>
+    <object class="IBCarbonSlider" id="247">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">21</int>
+      <ostype name="command">Freq</ostype>
+      <int name="initialValue">250</int>
+      <int name="minimumValue">100</int>
+      <int name="maximumValue">400</int>
+      <string name="viewFrame">63 184 18 152 </string>
+      <string name="bounds">184 63 336 81 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="138">
+      <string name="title">Save</string>
+      <string name="keyEquivalent">s</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">save</ostype>
+    </object>
+    <object class="IBCarbonSlider" id="237">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">14</int>
+      <ostype name="command">Hm14</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">486 184 18 152 </string>
+      <string name="bounds">184 486 336 504 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="249">
+      <int name="controlSize">1</int>
+      <string name="title">0 dB</string>
+      <string name="viewFrame">136 184 30 13 </string>
+      <string name="bounds">184 136 197 166 </string>
+    </object>
+    <object class="IBCarbonMenu" id="184">
+      <string name="title">Waveform Synthesis</string>
+      <string name="name">_NSAppleMenu</string>
+      <array count="1" name="items">
+        <object class="IBCarbonMenuItem" id="187">
+          <string name="title">About Waveform Synthesis</string>
+          <int name="keyEquivalentModifier">0</int>
+          <ostype name="command">abou</ostype>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonMenuItem" id="144">
+      <string name="title">Paste</string>
+      <string name="keyEquivalent">v</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">past</ostype>
+    </object>
+    <object class="IBCarbonSlider" id="244">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">18</int>
+      <ostype name="command">Hm18</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">582 184 18 152 </string>
+      <string name="bounds">184 582 336 600 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="136">
+      <string name="title">Print…</string>
+      <string name="keyEquivalent">p</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">prnt</ostype>
+    </object>
+    <object class="IBCarbonEditText" id="252">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">22</int>
+      <ostype name="command">Hz  </ostype>
+      <boolean name="isUnicode">TRUE</boolean>
+      <string name="viewFrame">55 348 28 16 </string>
+      <string name="bounds">348 55 364 83 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="135">
+      <string name="title">Page Setup…</string>
+      <string name="keyEquivalent">P</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">page</ostype>
+    </object>
+    <object class="IBCarbonSlider" id="223">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">3</int>
+      <ostype name="command">Hrm3</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">222 184 18 152 </string>
+      <string name="bounds">184 222 336 240 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="146">
+      <string name="title">Redo</string>
+      <string name="keyEquivalent">Z</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">redo</ostype>
+    </object>
+    <object class="IBCarbonButton" id="200">
+      <ostype name="command">play</ostype>
+      <string name="title">Play</string>
+      <string name="viewFrame">32 387 70 20 </string>
+      <string name="bounds">387 32 407 102 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="128">
+      <boolean name="separator">TRUE</boolean>
+    </object>
+    <object class="IBCarbonMenuItem" id="143">
+      <string name="title">Cut</string>
+      <string name="keyEquivalent">x</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">cut </ostype>
+    </object>
+    <object class="IBCarbonStaticText" id="254">
+      <int name="controlSize">1</int>
+      <string name="title">Hz</string>
+      <string name="viewFrame">94 350 19 13 </string>
+      <string name="bounds">350 94 363 113 </string>
+    </object>
+    <object class="IBCarbonSlider" id="222">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">2</int>
+      <ostype name="command">Hrm2</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">198 184 18 152 </string>
+      <string name="bounds">184 198 336 216 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="258">
+      <string name="title">Compiled using XCode 3.0</string>
+      <string name="viewFrame">147 72 503 22 </string>
+      <string name="bounds">72 147 94 650 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="257">
+      <string name="title">Carbon program in C/C++ in MacOS X 10.5</string>
+      <string name="viewFrame">147 37 503 22 </string>
+      <string name="bounds">37 147 59 650 </string>
+    </object>
+    <object class="IBCarbonMenu" id="147">
+      <string name="title">Edit</string>
+      <array count="10" name="items">
+        <object class="IBCarbonMenuItem" id="141">
+          <string name="title">Undo</string>
+          <string name="keyEquivalent">z</string>
+          <boolean name="disabled">TRUE</boolean>
+          <ostype name="command">undo</ostype>
+        </object>
+        <reference idRef="146"/>
+        <object class="IBCarbonMenuItem" id="142">
+          <boolean name="separator">TRUE</boolean>
+        </object>
+        <reference idRef="143"/>
+        <object class="IBCarbonMenuItem" id="149">
+          <string name="title">Copy</string>
+          <string name="keyEquivalent">c</string>
+          <boolean name="disabled">TRUE</boolean>
+          <ostype name="command">copy</ostype>
+        </object>
+        <reference idRef="144"/>
+        <object class="IBCarbonMenuItem" id="151">
+          <string name="title">Delete</string>
+          <boolean name="disabled">TRUE</boolean>
+          <ostype name="command">clea</ostype>
+        </object>
+        <object class="IBCarbonMenuItem" id="148">
+          <string name="title">Select All</string>
+          <string name="keyEquivalent">a</string>
+          <boolean name="disabled">TRUE</boolean>
+          <ostype name="command">sall</ostype>
+        </object>
+        <object class="IBCarbonMenuItem" id="199">
+          <boolean name="separator">TRUE</boolean>
+        </object>
+        <object class="IBCarbonMenuItem" id="198">
+          <string name="title">Special Characters…</string>
+          <boolean name="disabled">TRUE</boolean>
+          <ostype name="command">chrp</ostype>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonSlider" id="221">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">1</int>
+      <ostype name="command">Hrm1</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">174 184 18 152 </string>
+      <string name="bounds">184 174 336 192 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="261">
+      <string name="title">London Metropolitan University</string>
+      <string name="viewFrame">488 428 270 16 </string>
+      <string name="bounds">428 488 444 758 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="262">
+      <string name="title">a.seago@londonmet.ac.uk</string>
+      <string name="viewFrame">488 452 270 16 </string>
+      <string name="bounds">452 488 468 758 </string>
+    </object>
+    <reference idRef="187"/>
+    <object class="IBCarbonSlider" id="233">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">8</int>
+      <ostype name="command">Hrm8</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">342 184 18 152 </string>
+      <string name="bounds">184 342 336 360 </string>
+    </object>
+    <object class="IBCarbonSlider" id="231">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">6</int>
+      <ostype name="command">Hrm6</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">294 184 18 152 </string>
+      <string name="bounds">184 294 336 312 </string>
+    </object>
+    <reference idRef="149"/>
+    <object class="IBCarbonMenuItem" id="185">
+      <string name="title">Waveform Synthesis</string>
+      <reference name="submenu" idRef="184"/>
+    </object>
+    <object class="IBCarbonSlider" id="224">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">4</int>
+      <ostype name="command">Hrm4</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">246 184 18 152 </string>
+      <string name="bounds">184 246 336 264 </string>
+    </object>
+    <reference idRef="198"/>
+    <reference idRef="142"/>
+    <reference idRef="151"/>
+    <object class="IBCarbonSlider" id="239">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">19</int>
+      <ostype name="command">Hm19</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">606 184 18 152 </string>
+      <string name="bounds">184 606 336 624 </string>
+    </object>
+    <reference idRef="141"/>
+    <object class="IBCarbonMenuItem" id="130">
+      <string name="title">Close</string>
+      <string name="keyEquivalent">w</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">clos</ostype>
+    </object>
+    <object class="IBCarbonSlider" id="236">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">13</int>
+      <ostype name="command">Hm13</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">462 184 18 152 </string>
+      <string name="bounds">184 462 336 480 </string>
+    </object>
+    <object class="IBCarbonSlider" id="243">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">15</int>
+      <ostype name="command">Hm15</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">510 184 18 152 </string>
+      <string name="bounds">184 510 336 528 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="251">
+      <int name="controlSize">1</int>
+      <string name="title">-∞</string>
+      <string name="viewFrame">130 324 30 13 </string>
+      <string name="bounds">324 130 337 160 </string>
+    </object>
+    <reference idRef="199"/>
+    <reference idRef="148"/>
+    <object class="IBCarbonMenuItem" id="133">
+      <boolean name="separator">TRUE</boolean>
+    </object>
+    <object class="IBCarbonSlider" id="240">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">11</int>
+      <ostype name="command">Hm11</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">414 184 18 152 </string>
+      <string name="bounds">184 414 336 432 </string>
+    </object>
+    <object class="IBCarbonMenuItem" id="139">
+      <string name="title">New</string>
+      <string name="keyEquivalent">n</string>
+      <boolean name="disabled">TRUE</boolean>
+      <ostype name="command">new </ostype>
+    </object>
+    <object class="IBCarbonSeparator" id="246">
+      <string name="viewFrame">121 59 1 367 </string>
+      <string name="bounds">59 121 426 122 </string>
+    </object>
+    <object class="IBCarbonSlider" id="238">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">17</int>
+      <ostype name="command">Hm17</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">558 184 18 152 </string>
+      <string name="bounds">184 558 336 576 </string>
+    </object>
+    <object class="IBCarbonMenu" id="29">
+      <string name="title">main</string>
+      <string name="name">_NSMainMenu</string>
+      <array count="3" name="items">
+        <reference idRef="185"/>
+        <object class="IBCarbonMenuItem" id="127">
+          <string name="title">File</string>
+          <object name="submenu" class="IBCarbonMenu" id="131">
+            <string name="title">File</string>
+            <array count="9" name="items">
+              <reference idRef="139"/>
+              <object class="IBCarbonMenuItem" id="134">
+                <string name="title">Open…</string>
+                <string name="keyEquivalent">o</string>
+                <boolean name="disabled">TRUE</boolean>
+                <ostype name="command">open</ostype>
+              </object>
+              <reference idRef="133"/>
+              <reference idRef="130"/>
+              <reference idRef="138"/>
+              <object class="IBCarbonMenuItem" id="137">
+                <string name="title">Save As…</string>
+                <string name="keyEquivalent">S</string>
+                <boolean name="disabled">TRUE</boolean>
+                <ostype name="command">svas</ostype>
+              </object>
+              <reference idRef="128"/>
+              <reference idRef="135"/>
+              <reference idRef="136"/>
+            </array>
+          </object>
+        </object>
+        <object class="IBCarbonMenuItem" id="152">
+          <string name="title">Edit</string>
+          <reference name="submenu" idRef="147"/>
+        </object>
+      </array>
+    </object>
+    <object class="IBCarbonSlider" id="234">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">7</int>
+      <ostype name="command">Hrm7</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">318 184 18 152 </string>
+      <string name="bounds">184 318 336 336 </string>
+    </object>
+    <reference idRef="152"/>
+    <reference idRef="127"/>
+    <object class="IBCarbonSlider" id="242">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">20</int>
+      <ostype name="command">Hm20</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">630 184 18 152 </string>
+      <string name="bounds">184 630 336 648 </string>
+    </object>
+    <reference idRef="131"/>
+    <object class="IBCarbonSlider" id="232">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">9</int>
+      <ostype name="command">Hrm9</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">366 184 18 152 </string>
+      <string name="bounds">184 366 336 384 </string>
+    </object>
+    <reference idRef="134"/>
+    <object class="IBCarbonSlider" id="230">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">10</int>
+      <ostype name="command">Hm10</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">390 184 18 152 </string>
+      <string name="bounds">184 390 336 408 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="248">
+      <int name="controlSize">1</int>
+      <string name="title">Frequency of 1st harmonic</string>
+      <string name="viewFrame">27 150 86 36 </string>
+      <string name="bounds">150 27 186 113 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="260">
+      <string name="title">Allan Seago</string>
+      <string name="viewFrame">488 404 270 16 </string>
+      <string name="bounds">404 488 420 758 </string>
+    </object>
+    <reference idRef="137"/>
+    <object class="IBCarbonSlider" id="241">
+      <ostype name="controlSignature">????</ostype>
+      <int name="controlID">12</int>
+      <ostype name="command">Hm12</ostype>
+      <int name="initialValue">50</int>
+      <string name="viewFrame">438 184 18 152 </string>
+      <string name="bounds">184 438 336 456 </string>
+    </object>
+    <object class="IBCarbonStaticText" id="250">
+      <int name="controlSize">1</int>
+      <string name="title">-6 dB</string>
+      <string name="viewFrame">130 251 30 13 </string>
+      <string name="bounds">251 130 264 160 </string>
+    </object>
+    <object class="IBCarbonRootControl" id="167">
+      <string name="viewFrame">0 0 716 488 </string>
+      <array count="35" name="subviews">
+        <reference idRef="200"/>
+        <reference idRef="221"/>
+        <reference idRef="222"/>
+        <reference idRef="223"/>
+        <reference idRef="224"/>
+        <reference idRef="229"/>
+        <reference idRef="230"/>
+        <reference idRef="231"/>
+        <reference idRef="232"/>
+        <reference idRef="233"/>
+        <reference idRef="234"/>
+        <reference idRef="235"/>
+        <reference idRef="236"/>
+        <reference idRef="237"/>
+        <reference idRef="238"/>
+        <reference idRef="239"/>
+        <reference idRef="240"/>
+        <reference idRef="241"/>
+        <reference idRef="242"/>
+        <reference idRef="243"/>
+        <reference idRef="244"/>
+        <reference idRef="246"/>
+        <reference idRef="247"/>
+        <reference idRef="248"/>
+        <reference idRef="249"/>
+        <reference idRef="250"/>
+        <reference idRef="251"/>
+        <reference idRef="252"/>
+        <object class="IBCarbonStaticText" id="253">
+          <string name="title">This program allows users to specify the amplitudes of twenty harmonics of a complex periodic waveform and the frequency of the first harmonic (or fundamental).</string>
+          <string name="viewFrame">147 109 503 53 </string>
+          <string name="bounds">109 147 162 650 </string>
+        </object>
+        <reference idRef="254"/>
+        <reference idRef="257"/>
+        <reference idRef="258"/>
+        <reference idRef="260"/>
+        <reference idRef="261"/>
+        <reference idRef="262"/>
+      </array>
+      <string name="bounds">0 0 488 716 </string>
+    </object>
+    <object class="IBCarbonWindow" id="166">
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="liveResize">TRUE</boolean>
+      <boolean name="metal">TRUE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <string name="title">Waveform synthesis</string>
+      <reference name="rootControl" idRef="167"/>
+      <string name="windowRect">193 211 681 927 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <reference idRef="253"/>
+  </array>
+  <array count="64" name="allParents">
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="185"/>
+    <reference idRef="147"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="147"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="147"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="152"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="184"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="147"/>
+    <reference idRef="29"/>
+    <reference idRef="167"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="167"/>
+    <reference idRef="147"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="1"/>
+    <reference idRef="167"/>
+    <reference idRef="29"/>
+    <reference idRef="29"/>
+    <reference idRef="167"/>
+    <reference idRef="127"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="131"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="166"/>
+    <reference idRef="1"/>
+    <reference idRef="167"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>MainWindow</string>
+    <reference idRef="166"/>
+    <string>MenuBar</string>
+    <reference idRef="29"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">263</unsigned_int>
+</object>

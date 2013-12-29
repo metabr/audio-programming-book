@@ -1,0 +1,26 @@
+file /Users/rorywalsh/SourceCode/examples/SConstructGUI,line 57:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C++ header file stdio.h... 
+scons: Configure: ".sconf_temp/conftest_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp\conftest_0.cpp <-
+  |  |
+  |  |#include <stdio.h>
+  |  |
+  |  |
+  |
+g++ -o .sconf_temp/conftest_0.o -c -g -I/Library/Frameworks/CsoundLib.framework/Versions/Current/headers -I/usr/include .sconf_temp/conftest_0.cpp
+scons: Configure: yes
+
+scons: Configure: Checking for C++ header file csound.hpp... 
+scons: Configure: ".sconf_temp/conftest_1.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp\conftest_1.cpp <-
+  |  |
+  |  |#include <csound.hpp>
+  |  |
+  |  |
+  |
+g++ -o .sconf_temp/conftest_1.o -c -g -I/Library/Frameworks/CsoundLib.framework/Versions/Current/headers -I/usr/include .sconf_temp/conftest_1.cpp
+scons: Configure: yes
+

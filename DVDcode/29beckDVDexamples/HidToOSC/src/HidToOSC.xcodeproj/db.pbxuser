@@ -1,0 +1,133 @@
+// !$*UTF8*$!
+{
+	23E6999F104DE37A00F5B3E6 /* HidToOSC */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = HidToOSC;
+		sourceDirectories = (
+		);
+	};
+	23E699AF104DE38B00F5B3E6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: conflicting types for 'uint8'";
+		fRef = 23E699B0104DE38B00F5B3E6 /* OSC-timetag.h */;
+		rLen = 1;
+		rLoc = 58;
+		rType = 1;
+	};
+	23E699B0104DE38B00F5B3E6 /* OSC-timetag.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = "OSC-timetag.h";
+		path = "/Users/db/Desktop/code/HidToOSC/src/./ObjCOSC.framework/Headers/OSC-timetag.h";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 1540}}";
+			sepNavSelRange = "{2249, 38}";
+			sepNavVisRange = "{1928, 535}";
+		};
+	};
+	23E699B1104DE38B00F5B3E6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 23E699B2104DE38B00F5B3E6 /* OSC-timetag.h */;
+		name = "OSC-timetag.h: 59";
+		rLen = 38;
+		rLoc = 2249;
+		rType = 0;
+		vrLen = 584;
+		vrLoc = 1928;
+	};
+	23E699B2104DE38B00F5B3E6 /* OSC-timetag.h */ = {
+		isa = PBXFileReference;
+		name = "OSC-timetag.h";
+		path = "/Users/db/Desktop/code/HidToOSC/src/./ObjCOSC.framework/Headers/OSC-timetag.h";
+		sourceTree = "<absolute>";
+	};
+	23E699BB104DE3B600F5B3E6 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	23E699BC104DE3B600F5B3E6 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	23E699BE104DE3D600F5B3E6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 23E699B0104DE38B00F5B3E6 /* OSC-timetag.h */;
+		name = "OSC-timetag.h: 59";
+		rLen = 38;
+		rLoc = 2249;
+		rType = 0;
+		vrLen = 535;
+		vrLoc = 1928;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Deployment;
+		activeExecutable = 23E6999F104DE37A00F5B3E6 /* HidToOSC */;
+		activeSDKPreference = macosx10.5;
+		activeTarget = 8D1107260486CEB800E47090 /* HidToOSC */;
+		codeSenseManager = 23E699BC104DE3B600F5B3E6 /* Code sense */;
+		executables = (
+			23E6999F104DE37A00F5B3E6 /* HidToOSC */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 273539962;
+			PBXWorkspaceStateSaveDate = 273539962;
+		};
+		perUserProjectItems = {
+			23E699AF104DE38B00F5B3E6 /* PBXTextBookmark */ = 23E699AF104DE38B00F5B3E6 /* PBXTextBookmark */;
+			23E699B1104DE38B00F5B3E6 /* PBXTextBookmark */ = 23E699B1104DE38B00F5B3E6 /* PBXTextBookmark */;
+			23E699BE104DE3D600F5B3E6 /* PBXTextBookmark */ = 23E699BE104DE3D600F5B3E6 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 23E699BB104DE3B600F5B3E6 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* HidToOSC */ = {
+		activeExec = 0;
+		executables = (
+			23E6999F104DE37A00F5B3E6 /* HidToOSC */,
+		);
+	};
+}

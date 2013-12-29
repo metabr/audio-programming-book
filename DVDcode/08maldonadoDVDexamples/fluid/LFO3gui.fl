@@ -1,0 +1,235 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0104 
+header_name {.h} 
+code_name {.cpp}
+decl {\#include "PortAudioStuff.h"} {public
+} 
+
+decl {\#include <FL/Fl_Box.H>} {public
+} 
+
+decl {class Fl_DrawShape;} {public
+} 
+
+decl {void drawWaveform(Fl_DrawShape*);} {public
+} 
+
+class Fl_DrawShape {open : {public Fl_Box}
+} {
+  Function {Fl_DrawShape(int X, int Y, int W, int H, const char *l=0) : Fl_Box(X,Y,W,H,l)} {open
+  } {}
+  decl {float *table;} {public
+  }
+  decl {long tablen;} {public
+  }
+  Function {draw()} {open
+  } {
+    code {Fl_Box::draw();
+drawWaveform(this);} {}
+  }
+} 
+
+class LFO3gui {open : {public PAstuff}
+} {
+  decl {bool isCarrier;} {}
+  Function {LFO3gui():PAstuff()} {open
+  } {
+    Fl_Window mainWindow {
+      label {Wavetable LFO example} open
+      xywh {81 219 747 380} labelsize 12 align 0 hide
+      code0 {make_menu();}
+    } {
+      Fl_Box joy {
+        label {LFO (X controls frequency, Y controls amplitude)}
+        callback {joy_callback();}
+        xywh {5 25 290 290} box DOWN_BOX color 46 selection_color 1 labelsize 12 align 2 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Group {} {
+        label {LFO shape} open
+        xywh {300 25 105 145} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelsize 15 labelcolor 42 align 21
+      } {
+        Fl_Round_Button {} {
+          label Sine
+          callback {LFO_radio_callback(0);}
+          xywh {305 50 85 25} type Radio down_box ROUND_DOWN_BOX value 1 labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Triangle
+          callback {LFO_radio_callback(1);}
+          xywh {305 65 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label {Up Ramp}
+          callback {LFO_radio_callback(2);}
+          xywh {305 80 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label {Down Ramp}
+          callback {LFO_radio_callback(3);}
+          xywh {305 95 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Square
+          callback {LFO_radio_callback(4);}
+          xywh {305 110 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Random
+          callback {LFO_radio_callback(5);}
+          xywh {305 125 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Custom
+          callback {isCarrier = false;
+customWave();}
+          xywh {305 140 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+      }
+      Fl_Group {} {
+        label {Carrier shape} open
+        xywh {300 185 105 150} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelsize 15 labelcolor 42 align 21
+      } {
+        Fl_Round_Button {} {
+          label Sine
+          callback {carrier_radio_callback(0);}
+          xywh {305 210 85 25} type Radio down_box ROUND_DOWN_BOX value 1 labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Triangle
+          callback {carrier_radio_callback(1);}
+          xywh {305 225 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label {Up Ramp}
+          callback {carrier_radio_callback(2);}
+          xywh {305 240 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label {Down Ramp}
+          callback {carrier_radio_callback(3);}
+          xywh {305 255 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Square
+          callback {carrier_radio_callback(4);}
+          xywh {305 270 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Random
+          callback {carrier_radio_callback(5);}
+          xywh {305 285 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+        Fl_Round_Button {} {
+          label Custom
+          callback {isCarrier = true;
+customWave();}
+          xywh {305 300 85 25} type Radio down_box ROUND_DOWN_BOX labelsize 12
+        }
+      }
+      Fl_Slider CarrierFreq {
+        label {Base frequency of the audio carrier:}
+        callback {carrier_freq_callback();}
+        xywh {205 340 535 25} type {Horz Knob} box FLAT_BOX selection_color 216 labelsize 12 labelcolor 0 align 4 value 0.3
+      }
+      Fl_Box LfoShape {
+        xywh {410 25 330 150} box DOWN_BOX color 51
+        class Fl_DrawShape
+      }
+      Fl_Box CarrierShape {
+        xywh {410 180 330 155} box DOWN_BOX color 51
+        class Fl_DrawShape
+      }
+    }
+  }
+  Function {customWave()} {open return_type void
+  } {
+    Fl_Window customWavWindow {
+      label {Custom waveform} open
+      xywh {164 156 226 431} hide
+    } {
+      Fl_Value_Input {numHarm[0]} {
+        label harm
+        xywh {10 270 30 25} labelsize 11 align 130 minimum 1 maximum 1000 step 0.5 value 1
+      }
+      Fl_Value_Slider {levelHarm[0]} {
+        callback {customWave_callback(isCarrier);}
+        xywh {10 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Input {numHarm[1]} {
+        label harm
+        xywh {45 270 30 25} labelsize 11 align 130 minimum 1 maximum 1000 step 0.5 value 2
+      }
+      Fl_Value_Slider {levelHarm[1]} {
+        callback {customWave_callback(isCarrier);}
+        xywh {45 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Input {numHarm[2]} {
+        label harm
+        xywh {80 270 30 25} labelsize 11 align 130 minimum 1 maximum 1000 step 0.5 value 3
+      }
+      Fl_Value_Slider {levelHarm[2]} {
+        callback {customWave_callback(isCarrier);}
+        xywh {80 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Input {numHarm[3]} {
+        label harm
+        xywh {115 270 30 25} labelsize 11 align 130 minimum 1 maximum 1000 step 0.5 value 4
+      }
+      Fl_Value_Slider {levelHarm[3]} {
+        callback {customWave_callback(isCarrier);}
+        xywh {115 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Input {numHarm[4]} {
+        label harm
+        xywh {150 270 30 25} labelsize 11 align 130 minimum 1 maximum 1000 step 0.5 value 5
+      }
+      Fl_Value_Slider {levelHarm[4]} {
+        callback {customWave_callback(isCarrier);} selected
+        xywh {150 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Input {numHarm[5]} {
+        label harm
+        xywh {185 270 30 25} labelsize 11 align 130 minimum 1 maximum 1000 step 0.5 value 6
+      }
+      Fl_Value_Slider {levelHarm[5]} {
+        callback {customWave_callback(isCarrier);}
+        xywh {185 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Button {} {
+        label Compute
+        callback {customWave_callback(isCarrier);}
+        xywh {35 390 75 30}
+      }
+      Fl_Return_Button {} {
+        label Exit
+        callback {delete o->parent();}
+        xywh {120 390 75 30}
+      }
+      Fl_Box {} {
+        label {Build your custom wave with a sum of sinusoids. You can redefine the number and amplitude of each partial}
+        xywh {30 315 185 70} labelsize 12 labelcolor 136 align 148
+      }
+    }
+    code {customWavWindow->show();} {}
+  }
+  Function {show()} {open
+  } {
+    code {mainWindow->show();} {}
+  }
+  Function {bye()} {open return_type void
+  } {
+    code {mainWindow->hide();} {}
+  }
+  Function {joy_callback()} {open return_type {virtual void}
+  } {}
+  Function {LFO_radio_callback(int i)} {open return_type {virtual void}
+  } {}
+  Function {carrier_radio_callback(int i)} {open return_type {virtual void}
+  } {}
+  Function {carrier_freq_callback()} {open return_type {virtual void}
+  } {}
+  Function {customWave_callback(bool isCarr)} {open return_type {virtual void}
+  } {}
+} 

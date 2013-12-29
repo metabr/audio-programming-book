@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = AudioOutput; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {copyElement = id; load = id; pasteElement = id; save = id; }; 
+            CLASS = HidFinder; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

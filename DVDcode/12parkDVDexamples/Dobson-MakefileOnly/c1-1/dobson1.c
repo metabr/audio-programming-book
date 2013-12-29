@@ -1,0 +1,1 @@
+#include <stdio.h>int main(){printf ("What A Wonderful World!\n");return 0;}

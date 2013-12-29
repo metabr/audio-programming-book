@@ -1,0 +1,10 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo ./envx ../../testvox.aif envx.txt
+
+echo
+echo
+./envx ../../testvox.aif envx.txt
+echo
+echo
+

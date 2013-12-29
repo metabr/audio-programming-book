@@ -1,0 +1,167 @@
+// !$*UTF8*$!
+{
+	4079523D0CEA382200E202DC /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeTarget = 407952600CEA391500E202DC /* firmware */;
+		codeSenseManager = 6A35ED58103B80DD0070C89B /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					708,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 272405798;
+			PBXWorkspaceStateSaveDate = 272405798;
+		};
+		perUserProjectItems = {
+			6A9B9288103C9557009D61FD /* PBXTextBookmark */ = 6A9B9288103C9557009D61FD /* PBXTextBookmark */;
+			6A9B928A103C95A2009D61FD /* PBXTextBookmark */ = 6A9B928A103C95A2009D61FD /* PBXTextBookmark */;
+			6A9B928D103C95A2009D61FD /* PBXTextBookmark */ = 6A9B928D103C95A2009D61FD /* PBXTextBookmark */;
+			6A9B928E103C95A2009D61FD /* PBXTextBookmark */ = 6A9B928E103C95A2009D61FD /* PBXTextBookmark */;
+			6A9B9299103C9756009D61FD /* PBXTextBookmark */ = 6A9B9299103C9756009D61FD /* PBXTextBookmark */;
+			6A9B929A103C9756009D61FD /* PBXTextBookmark */ = 6A9B929A103C9756009D61FD /* PBXTextBookmark */;
+			6A9B929B103C9756009D61FD /* PBXTextBookmark */ = 6A9B929B103C9756009D61FD /* PBXTextBookmark */;
+			6A9B929C103C9756009D61FD /* PBXTextBookmark */ = 6A9B929C103C9756009D61FD /* PBXTextBookmark */;
+		};
+		sourceControlManager = 6A35ED57103B80DD0070C89B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	4079525E0CEA38CC00E202DC /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {886, 2170}}";
+			sepNavSelRange = "{2141, 0}";
+			sepNavVisRange = "{1939, 934}";
+		};
+	};
+	4079525F0CEA38CC00E202DC /* Makefile */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {886, 1414}}";
+			sepNavSelRange = "{772, 0}";
+			sepNavVisRange = "{0, 1956}";
+		};
+	};
+	407952600CEA391500E202DC /* firmware */ = {
+		activeExec = 0;
+	};
+	6A35ED57103B80DD0070C89B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	6A35ED58103B80DD0070C89B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6A9B9288103C9557009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4079525F0CEA38CC00E202DC /* Makefile */;
+		name = "Makefile: 19";
+		rLen = 0;
+		rLoc = 847;
+		rType = 0;
+		vrLen = 1956;
+		vrLoc = 0;
+	};
+	6A9B928A103C95A2009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6A9B928B103C95A2009D61FD /* SeqExample.c */;
+		name = "SeqExample.c: 1";
+		rLen = 3170;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1058;
+		vrLoc = 0;
+	};
+	6A9B928B103C95A2009D61FD /* SeqExample.c */ = {
+		isa = PBXFileReference;
+		name = SeqExample.c;
+		path = "/Volumes/NO NAME/Documents and Settings/Gil Weinberg/Desktop/AVR/SeqExample.c";
+		sourceTree = "<absolute>";
+	};
+	6A9B928D103C95A2009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4079525E0CEA38CC00E202DC /* main.c */;
+		name = "main.c: 1";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 0;
+	};
+	6A9B928E103C95A2009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6A9B928F103C95A2009D61FD /* SeqExample.c */;
+		name = "SeqExample.c: 1";
+		rLen = 3170;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1058;
+		vrLoc = 0;
+	};
+	6A9B928F103C95A2009D61FD /* SeqExample.c */ = {
+		isa = PBXFileReference;
+		name = SeqExample.c;
+		path = "/Volumes/NO NAME/Documents and Settings/Gil Weinberg/Desktop/AVR/SeqExample.c";
+		sourceTree = "<absolute>";
+	};
+	6A9B9299103C9756009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4079525E0CEA38CC00E202DC /* main.c */;
+		name = "main.c: 107";
+		rLen = 0;
+		rLoc = 2141;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 1939;
+	};
+	6A9B929A103C9756009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4079525F0CEA38CC00E202DC /* Makefile */;
+		name = "Makefile: 19";
+		rLen = 0;
+		rLoc = 847;
+		rType = 0;
+		vrLen = 1956;
+		vrLoc = 0;
+	};
+	6A9B929B103C9756009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4079525E0CEA38CC00E202DC /* main.c */;
+		name = "main.c: 107";
+		rLen = 0;
+		rLoc = 2141;
+		rType = 0;
+		vrLen = 934;
+		vrLoc = 1939;
+	};
+	6A9B929C103C9756009D61FD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4079525F0CEA38CC00E202DC /* Makefile */;
+		name = "Makefile: 16";
+		rLen = 0;
+		rLoc = 772;
+		rType = 0;
+		vrLen = 1956;
+		vrLoc = 0;
+	};
+}

@@ -1,0 +1,98 @@
+# SConstruct for Developing Audio Applications with the Csound Host API
+# examples and projects
+# (c) R Walsh, 2009
+
+import os
+import sys
+import shutil
+
+
+# Simple function to Detect OPERATING SYSTEM.
+def getPlatform():
+    if sys.platform[:5] == 'linux':
+        return 'linux'
+    elif sys.platform[:3] == 'win':
+        return 'win32'
+    elif sys.platform[:6] == 'darwin':
+        return 'darwin'
+    else:
+        return 'unsupported'
+
+if getPlatform() == 'win32':
+	env = Environment(tools = ['mingw'], ENV = {'PATH' : os.environ['PATH'], 'TEMP' : os.environ ['TEMP']}) 
+	#alter this path so it points to where you have the Csound  and wxWidgets libs and headers
+	env.Append(LIBPATH = ['C:/Program Files/Dev-Cpp/lib','C:/MyDocuments/SourceCode/Csound5/csound5'])
+	env.Append(CPPPATH = ['C:/Program Files/Dev-Cpp/include','C:/MyDocuments/SourceCode/Csound5/csound5/H',
+	'C:/MyDocuments/SourceCode/Csound5/csound5/interfaces','C:/Program Files/Dev-Cpp/include/common'])
+elif getPlatform() == 'linux':
+	env =  Environment(ENV = {'PATH' : os.environ['PATH']})
+	env.Append(LIBPATH = ['/home/rory/SourceCode/csound/csound5'])
+	env.Append(CPPPATH = ['/home/rory/SourceCode/csound/csound5/H','/home/rory/SourceCode/csound/csound5/interfaces'])
+elif getPlatform() == 'darwin':
+	env =  Environment(ENV = {'PATH' : os.environ['PATH']})
+	env.Append(CPPPATH = ['/Library/Frameworks/CsoundLib.framework/Versions/Current/headers', '/usr/include'])
+	env.Append(LIBPATH = ['/Library/Frameworks/CsoundLib.framework/Versions/Current/'])	
+
+
+if getPlatform() == 'linux':
+	#csound libs
+	env.Append(LIBS = ['csound', 'pthread', 'dl', 'sndfile', 'm', 'csnd'])
+elif getPlatform() == 'win32':
+	# csound libs   	
+	env.Append(LIBS = ['csound','csnd','wxmsw28','wxmsw28_gl','wxtiff','wxjpeg','wxpng','wxzlib','wxregex',
+	'wxexpat','kernel32','user32','gdi32','comdlg32','winspool','winmm','shell32','comctl32','ole32','oleaut32',
+	'uuid','rpcrt4','advapi32','wsock32', 'odbc32','opengl32'])
+	env.Append(LINK = ['-mwindows'])
+	#define preprocessor directives for windows 
+	env.Append(CCFLAGS = ['-DWIN32','-D__WXMSW__','-D__GNUWIN32__','-D__WIN95__','-fexceptions',
+	'-fno-pcc-struct-return','-fstrict-aliasing','-fexpensive-optimizations','-O3'])
+elif getPlatform() == 'darwin':
+	# csound framework   	
+	env.Append(LINKFLAGS = ['-framework', 'CsoundLib'])
+	env.Append(LIBS = ['_csnd'])
+	env.Append(CCFLAGS = ['-g'])
+	
+configure = env.Configure()
+sane = configure.CheckHeader("stdio.h", language="C++")
+if not sane:
+	print "\n*** BUILD ERROR: there is a problem with your C/C++ compiler"
+	print "  =>please fix this before proceeding\n"
+	sys.exit()
+
+csound = configure.CheckHeader("csound.hpp", language="C++")
+if not csound:
+	print "\n***BUILD ERROR:csound header not found"
+	print "  =>please fix this before proceeding\n"
+	sys.exit()
+
+if sane and csound:
+	print "\n*** BUILDING PROGRAMS:"
+	print "     HelloWorld: Simple \"hello audio world\" application" 
+	print "     GUIexample1: GUI version of command line example9" 
+	print "     granualtorV1: realtime granular synthesis application" 
+	print "     granualtorV2: same as above but with new features and"
+	print "     less verbose code"
+
+if getPlatform() == 'win32':
+	env.Program('BasicApp', 'helloworld.cpp')
+	env.Program('GUIexample1', 'GUIexample1.cpp')
+	env.Program('GranulatorV1', 'granulatorV1.cpp') 
+	env.Program('GranulatorV2', 'granulatorV2.cpp')
+elif getPlatform() == 'linux':
+	env.ParseConfig('wx-config --cflags --libs')
+	env.Program('BasicApp', 'helloworld.cpp')
+	env.Program('GUIexample1', 'GUIexample1.cpp')
+	env.Program('GranulatorV1', 'granulatorV1.cpp')
+	env.Program('GranulatorV2', 'granulatorV2.cpp')
+elif getPlatform() == 'darwin':
+	env.ParseConfig('wx-config --cflags --libs')
+	env.Program('HelloWorld', 'helloworld.cpp')
+	env.Program('GUIexample1', 'GUIexample1.cpp')
+	env.Program('GranulatorV1', 'granulatorV1.cpp')
+	env.Program('GranulatorV2', 'granulatorV2.cpp')
+		  
+# you can add here your own projects here
+# use this format:
+# project = env.Program('project', 'source.c')
+# where project is the name of your new program 
+# and source

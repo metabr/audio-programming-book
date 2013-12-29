@@ -1,0 +1,83 @@
+// !$*UTF8*$!
+{
+	20286C28FDCF999611CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeExecutable = 236E460B0CCD006A0050FF0C /* Audio demo */;
+		activeTarget = 8D0C4E890486CD37000505A6 /* Audio demo */;
+		codeSenseManager = 236E46200CCD007A0050FF0C /* Code sense */;
+		executables = (
+			236E460B0CCD006A0050FF0C /* Audio demo */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 214761578;
+			PBXWorkspaceStateSaveDate = 214761578;
+		};
+		sourceControlManager = 236E461F0CCD007A0050FF0C /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	236E460B0CCD006A0050FF0C /* Audio demo */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Audio demo";
+		sourceDirectories = (
+		);
+	};
+	236E461F0CCD007A0050FF0C /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	236E46200CCD007A0050FF0C /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D0C4E890486CD37000505A6 /* Audio demo */ = {
+		activeExec = 0;
+		executables = (
+			236E460B0CCD006A0050FF0C /* Audio demo */,
+		);
+	};
+}

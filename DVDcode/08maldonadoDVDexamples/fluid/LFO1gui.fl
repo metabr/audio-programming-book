@@ -1,0 +1,40 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0104 
+header_name {.h} 
+code_name {.cpp}
+decl {\#include "PortAudioStuff.h"} {public
+} 
+
+class LFO1gui {open : {public PAstuff}
+} {
+  Function {LFO1gui():PAstuff()} {open
+  } {
+    Fl_Window mainWindow {
+      label {a simple LFO example} open
+      xywh {183 183 385 454} resizable
+      code0 {make_menu();} visible
+    } {
+      Fl_Box joy {
+        label {LFO (X controls frequency, Y controls amplitude)}
+        callback {joy_callback();} selected
+        xywh {10 30 365 365} box DOWN_BOX color 45 selection_color 1 align 2 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Value_Input CarrierFreq {
+        label {frequency of the audio carrier:}
+        xywh {225 420 110 25} align 132 maximum 20000 step 5 value 220
+      }
+    }
+  }
+  Function {show()} {open
+  } {
+    code {mainWindow->show();} {}
+  }
+  Function {bye()} {open return_type void
+  } {
+    code {mainWindow->hide();} {}
+  }
+  Function {joy_callback()} {return_type {virtual void}
+  } {}
+} 

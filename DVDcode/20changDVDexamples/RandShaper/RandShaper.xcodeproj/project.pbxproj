@@ -1,0 +1,219 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A16A5B00DA688FE0070F534 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A16A5A90DA688FE0070F534 /* main.cpp */; };
+		7A16A5B20DA688FE0070F534 /* CSineWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A16A5AD0DA688FE0070F534 /* CSineWave.cpp */; };
+		7A16A5B30DA688FE0070F534 /* CRandShaper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A16A5AF0DA688FE0070F534 /* CRandShaper.cpp */; };
+		7A1C8C2411D7449E0012550B /* libportsf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1C8C2211D7449E0012550B /* libportsf.a */; };
+		7A700C0B0DAD1A290003E464 /* CRandShaperSimpleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A700C090DAD1A290003E464 /* CRandShaperSimpleTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A16A5A90DA688FE0070F534 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7A16A5AC0DA688FE0070F534 /* CSineWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSineWave.h; sourceTree = "<group>"; };
+		7A16A5AD0DA688FE0070F534 /* CSineWave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSineWave.cpp; sourceTree = "<group>"; };
+		7A16A5AE0DA688FE0070F534 /* CRandShaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRandShaper.h; sourceTree = "<group>"; };
+		7A16A5AF0DA688FE0070F534 /* CRandShaper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRandShaper.cpp; sourceTree = "<group>"; };
+		7A1C8C2211D7449E0012550B /* libportsf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libportsf.a; path = portsf/libportsf.a; sourceTree = "<group>"; };
+		7A1C8C2311D7449E0012550B /* portsf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = portsf.h; path = portsf/portsf.h; sourceTree = "<group>"; };
+		7A700C090DAD1A290003E464 /* CRandShaperSimpleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRandShaperSimpleTest.cpp; sourceTree = "<group>"; };
+		7A700C0A0DAD1A290003E464 /* CRandShaperSimpleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRandShaperSimpleTest.h; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* RandShaper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandShaper; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1C8C2411D7449E0012550B /* libportsf.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* RandShaper */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				7AFE421F0D449DED00EFAF74 /* portsf */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = RandShaper;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7A16A5A90DA688FE0070F534 /* main.cpp */,
+				7A700C090DAD1A290003E464 /* CRandShaperSimpleTest.cpp */,
+				7A700C0A0DAD1A290003E464 /* CRandShaperSimpleTest.h */,
+				7A16A5AC0DA688FE0070F534 /* CSineWave.h */,
+				7A16A5AD0DA688FE0070F534 /* CSineWave.cpp */,
+				7A16A5AE0DA688FE0070F534 /* CRandShaper.h */,
+				7A16A5AF0DA688FE0070F534 /* CRandShaper.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* RandShaper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AFE421F0D449DED00EFAF74 /* portsf */ = {
+			isa = PBXGroup;
+			children = (
+				7A1C8C2211D7449E0012550B /* libportsf.a */,
+				7A1C8C2311D7449E0012550B /* portsf.h */,
+			);
+			name = portsf;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* RandShaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "RandShaper" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandShaper;
+			productInstallPath = "$(HOME)/bin";
+			productName = RandShaper;
+			productReference = 8DD76F6C0486A84900D96B5E /* RandShaper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "RandShaper" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* RandShaper */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* RandShaper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A16A5B00DA688FE0070F534 /* main.cpp in Sources */,
+				7A16A5B20DA688FE0070F534 /* CSineWave.cpp in Sources */,
+				7A16A5B30DA688FE0070F534 /* CRandShaper.cpp in Sources */,
+				7A700C0B0DAD1A290003E464 /* CRandShaperSimpleTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/portsf\"";
+				PRODUCT_NAME = RandShaper;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/portsf\"";
+				PRODUCT_NAME = RandShaper;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "RandShaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "RandShaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

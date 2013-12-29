@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = BC81FEF7101746CC000FF6BA /* App3 */;
+		activeTarget = 8D1107260486CEB800E47090 /* App3 */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* App3 */,
+		);
+		codeSenseManager = BC81FF04101746EB000FF6BA /* Code sense */;
+		executables = (
+			BC81FEF7101746CC000FF6BA /* App3 */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					842,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 270114726;
+			PBXWorkspaceStateSaveDate = 270114726;
+		};
+		perUserProjectItems = {
+			BC2ABE9710199FB00029DE14 /* PBXTextBookmark */ = BC2ABE9710199FB00029DE14 /* PBXTextBookmark */;
+			BC2ABEA11019A4290029DE14 /* PBXTextBookmark */ = BC2ABEA11019A4290029DE14 /* PBXTextBookmark */;
+			BC2ABEA21019A4290029DE14 /* PBXTextBookmark */ = BC2ABEA21019A4290029DE14 /* PBXTextBookmark */;
+			BCC8F0E410186605004A9ED5 /* PBXTextBookmark */ = BCC8F0E410186605004A9ED5 /* PBXTextBookmark */;
+			BCC8F0E510186605004A9ED5 /* PBXTextBookmark */ = BCC8F0E510186605004A9ED5 /* PBXTextBookmark */;
+			BCC8F0E710186605004A9ED5 /* PBXTextBookmark */ = BCC8F0E710186605004A9ED5 /* PBXTextBookmark */;
+			BCC8F0E810186605004A9ED5 /* PBXTextBookmark */ = BCC8F0E810186605004A9ED5 /* PBXTextBookmark */;
+			BCC8F0E910186605004A9ED5 /* PBXTextBookmark */ = BCC8F0E910186605004A9ED5 /* PBXTextBookmark */;
+			BCC8F12A10186742004A9ED5 /* PBXTextBookmark */ = BCC8F12A10186742004A9ED5 /* PBXTextBookmark */;
+		};
+		sourceControlManager = BC81FF03101746EB000FF6BA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32CA4F630368D1EE00C91783 /* App3_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1040, 606}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {1040, 606}}";
+		};
+	};
+	8D1107260486CEB800E47090 /* App3 */ = {
+		activeExec = 0;
+		executables = (
+			BC81FEF7101746CC000FF6BA /* App3 */,
+		);
+	};
+	BC2ABE9710199FB00029DE14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF07101747DF000FF6BA /* singleMidiNoteController.m */;
+		name = "singleMidiNoteController.m: 25";
+		rLen = 0;
+		rLoc = 864;
+		rType = 0;
+		vrLen = 874;
+		vrLoc = 0;
+	};
+	BC2ABEA11019A4290029DE14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF07101747DF000FF6BA /* singleMidiNoteController.m */;
+		name = "singleMidiNoteController.m: 23";
+		rLen = 0;
+		rLoc = 741;
+		rType = 0;
+		vrLen = 874;
+		vrLoc = 0;
+	};
+	BC2ABEA21019A4290029DE14 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF07101747DF000FF6BA /* singleMidiNoteController.m */;
+		name = "singleMidiNoteController.m: 25";
+		rLen = 0;
+		rLoc = 864;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	BC81FEF7101746CC000FF6BA /* App3 */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = App3;
+		sourceDirectories = (
+		);
+	};
+	BC81FF03101746EB000FF6BA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	BC81FF04101746EB000FF6BA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	BC81FF06101747DF000FF6BA /* singleMidiNoteController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1040, 606}}";
+			sepNavSelRange = "{170, 0}";
+			sepNavVisRect = "{{0, 0}, {1040, 606}}";
+			sepNavWindowFrame = "{{551, 123}, {665, 655}}";
+		};
+	};
+	BC81FF07101747DF000FF6BA /* singleMidiNoteController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1040, 606}}";
+			sepNavSelRange = "{741, 0}";
+			sepNavVisRect = "{{0, 0}, {1040, 606}}";
+			sepNavWindowFrame = "{{429, 182}, {665, 655}}";
+		};
+	};
+	BCC8F0E410186605004A9ED5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* App3_Prefix.pch */;
+		name = "App3_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 139;
+		vrLoc = 0;
+	};
+	BCC8F0E510186605004A9ED5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF06101747DF000FF6BA /* singleMidiNoteController.h */;
+		name = "singleMidiNoteController.h: 16";
+		rLen = 0;
+		rLoc = 170;
+		rType = 0;
+		vrLen = 175;
+		vrLoc = 0;
+	};
+	BCC8F0E710186605004A9ED5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* App3_Prefix.pch */;
+		name = "App3_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 139;
+		vrLoc = 0;
+	};
+	BCC8F0E810186605004A9ED5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF06101747DF000FF6BA /* singleMidiNoteController.h */;
+		name = "singleMidiNoteController.h: 16";
+		rLen = 0;
+		rLoc = 170;
+		rType = 0;
+		vrLen = 175;
+		vrLoc = 0;
+	};
+	BCC8F0E910186605004A9ED5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF07101747DF000FF6BA /* singleMidiNoteController.m */;
+		name = "singleMidiNoteController.m: play:";
+		rLen = 0;
+		rLoc = 864;
+		rType = 0;
+		vrLen = 874;
+		vrLoc = 0;
+	};
+	BCC8F12A10186742004A9ED5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BC81FF07101747DF000FF6BA /* singleMidiNoteController.m */;
+		name = "singleMidiNoteController.m: 25";
+		rLen = 0;
+		rLoc = 864;
+		rType = 0;
+		vrLen = 874;
+		vrLoc = 0;
+	};
+}

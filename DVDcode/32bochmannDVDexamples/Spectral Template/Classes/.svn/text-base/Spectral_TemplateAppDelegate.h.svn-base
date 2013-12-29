@@ -1,0 +1,26 @@
+//
+//  Spectral_TemplateAppDelegate.h
+//  Spectral Template
+//
+//  Created by Anna Schmidt on 07.04.09.
+//  Copyright Grafikdesign 2009. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#include <AudioToolbox/AudioToolbox.h>
+
+@class EAGLView;
+
+@interface Spectral_TemplateAppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window;
+    EAGLView *glView;
+	
+	Float64						hwSampleRate;
+	Float32						hwBufferDuration;
+}
+
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet EAGLView *glView;
+
+@end
+

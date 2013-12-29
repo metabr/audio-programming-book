@@ -1,0 +1,20 @@
+/*
+ *  globals.h
+ *  Spectral Template
+ *
+ *  Created by Anna Schmidt on 25.04.09.
+ *  Copyright 2009 Grafikdesign. All rights reserved.
+ *
+ */
+
+
+#ifndef __globals_h__
+#define __globals_h__
+
+#define FFT_FRAMESIZE 512
+
+#define MATRIX_COLUMNS 256
+
+const double twopi = 8.*atan(1.);
+
+#endif //__globals_h__

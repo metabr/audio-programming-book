@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	20286C28FDCF999611CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeExecutable = 4A203E160CA57D2C008A5B41 /* Audio demo */;
+		activeTarget = 8D0C4E890486CD37000505A6 /* Audio demo */;
+		codeSenseManager = 4A203E300CA57D73008A5B41 /* Code sense */;
+		executables = (
+			4A203E160CA57D2C008A5B41 /* Audio demo */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					239,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 299060989;
+			PBXWorkspaceStateSaveDate = 299060989;
+		};
+		perUserProjectItems = {
+			4A13FB2511D348C2002F6606 /* PBXTextBookmark */ = 4A13FB2511D348C2002F6606 /* PBXTextBookmark */;
+			4A13FB7A11D34F0E002F6606 /* PBXTextBookmark */ = 4A13FB7A11D34F0E002F6606 /* PBXTextBookmark */;
+			4A929F370FEA19910073ECA4 /* PBXTextBookmark */ = 4A929F370FEA19910073ECA4 /* PBXTextBookmark */;
+			4AFBEF2611D219D8007152C2 /* PBXTextBookmark */ = 4AFBEF2611D219D8007152C2 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 4A203E2F0CA57D73008A5B41 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	20286C2BFDCF999611CA2CEA /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1552, 4004}}";
+			sepNavSelRange = "{0, 12176}";
+			sepNavVisRange = "{0, 63}";
+			sepNavVisRect = "{{0, 896}, {1005, 745}}";
+			sepNavWindowFrame = "{{273, -51}, {1044, 874}}";
+		};
+	};
+	4A13FB2511D348C2002F6606 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.c */;
+		name = "main.c: 1";
+		rLen = 12176;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 154;
+		vrLoc = 0;
+	};
+	4A13FB7A11D34F0E002F6606 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.c */;
+		name = "main.c: 1";
+		rLen = 12176;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 63;
+		vrLoc = 0;
+	};
+	4A203E160CA57D2C008A5B41 /* Audio demo */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Audio demo";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	4A203E2F0CA57D73008A5B41 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+		scmType = "";
+	};
+	4A203E300CA57D73008A5B41 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	4A929F370FEA19910073ECA4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F6628AC06F3AC5E00F954BF /* main.h */;
+		name = "main.h: 169";
+		rLen = 0;
+		rLoc = 12385;
+		rType = 0;
+		vrLen = 279;
+		vrLoc = 0;
+	};
+	4AFBEF2611D219D8007152C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F6628F806F3B2CB00F954BF /* PlayCommandHandler.cpp */;
+		name = "PlayCommandHandler.cpp: 208";
+		rLen = 58;
+		rLoc = 14402;
+		rType = 0;
+		vrLen = 244;
+		vrLoc = 14235;
+	};
+	7F6628AC06F3AC5E00F954BF /* main.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {768, 3906}}";
+			sepNavSelRange = "{12385, 0}";
+			sepNavVisRange = "{0, 279}";
+			sepNavVisRect = "{{0, 907}, {1005, 745}}";
+			sepNavWindowFrame = "{{137, -36}, {1044, 874}}";
+		};
+	};
+	7F6628DC06F3B17000F954BF /* ClearCommandHandler.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {985, 2562}}";
+			sepNavSelRange = "{3, 12142}";
+			sepNavVisRange = "{10074, 2398}";
+			sepNavVisRect = "{{0, 0}, {1005, 745}}";
+			sepNavWindowFrame = "{{298, -70}, {1044, 874}}";
+		};
+	};
+	7F6628E906F3B21D00F954BF /* GenCommandHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {985, 746}}";
+			sepNavSelRange = "{86, 0}";
+			sepNavVisRange = "{0, 123}";
+			sepNavVisRect = "{{0, 0}, {1005, 745}}";
+			sepNavWindowFrame = "{{15, 4}, {1044, 874}}";
+		};
+	};
+	7F6628EA06F3B21D00F954BF /* GenCommandHandler.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {985, 2674}}";
+			sepNavSelRange = "{12199, 0}";
+			sepNavVisRange = "{9356, 3084}";
+			sepNavVisRect = "{{0, 0}, {1005, 745}}";
+			sepNavWindowFrame = "{{125, -30}, {1044, 874}}";
+		};
+	};
+	7F6628F306F3B29200F954BF /* ClearCommandHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1192, 618}}";
+			sepNavSelRange = "{1, 0}";
+			sepNavVisRange = "{0, 125}";
+			sepNavWindowFrame = "{{38, 106}, {1251, 746}}";
+		};
+	};
+	7F6628F706F3B2CB00F954BF /* PlayCommandHandler.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1192, 618}}";
+			sepNavSelRange = "{89, 0}";
+			sepNavVisRange = "{0, 126}";
+			sepNavWindowFrame = "{{15, 127}, {1251, 746}}";
+		};
+	};
+	7F6628F806F3B2CB00F954BF /* PlayCommandHandler.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {719, 3354}}";
+			sepNavSelRange = "{14402, 58}";
+			sepNavVisRange = "{14235, 244}";
+			sepNavVisRect = "{{0, 501}, {1005, 745}}";
+			sepNavWindowFrame = "{{66, -12}, {1044, 874}}";
+		};
+	};
+	8D0C4E890486CD37000505A6 /* Audio demo */ = {
+		activeExec = 0;
+		executables = (
+			4A203E160CA57D2C008A5B41 /* Audio demo */,
+		);
+	};
+}

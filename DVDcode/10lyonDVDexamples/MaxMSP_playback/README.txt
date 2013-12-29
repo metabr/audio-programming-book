@@ -1,0 +1,1 @@
+The enclosed Csound Playback patch allows direct synthesis from generated .csd files in Max/MSP, using the third party external csound~ by Dave Pyon, available from: http://www.davixology.com/csound~.html

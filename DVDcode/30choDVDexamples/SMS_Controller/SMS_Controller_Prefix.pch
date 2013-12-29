@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SMS_Controller' target in the 'SMS_Controller' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

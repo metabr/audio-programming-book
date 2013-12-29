@@ -1,0 +1,258 @@
+TAudio demo
+v7
+r0
+t298981558.630244
+cCheck dependencies
+cProcessInfoPlistFile "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Info.plist" Info.plist
+cCopyStringsFile "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cStripNIB /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/English.lproj/main.nib
+cCpResource "build/Development/Audio demo.app/Contents/Resources/main.h" main.h
+cCpResource "build/Development/Audio demo.app/Contents/Resources/GenCommandHandler.h" GenCommandHandler.h
+cCpResource "build/Development/Audio demo.app/Contents/Resources/ClearCommandHandler.h" ClearCommandHandler.h
+cCpResource "build/Development/Audio demo.app/Contents/Resources/PlayCommandHandler.h" PlayCommandHandler.h
+cCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/main.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/ClearCommandHandler.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/GenCommandHandler.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/PlayCommandHandler.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/MacOS/Audio demo" normal i386
+cTouch "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app"
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004C0FDD7E000000000000A5F0
+t1276108158
+s42480
+
+N/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004B448EEF00000000000005FF
+t1262784239
+s1535
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp
+c000000004A33FE8F00000000000030B8
+t1244921487
+s12472
+i"ClearCommandHandler.h"
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.h
+c000000004A33B155000000000000007D
+t1244901717
+s125
+i<Carbon/Carbon.h>
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/English.lproj/InfoPlist.strings
+c00000000416444C00000000000000106
+t1097090240
+s262
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/English.lproj/main.nib
+c000000004BF3D07C00000000000000AA
+t1274269820
+s170
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp
+c000000004A33FEE200000000000032B7
+t1244921570
+s12983
+i"GenCommandHandler.h"
+i"main.h"
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.h
+c000000004A33B140000000000000007B
+t1244901696
+s123
+i<Carbon/Carbon.h>
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp
+c000000004A33FF6A0000000000003C59
+t1244921706
+s15449
+i"PlayCommandHandler.h"
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.h
+c000000004A33B101000000000000007E
+t1244901633
+s126
+i<Carbon/Carbon.h>
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/Audio demo.LinkFileList
+c000000004C21E131000000000000029E
+t1277288753
+s670
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/ClearCommandHandler.o
+t1277288755
+s3940
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/GenCommandHandler.o
+t1277288756
+s6044
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/PlayCommandHandler.o
+t1277288756
+s7468
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/main.o
+t1277288755
+s17740
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app
+t1277288758
+s102
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Info.plist
+t1245306795
+s648
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/MacOS/Audio demo
+t1277288758
+s18180
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/PkgInfo
+t1245306795
+s8
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/ClearCommandHandler.h
+t1245306795
+s125
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1245306795
+s262
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/English.lproj/main.nib
+t1274269820
+s170
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/GenCommandHandler.h
+t1245306795
+s123
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/PlayCommandHandler.h
+t1245306795
+s126
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/main.h
+t1245306795
+s17002
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c
+c000000004A33FF400000000000004BF0
+t1244921664
+s19440
+i"main.h"
+
+N/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.h
+c000000004A33FF7C000000000000426A
+t1244921724
+s17002
+i<Carbon/Carbon.h>
+
+NInfo.plist
+c00000000416444C000000000000002C1
+t1097090240
+s705
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies298981553#298981553#0(0"0(0#1#0"29836824280170608#0"0#
+
+CCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/ClearCommandHandler.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s298981553.705148
+e298981555.299582
+r1
+xCompileC
+xbuild/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/ClearCommandHandler.o
+x/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@109"Compile /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp298981553#298981555#0(0"0(0#0#101"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp4300911832#1235"    cd /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Audio demo.hmap" -F/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development -I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/include "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources/i386" "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources" -c /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/ClearCommandHandler.cpp -o "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/ClearCommandHandler.o"0#
+
+CCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/GenCommandHandler.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s298981555.299814
+e298981556.467172
+r1
+xCompileC
+xbuild/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/GenCommandHandler.o
+x/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@107"Compile /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp298981555#298981556#0(0"0(0#0#99"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp4300911832#1231"    cd /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Audio demo.hmap" -F/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development -I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/include "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources/i386" "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources" -c /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/GenCommandHandler.cpp -o "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/GenCommandHandler.o"0#
+
+CCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/PlayCommandHandler.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s298981555.329627
+e298981556.513705
+r1
+xCompileC
+xbuild/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/PlayCommandHandler.o
+x/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp: In function 'short int PlayCommandHandler(OpaqueWindowPtr*, short int*)':
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:208: warning: 'SndNewChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1428)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:208: warning: 'SndNewChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1428)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:218: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:218: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:228: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:228: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:236: warning: 'SndDisposeChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1442)
+o/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:236: warning: 'SndDisposeChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1442)
+lSLF07#2@108"Compile /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp298981555#298981556#0(2244"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp: In function 'short int PlayCommandHandler(OpaqueWindowPtr*, short int*)':/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:208: warning: 'SndNewChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1428)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:208: warning: 'SndNewChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1428)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:218: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:218: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:228: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:228: warning: 'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:236: warning: 'SndDisposeChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1442)/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp:236: warning: 'SndDisposeChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1442)8(22@141"'SndNewChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1428)298981556#176#257#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#208#0#208#0#33"'*' is deprecated (declared at *)0(22@141"'SndNewChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1428)298981556#433#257#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#208#0#208#0#33"'*' is deprecated (declared at *)0(22@142"'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)298981556#690#258#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#218#0#218#0#33"'*' is deprecated (declared at *)0(22@142"'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)298981556#948#258#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#218#0#218#0#33"'*' is deprecated (declared at *)0(22@142"'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)298981556#1206#258#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#228#0#228#0#33"'*' is deprecated (declared at *)0(22@142"'SndDoImmediate' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1412)298981556#1464#258#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#228#0#228#0#33"'*' is deprecated (declared at *)0(22@145"'SndDisposeChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1442)298981556#1722#261#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#236#0#236#0#33"'*' is deprecated (declared at *)0(22@145"'SndDisposeChannel' is deprecated (declared at /System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers/Sound.h:1442)298981556#1983#261#0(6@100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp266614506#236#0#236#0#33"'*' is deprecated (declared at *)0(0#0#100"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp4300911832#1233"    cd /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Audio demo.hmap" -F/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development -I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/include "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources/i386" "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources" -c /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/PlayCommandHandler.cpp -o "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/PlayCommandHandler.o"0#
+
+CCompileC "build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/main.o" /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c normal i386 c++ com.apple.compilers.gcc.4_2
+s298981553.628833
+e298981555.329491
+r1
+xCompileC
+xbuild/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/main.o
+x/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c298981553#298981555#0(0"0(0#0#84"/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c4841219401891341312#1203"    cd /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -fvisibility-inlines-hidden -gdwarf-2 "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Audio demo.hmap" -F/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development -I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/include "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources/i386" "-I/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/DerivedSources" -c /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/main.c -o "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/main.o"0#
+
+CCopyStringsFile "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+r0
+
+CCpResource "build/Development/Audio demo.app/Contents/Resources/ClearCommandHandler.h" ClearCommandHandler.h
+r0
+
+CCpResource "build/Development/Audio demo.app/Contents/Resources/GenCommandHandler.h" GenCommandHandler.h
+r0
+
+CCpResource "build/Development/Audio demo.app/Contents/Resources/PlayCommandHandler.h" PlayCommandHandler.h
+r0
+
+CCpResource "build/Development/Audio demo.app/Contents/Resources/main.h" main.h
+r0
+
+CLd "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/MacOS/Audio demo" normal i386
+s298981556.513830
+e298981558.627065
+r1
+xLd
+x/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/MacOS/Audio demo
+xnormal
+xi386
+lSLF07#2@141"Link /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/MacOS/Audio demo298981556#298981558#0(0"0(0#0#0"4300911832#678"    cd /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo    /Developer/usr/bin/g++-4.2 -arch i386 -L/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development -F/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development -filelist "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Audio demo.build/Development/Audio demo.build/Objects-normal/i386/Audio demo.LinkFileList" -framework Carbon -prebind -o "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/MacOS/Audio demo"0#
+
+CProcessInfoPlistFile "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app/Contents/Info.plist" Info.plist
+r0
+
+CStripNIB /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/English.lproj/main.nib
+r0
+
+CTouch "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app"
+s298981558.627250
+e298981558.630166
+r1
+xTouch
+x/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app
+lSLF07#2@116"Touch /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app298981558#298981558#0(0"0(0#0#0"7306086829851632640#220"    cd /Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo    /usr/bin/touch -c "/Users/seagoallan/Desktop/4u2review/Code/DVDcode/25seagoDVDexamples/AudioDemo/build/Development/Audio demo.app"0#
+

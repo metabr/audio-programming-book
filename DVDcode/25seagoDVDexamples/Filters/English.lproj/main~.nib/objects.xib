@@ -1,0 +1,520 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="68" name="allObjects">
+    <object class="IBCarbonMenu" id="29">
+      <string name="title">main</string>
+      <array count="3" name="items">
+        <object class="IBCarbonMenuItem" id="185">
+          <string name="title">Filter</string>
+          <object name="submenu" class="IBCarbonMenu" id="184">
+            <string name="title">Filter</string>
+            <array count="1" name="items">
+              <object class="IBCarbonMenuItem" id="187">
+                <string name="title">About Filter</string>
+                <int name="keyEquivalentModifier">0</int>
+                <ostype name="command">abou</ostype>
+              </object>
+            </array>
+            <string name="name">_NSAppleMenu</string>
+          </object>
+        </object>
+        <object class="IBCarbonMenuItem" id="127">
+          <string name="title">File</string>
+          <object name="submenu" class="IBCarbonMenu" id="131">
+            <string name="title">File</string>
+            <int name="menuID">10</int>
+            <array count="6" name="items">
+              <object class="IBCarbonMenuItem" id="139">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">New</string>
+                <string name="keyEquivalent">n</string>
+                <ostype name="command">new </ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="134">
+                <string name="title">Open…</string>
+                <string name="keyEquivalent">o</string>
+                <ostype name="command">open</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="133">
+                <boolean name="separator">TRUE</boolean>
+              </object>
+              <object class="IBCarbonMenuItem" id="130">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Close</string>
+                <string name="keyEquivalent">w</string>
+                <ostype name="command">clos</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="138">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Save</string>
+                <string name="keyEquivalent">s</string>
+                <ostype name="command">save</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="137">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Save As…</string>
+                <string name="keyEquivalent">S</string>
+                <ostype name="command">svas</ostype>
+              </object>
+            </array>
+          </object>
+        </object>
+        <object class="IBCarbonMenuItem" id="152">
+          <string name="title">Edit</string>
+          <object name="submenu" class="IBCarbonMenu" id="147">
+            <string name="title">Edit</string>
+            <array count="10" name="items">
+              <object class="IBCarbonMenuItem" id="141">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Undo</string>
+                <string name="keyEquivalent">z</string>
+                <ostype name="command">undo</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="146">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Redo</string>
+                <string name="keyEquivalent">Z</string>
+                <ostype name="command">redo</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="142">
+                <boolean name="separator">TRUE</boolean>
+              </object>
+              <object class="IBCarbonMenuItem" id="143">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Cut</string>
+                <string name="keyEquivalent">x</string>
+                <ostype name="command">cut </ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="149">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Copy</string>
+                <string name="keyEquivalent">c</string>
+                <ostype name="command">copy</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="144">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Paste</string>
+                <string name="keyEquivalent">v</string>
+                <ostype name="command">past</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="151">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Delete</string>
+                <ostype name="command">clea</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="148">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Select All</string>
+                <string name="keyEquivalent">a</string>
+                <ostype name="command">sall</ostype>
+              </object>
+              <object class="IBCarbonMenuItem" id="199">
+                <boolean name="separator">TRUE</boolean>
+              </object>
+              <object class="IBCarbonMenuItem" id="198">
+                <boolean name="disabled">TRUE</boolean>
+                <string name="title">Special Characters…</string>
+                <ostype name="command">chrp</ostype>
+              </object>
+            </array>
+          </object>
+        </object>
+      </array>
+      <string name="name">_NSMainMenu</string>
+    </object>
+    <reference idRef="127"/>
+    <reference idRef="130"/>
+    <reference idRef="131"/>
+    <reference idRef="133"/>
+    <reference idRef="134"/>
+    <reference idRef="137"/>
+    <reference idRef="138"/>
+    <reference idRef="139"/>
+    <reference idRef="141"/>
+    <reference idRef="142"/>
+    <reference idRef="143"/>
+    <reference idRef="144"/>
+    <reference idRef="146"/>
+    <reference idRef="147"/>
+    <reference idRef="148"/>
+    <reference idRef="149"/>
+    <reference idRef="151"/>
+    <reference idRef="152"/>
+    <object class="IBCarbonWindow" id="166">
+      <string name="windowRect">231 183 623 826 </string>
+      <string name="title">Filter program</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="167">
+        <string name="bounds">0 0 392 643 </string>
+        <string name="viewFrame">0 0 643 392 </string>
+        <array count="10" name="subviews">
+          <object class="IBCarbonButton" id="200">
+            <string name="bounds">334 401 354 471 </string>
+            <string name="viewFrame">401 334 70 20 </string>
+            <ostype name="controlSignature">????</ostype>
+            <int name="controlID">1</int>
+            <boolean name="enabled">FALSE</boolean>
+            <string name="title">Filter</string>
+            <ostype name="command">filt</ostype>
+          </object>
+          <object class="IBCarbonRadioGroup" id="206">
+            <string name="bounds">163 89 326 220 </string>
+            <string name="viewFrame">89 163 131 163 </string>
+            <ostype name="controlSignature">????</ostype>
+            <int name="controlID">2</int>
+            <ostype name="command">fltp</ostype>
+            <int name="numRows">4</int>
+            <int name="intercellHeight">20</int>
+            <array count="4" name="radioTitles">
+              <array count="1">
+                <string>Low pass</string>
+              </array>
+              <array count="1">
+                <string>High pass</string>
+              </array>
+              <array count="1">
+                <string>Band pass</string>
+              </array>
+              <array count="1">
+                <string>Notch</string>
+              </array>
+            </array>
+          </object>
+          <object class="IBCarbonSeparator" id="210">
+            <string name="bounds">227 50 228 435 </string>
+            <string name="viewFrame">50 227 385 1 </string>
+          </object>
+          <object class="IBCarbonStaticText" id="213">
+            <string name="bounds">189 450 202 471 </string>
+            <string name="viewFrame">450 189 21 13 </string>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">1</int>
+            <string name="title">Hz</string>
+          </object>
+          <object class="IBCarbonStaticText" id="214">
+            <string name="bounds">263 450 276 471 </string>
+            <string name="viewFrame">450 263 21 13 </string>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">1</int>
+            <string name="title">Hz</string>
+          </object>
+          <object class="IBCarbonPopupButton" id="229">
+            <string name="bounds">187 199 207 438 </string>
+            <string name="viewFrame">199 187 239 20 </string>
+            <ostype name="controlSignature">????</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Cut off frequency  </string>
+            <ostype name="command">ctof</ostype>
+            <int name="titleJustification">-2</int>
+            <int name="selectedItem">15</int>
+            <object name="menu" class="IBCarbonMenu" id="230">
+              <string name="title">Popup</string>
+              <array count="15" name="items">
+                <object class="IBCarbonMenuItem" id="235">
+                  <string name="title">1378.125</string>
+                  <ostype name="command">cf1 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="233">
+                  <string name="title">2756.25</string>
+                  <ostype name="command">cf2 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="234">
+                  <string name="title">4134.375</string>
+                  <ostype name="command">cf3 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="232">
+                  <string name="title">5512.5</string>
+                  <ostype name="command">cf4 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="231">
+                  <string name="title">6890.625</string>
+                  <ostype name="command">cf5 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="236">
+                  <string name="title">8268.75</string>
+                  <ostype name="command">cf6 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="237">
+                  <string name="title">9646.875</string>
+                  <ostype name="command">cf7 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="238">
+                  <string name="title">11025</string>
+                  <ostype name="command">cf8 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="239">
+                  <string name="title">12403.125</string>
+                  <ostype name="command">cf9 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="243">
+                  <string name="title">13781.25</string>
+                  <ostype name="command">cf10</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="244">
+                  <string name="title">15159.375</string>
+                  <ostype name="command">cf11</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="242">
+                  <string name="title">16537.5</string>
+                  <ostype name="command">cf12</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="245">
+                  <string name="title">17915.625</string>
+                  <ostype name="command">cf13</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="246">
+                  <string name="title">19293.75</string>
+                  <ostype name="command">cf14</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="247">
+                  <boolean name="checked">TRUE</boolean>
+                  <string name="title">20671.875</string>
+                  <ostype name="command">cf15</ostype>
+                </object>
+              </array>
+            </object>
+          </object>
+          <object class="IBCarbonPopupButton" id="248">
+            <string name="bounds">261 199 281 438 </string>
+            <string name="viewFrame">199 261 239 20 </string>
+            <ostype name="controlSignature">????</ostype>
+            <int name="controlID">4</int>
+            <string name="title">Centre frequency  </string>
+            <ostype name="command">cnfq</ostype>
+            <int name="titleJustification">-2</int>
+            <object name="menu" class="IBCarbonMenu" id="249">
+              <string name="title">Popup</string>
+              <array count="15" name="items">
+                <object class="IBCarbonMenuItem" id="264">
+                  <boolean name="checked">TRUE</boolean>
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">1378.125</string>
+                  <ostype name="command">cn1 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="256">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">2756.25</string>
+                  <ostype name="command">cn2 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="261">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">4134.375</string>
+                  <ostype name="command">cn3 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="252">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">5512.5</string>
+                  <ostype name="command">cn4 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="258">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">6890.625</string>
+                  <ostype name="command">cn5 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="263">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">8268.75</string>
+                  <ostype name="command">cn6 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="254">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">9646.875</string>
+                  <ostype name="command">cn7 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="260">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">11025</string>
+                  <ostype name="command">cn8 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="251">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">12403.125</string>
+                  <ostype name="command">cn9 </ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="257">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">13781.25</string>
+                  <ostype name="command">cn10</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="262">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">15159.375</string>
+                  <ostype name="command">cn11</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="253">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">16537.5</string>
+                  <ostype name="command">cn12</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="259">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">17915.625</string>
+                  <ostype name="command">cn13</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="250">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">19293.75</string>
+                  <ostype name="command">cn14</ostype>
+                </object>
+                <object class="IBCarbonMenuItem" id="255">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">20671.875</string>
+                  <ostype name="command">cn15</ostype>
+                </object>
+              </array>
+            </object>
+          </object>
+          <object class="IBCarbonStaticText" id="271">
+            <string name="bounds">112 88 128 266 </string>
+            <string name="viewFrame">88 112 178 16 </string>
+            <string name="title"> © Allan Seago 2007</string>
+          </object>
+          <object class="IBCarbonStaticText" id="272">
+            <string name="bounds">71 88 87 358 </string>
+            <string name="viewFrame">88 71 270 16 </string>
+            <string name="title">Compiled using XCode 2.4</string>
+          </object>
+          <object class="IBCarbonStaticText" id="273">
+            <string name="bounds">34 88 50 610 </string>
+            <string name="viewFrame">88 34 522 16 </string>
+            <string name="title">Carbon program in C/C++ for demonstrating simple filtering in MacOS X 10.4</string>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="liveResize">TRUE</boolean>
+      <boolean name="metal">TRUE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+    </object>
+    <reference idRef="167"/>
+    <reference idRef="184"/>
+    <reference idRef="185"/>
+    <reference idRef="187"/>
+    <reference idRef="198"/>
+    <reference idRef="199"/>
+    <reference idRef="200"/>
+    <reference idRef="206"/>
+    <reference idRef="210"/>
+    <reference idRef="213"/>
+    <reference idRef="214"/>
+    <reference idRef="229"/>
+    <reference idRef="230"/>
+    <reference idRef="231"/>
+    <reference idRef="232"/>
+    <reference idRef="233"/>
+    <reference idRef="234"/>
+    <reference idRef="235"/>
+    <reference idRef="236"/>
+    <reference idRef="237"/>
+    <reference idRef="238"/>
+    <reference idRef="239"/>
+    <reference idRef="242"/>
+    <reference idRef="243"/>
+    <reference idRef="244"/>
+    <reference idRef="245"/>
+    <reference idRef="246"/>
+    <reference idRef="247"/>
+    <reference idRef="248"/>
+    <reference idRef="249"/>
+    <reference idRef="250"/>
+    <reference idRef="251"/>
+    <reference idRef="252"/>
+    <reference idRef="253"/>
+    <reference idRef="254"/>
+    <reference idRef="255"/>
+    <reference idRef="256"/>
+    <reference idRef="257"/>
+    <reference idRef="258"/>
+    <reference idRef="259"/>
+    <reference idRef="260"/>
+    <reference idRef="261"/>
+    <reference idRef="262"/>
+    <reference idRef="263"/>
+    <reference idRef="264"/>
+    <reference idRef="271"/>
+    <reference idRef="272"/>
+    <reference idRef="273"/>
+  </array>
+  <array count="68" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="29"/>
+    <reference idRef="131"/>
+    <reference idRef="127"/>
+    <reference idRef="131"/>
+    <reference idRef="131"/>
+    <reference idRef="131"/>
+    <reference idRef="131"/>
+    <reference idRef="131"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="152"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="29"/>
+    <reference idRef="1"/>
+    <reference idRef="166"/>
+    <reference idRef="185"/>
+    <reference idRef="29"/>
+    <reference idRef="184"/>
+    <reference idRef="147"/>
+    <reference idRef="147"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="229"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+    <reference idRef="167"/>
+    <reference idRef="248"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="249"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+    <reference idRef="167"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>MainWindow</string>
+    <reference idRef="166"/>
+    <string>MenuBar</string>
+    <reference idRef="29"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">274</unsigned_int>
+</object>

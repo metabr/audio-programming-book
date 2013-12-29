@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 9FC26C9011E11D710012BAAE /* AudioFilePlayer */;
+		activeTarget = 8D1107260486CEB800E47090 /* AudioFilePlayer */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* AudioFilePlayer */,
+		);
+		codeSenseManager = 9FC26CA211E11D7F0012BAAE /* Code sense */;
+		executables = (
+			9FC26C9011E11D710012BAAE /* AudioFilePlayer */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					263,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 299970995;
+			PBXWorkspaceStateSaveDate = 299970995;
+		};
+		perUserProjectItems = {
+			9FBDE0A111E131CE00535F6D /* PBXTextBookmark */ = 9FBDE0A111E131CE00535F6D /* PBXTextBookmark */;
+			9FBDE0A611E1320700535F6D /* XCBuildMessageTextBookmark */ = 9FBDE0A611E1320700535F6D /* XCBuildMessageTextBookmark */;
+			9FBDE0A711E1320700535F6D /* PBXTextBookmark */ = 9FBDE0A711E1320700535F6D /* PBXTextBookmark */;
+			9FBDE0AC11E1323400535F6D /* PBXTextBookmark */ = 9FBDE0AC11E1323400535F6D /* PBXTextBookmark */;
+			9FBDE0AD11E1323400535F6D /* PBXTextBookmark */ = 9FBDE0AD11E1323400535F6D /* PBXTextBookmark */;
+			9FBDE0AE11E1323400535F6D /* PBXTextBookmark */ = 9FBDE0AE11E1323400535F6D /* PBXTextBookmark */;
+			9FBDE0AF11E1323400535F6D /* PBXTextBookmark */ = 9FBDE0AF11E1323400535F6D /* PBXTextBookmark */;
+			9FBDE0BE11E132BE00535F6D /* XCBuildMessageTextBookmark */ = 9FBDE0BE11E132BE00535F6D /* XCBuildMessageTextBookmark */;
+			9FBDE0BF11E132BE00535F6D /* PBXTextBookmark */ = 9FBDE0BF11E132BE00535F6D /* PBXTextBookmark */;
+			9FBDE0C011E132C300535F6D /* PBXTextBookmark */ = 9FBDE0C011E132C300535F6D /* PBXTextBookmark */;
+			9FBDE0C111E132C300535F6D /* XCBuildMessageTextBookmark */ = 9FBDE0C111E132C300535F6D /* XCBuildMessageTextBookmark */;
+			9FBDE0C211E132C300535F6D /* PBXTextBookmark */ = 9FBDE0C211E132C300535F6D /* PBXTextBookmark */;
+			9FBDE0C511E1331900535F6D /* PBXTextBookmark */ = 9FBDE0C511E1331900535F6D /* PBXTextBookmark */;
+			9FC26CF511E121300012BAAE = 9FC26CF511E121300012BAAE /* PBXTextBookmark */;
+			9FC26D4C11E131A80012BAAE = 9FC26D4C11E131A80012BAAE /* PBXTextBookmark */;
+		};
+		sourceControlManager = 9FC26CA111E11D7F0012BAAE /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* AudioFilePlayer */ = {
+		activeExec = 0;
+		executables = (
+			9FC26C9011E11D710012BAAE /* AudioFilePlayer */,
+		);
+	};
+	9FBDE0A111E131CE00535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CAA11E11E1A0012BAAE /* AudioFilePlayer.mm */;
+		name = "AudioFilePlayer.mm: 332";
+		rLen = 0;
+		rLoc = 9716;
+		rType = 0;
+		vrLen = 525;
+		vrLoc = 8976;
+	};
+	9FBDE0A611E1320700535F6D /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ',' or '...' before '*' token";
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 54;
+		rType = 1;
+	};
+	9FBDE0A711E1320700535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		name = "CAComponentDescription.h: 55";
+		rLen = 0;
+		rLoc = 2739;
+		rType = 0;
+		vrLen = 388;
+		vrLoc = 2607;
+	};
+	9FBDE0AC11E1323400535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CAA11E11E1A0012BAAE /* AudioFilePlayer.mm */;
+		name = "AudioFilePlayer.mm: 332";
+		rLen = 0;
+		rLoc = 9716;
+		rType = 0;
+		vrLen = 525;
+		vrLoc = 8976;
+	};
+	9FBDE0AD11E1323400535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB411E11E670012BAAE /* CAComponentDescription.cpp */;
+		name = "CAComponentDescription.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1117;
+		vrLoc = 0;
+	};
+	9FBDE0AE11E1323400535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		name = "CAComponentDescription.h: 55";
+		rLen = 0;
+		rLoc = 2739;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 2446;
+	};
+	9FBDE0AF11E1323400535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		name = "CAComponentDescription.h: 55";
+		rLen = 0;
+		rLoc = 2739;
+		rType = 0;
+		vrLen = 446;
+		vrLoc = 2446;
+	};
+	9FBDE0BE11E132BE00535F6D /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "ISO C++ forbids declaration of 'AudioComponentDescription' with no type";
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 54;
+		rType = 1;
+	};
+	9FBDE0BF11E132BE00535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		name = "CAComponentDescription.h: 55";
+		rLen = 25;
+		rLoc = 2777;
+		rType = 0;
+		vrLen = 354;
+		vrLoc = 2567;
+	};
+	9FBDE0C011E132C300535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CA911E11E1A0012BAAE /* AudioFilePlayer.h */;
+		name = "AudioFilePlayer.h: 14";
+		rLen = 0;
+		rLoc = 291;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 173;
+	};
+	9FBDE0C111E132C300535F6D /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ',' or '...' before '*' token";
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 54;
+		rType = 1;
+	};
+	9FBDE0C211E132C300535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		name = "CAComponentDescription.h: 55";
+		rLen = 0;
+		rLoc = 2739;
+		rType = 0;
+		vrLen = 466;
+		vrLoc = 2521;
+	};
+	9FBDE0C511E1331900535F6D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CB511E11E670012BAAE /* CAComponentDescription.h */;
+		name = "CAComponentDescription.h: 55";
+		rLen = 0;
+		rLoc = 2739;
+		rType = 0;
+		vrLen = 386;
+		vrLoc = 2601;
+	};
+	9FC26C9011E11D710012BAAE /* AudioFilePlayer */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = AudioFilePlayer;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	9FC26CA111E11D7F0012BAAE /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	9FC26CA211E11D7F0012BAAE /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	9FC26CA911E11E1A0012BAAE /* AudioFilePlayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {705, 949}}";
+			sepNavSelRange = "{291, 0}";
+			sepNavVisRange = "{173, 478}";
+			sepNavWindowFrame = "{{61, 317}, {696, 514}}";
+		};
+	};
+	9FC26CAA11E11E1A0012BAAE /* AudioFilePlayer.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {768, 6409}}";
+			sepNavSelRange = "{1298, 22}";
+			sepNavVisRange = "{835, 878}";
+			sepNavWindowFrame = "{{523, 75}, {696, 514}}";
+		};
+	};
+	9FC26CB411E11E670012BAAE /* CAComponentDescription.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 1235}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1117}";
+		};
+	};
+	9FC26CB511E11E670012BAAE /* CAComponentDescription.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {614, 1690}}";
+			sepNavSelRange = "{2739, 0}";
+			sepNavVisRange = "{2601, 386}";
+			sepNavWindowFrame = "{{15, 359}, {696, 514}}";
+		};
+	};
+	9FC26CF511E121300012BAAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CAA11E11E1A0012BAAE /* AudioFilePlayer.mm */;
+		name = "AudioFilePlayer.mm: 332";
+		rLen = 0;
+		rLoc = 9716;
+		rType = 0;
+		vrLen = 538;
+		vrLoc = 8963;
+	};
+	9FC26D4C11E131A80012BAAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9FC26CAA11E11E1A0012BAAE /* AudioFilePlayer.mm */;
+		name = "AudioFilePlayer.mm: 332";
+		rLen = 0;
+		rLoc = 9716;
+		rType = 0;
+		vrLen = 538;
+		vrLoc = 8963;
+	};
+}

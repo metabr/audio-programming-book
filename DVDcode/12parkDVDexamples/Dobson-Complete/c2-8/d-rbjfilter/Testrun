@@ -1,0 +1,9 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo  ./rbjfilter ../../testvox.aif rbjfilter.aif 2 2500 3  0.8
+echo
+echo
+ ./rbjfilter ../../testvox.aif rbjfilter.aif 2 2500 3  0.8
+echo
+echo
+

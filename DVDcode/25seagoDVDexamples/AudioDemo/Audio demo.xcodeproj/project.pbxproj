@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F6628AD06F3AC5E00F954BF /* main.h in Resources */ = {isa = PBXBuildFile; fileRef = 7F6628AC06F3AC5E00F954BF /* main.h */; };
+		7F6628DE06F3B17000F954BF /* ClearCommandHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F6628DC06F3B17000F954BF /* ClearCommandHandler.cpp */; };
+		7F6628EB06F3B21D00F954BF /* GenCommandHandler.h in Resources */ = {isa = PBXBuildFile; fileRef = 7F6628E906F3B21D00F954BF /* GenCommandHandler.h */; };
+		7F6628EC06F3B21D00F954BF /* GenCommandHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F6628EA06F3B21D00F954BF /* GenCommandHandler.cpp */; };
+		7F6628F406F3B29200F954BF /* ClearCommandHandler.h in Resources */ = {isa = PBXBuildFile; fileRef = 7F6628F306F3B29200F954BF /* ClearCommandHandler.h */; };
+		7F6628F906F3B2CB00F954BF /* PlayCommandHandler.h in Resources */ = {isa = PBXBuildFile; fileRef = 7F6628F706F3B2CB00F954BF /* PlayCommandHandler.h */; };
+		7F6628FA06F3B2CB00F954BF /* PlayCommandHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F6628F806F3B2CB00F954BF /* PlayCommandHandler.cpp */; };
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E8E0486CD37000505A6 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 02345980000FD03B11CA0E72 /* main.nib */; };
+		8D0C4E900486CD37000505A6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 20286C2BFDCF999611CA2CEA /* main.c */; settings = {ATTRIBUTES = (); }; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		7FC330C006FE1A0000FABEF5 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1870340FFE93FCAF11CA0CD7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		20286C2BFDCF999611CA2CEA /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = main.c; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32DBCF6D0370B57F00C91783 /* Audio demo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Audio demo_Prefix.pch"; sourceTree = "<group>"; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		7F6628AC06F3AC5E00F954BF /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		7F6628DC06F3B17000F954BF /* ClearCommandHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearCommandHandler.cpp; sourceTree = "<group>"; };
+		7F6628E906F3B21D00F954BF /* GenCommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenCommandHandler.h; sourceTree = "<group>"; };
+		7F6628EA06F3B21D00F954BF /* GenCommandHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GenCommandHandler.cpp; sourceTree = "<group>"; };
+		7F6628F306F3B29200F954BF /* ClearCommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCommandHandler.h; sourceTree = "<group>"; };
+		7F6628F706F3B2CB00F954BF /* PlayCommandHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCommandHandler.h; sourceTree = "<group>"; };
+		7F6628F806F3B2CB00F954BF /* PlayCommandHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayCommandHandler.cpp; sourceTree = "<group>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* Audio demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* Audio demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* Audio demo */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = "Audio demo";
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF6D0370B57F00C91783 /* Audio demo_Prefix.pch */,
+				7F6628F706F3B2CB00F954BF /* PlayCommandHandler.h */,
+				7F6628F806F3B2CB00F954BF /* PlayCommandHandler.cpp */,
+				7F6628F306F3B29200F954BF /* ClearCommandHandler.h */,
+				7F6628E906F3B21D00F954BF /* GenCommandHandler.h */,
+				7F6628EA06F3B21D00F954BF /* GenCommandHandler.cpp */,
+				7F6628DC06F3B17000F954BF /* ClearCommandHandler.cpp */,
+				7F6628AC06F3AC5E00F954BF /* main.h */,
+				20286C2BFDCF999611CA2CEA /* main.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+				02345980000FD03B11CA0E72 /* main.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* Audio demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A203E270CA57D73008A5B41 /* Build configuration list for PBXNativeTarget "Audio demo" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+			);
+			buildRules = (
+				7FC330C006FE1A0000FABEF5 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "Audio demo";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Audio demo";
+			productReference = 8D0C4E970486CD37000505A6 /* Audio demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4A203E2B0CA57D73008A5B41 /* Build configuration list for PBXProject "Audio demo" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 20286C29FDCF999611CA2CEA /* Audio demo */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* Audio demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				8D0C4E8E0486CD37000505A6 /* main.nib in Resources */,
+				7F6628AD06F3AC5E00F954BF /* main.h in Resources */,
+				7F6628EB06F3B21D00F954BF /* GenCommandHandler.h in Resources */,
+				7F6628F406F3B29200F954BF /* ClearCommandHandler.h in Resources */,
+				7F6628F906F3B2CB00F954BF /* PlayCommandHandler.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E900486CD37000505A6 /* main.c in Sources */,
+				7F6628DE06F3B17000F954BF /* ClearCommandHandler.cpp in Sources */,
+				7F6628EC06F3B21D00F954BF /* GenCommandHandler.cpp in Sources */,
+				7F6628FA06F3B2CB00F954BF /* PlayCommandHandler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02345980000FD03B11CA0E72 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1870340FFE93FCAF11CA0CD7 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A203E280CA57D73008A5B41 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PFE_FILE_C_DIALECTS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Audio demo_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Audio demo";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A203E290CA57D73008A5B41 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_PFE_FILE_C_DIALECTS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Audio demo_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Audio demo";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4A203E2A0CA57D73008A5B41 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_PFE_FILE_C_DIALECTS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Audio demo_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Audio demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		4A203E2C0CA57D73008A5B41 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				PREBINDING = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A203E2D0CA57D73008A5B41 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				PREBINDING = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				ZERO_LINK = YES;
+			};
+			name = Deployment;
+		};
+		4A203E2E0CA57D73008A5B41 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				PREBINDING = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A203E270CA57D73008A5B41 /* Build configuration list for PBXNativeTarget "Audio demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A203E280CA57D73008A5B41 /* Development */,
+				4A203E290CA57D73008A5B41 /* Deployment */,
+				4A203E2A0CA57D73008A5B41 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4A203E2B0CA57D73008A5B41 /* Build configuration list for PBXProject "Audio demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A203E2C0CA57D73008A5B41 /* Development */,
+				4A203E2D0CA57D73008A5B41 /* Deployment */,
+				4A203E2E0CA57D73008A5B41 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

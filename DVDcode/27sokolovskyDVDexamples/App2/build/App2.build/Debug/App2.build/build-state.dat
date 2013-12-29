@@ -1,0 +1,145 @@
+TApp2
+v7
+r0
+t297698816.205369
+cCheck dependencies
+cProcessInfoPlistFile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Info.plist Info.plist
+cStripNIB /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/English.lproj/MainMenu.nib
+cCopyStringsFile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileC build/App2.build/Debug/App2.build/Objects-normal/i386/main.o /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/App2.build/Debug/App2.build/Objects-normal/i386/playbackController.o /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/MacOS/App2 normal i386
+cTouch /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004BB1C5E800000000000000EE
+t1269941736
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/English.lproj/InfoPlist.strings
+c000000004A66DCCA00000000000000C6
+t1248255178
+s198
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/English.lproj/MainMenu.nib
+c000000004BF2421400000000000000AA
+t1274167828
+s170
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/Objects-normal/i386/App2.LinkFileList
+c000000004C0E4E7F000000000000012C
+t1276006015
+s300
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/Objects-normal/i386/main.o
+t1248256648
+s932
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/Objects-normal/i386/playbackController.o
+t1276006016
+s19860
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app
+t1276006016
+s102
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Info.plist
+t1248256411
+s769
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/MacOS/App2
+t1276006016
+s18840
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/PkgInfo
+t1248256411
+s8
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1248256412
+s198
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Resources/English.lproj/MainMenu.nib
+t1274167828
+s170
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/main.m
+c000000004A66E19B0000000000000104
+t1248256411
+s260
+i<Cocoa/Cocoa.h>
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.h
+c000000004A682CF7000000000000045D
+t1248341239
+s1117
+i<Cocoa/Cocoa.h>
+
+N/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m
+c000000004A6C0A9A00000000000009B8
+t1248594586
+s2488
+i"playbackController.h"
+
+NInfo.plist
+c000000004A66DCCA000000000000034A
+t1248255178
+s842
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies297698815#297698815#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/App2.build/Debug/App2.build/Objects-normal/i386/main.o /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/App2.build/Debug/App2.build/Objects-normal/i386/playbackController.o /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s297698815.258156
+e297698816.111133
+r1
+xCompileC
+xbuild/App2.build/Debug/App2.build/Objects-normal/i386/playbackController.o
+x/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@110"Compile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m297698815#297698816#0(0"0(0#0#102"/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m4300911832#1244"    cd /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/App2.hmap -F/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug -I/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/include -I/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/DerivedSources/i386 -I/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/DerivedSources -c /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/playbackController.m -o /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/Objects-normal/i386/playbackController.o0#
+
+CCopyStringsFile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
+
+CLd /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/MacOS/App2 normal i386
+s297698816.111251
+e297698816.201937
+r1
+xLd
+x/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/MacOS/App2
+xnormal
+xi386
+lSLF07#2@127"Link /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/MacOS/App2297698816#297698816#0(0"0(0#0#0"4300911832#738"    cd /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug -F/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug -filelist /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/App2.build/Debug/App2.build/Objects-normal/i386/App2.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -o /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/MacOS/App20#
+
+CProcessInfoPlistFile /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app/Contents/Info.plist Info.plist
+r0
+
+CStripNIB /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/English.lproj/MainMenu.nib
+r0
+
+CTouch /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app
+s297698816.202054
+e297698816.205320
+r1
+xTouch
+x/Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app
+lSLF07#2@108"Touch /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app297698816#297698816#0(0"0(0#0#0"4300911832#214"    cd /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2    /usr/bin/touch -c /Users/macbookmacbook/Desktop/4u2review/Code/DVDcode/27sokolovskyDVDexamples/App2/build/Debug/App2.app0#
+

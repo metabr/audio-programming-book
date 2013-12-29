@@ -1,0 +1,9 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo  ./siggen siggen.aif 3 2 44100 0.5 440
+echo
+echo
+./siggen siggen.aif 3 2 44100 0.5 440
+echo
+echo
+

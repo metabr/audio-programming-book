@@ -1,0 +1,10 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo ./sfnorm ../../testvox.aif sfnorm.aif 0
+
+echo
+echo
+./sfnorm ../../testvox.aif sfnorm.aif 0
+echo
+echo
+

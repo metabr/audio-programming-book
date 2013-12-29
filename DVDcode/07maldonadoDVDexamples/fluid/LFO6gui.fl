@@ -1,0 +1,991 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0104 
+header_name {.h} 
+code_name {.cpp}
+decl {\#include "PortAudioStuff.h"} {public
+} 
+
+decl {\#include <FL/Fl_Box.H>} {public
+} 
+
+decl {class Fl_DrawShape;} {public
+} 
+
+decl {void drawWaveform(Fl_DrawShape*);} {public
+} 
+
+class Fl_DrawShape {: {public Fl_Box}
+} {
+  Function {Fl_DrawShape(int X, int Y, int W, int H, const char *l=0) : Fl_Box(X,Y,W,H,l)} {open
+  } {}
+  decl {float *table;} {public
+  }
+  decl {long tablen;} {public
+  }
+  Function {draw()} {} {
+    code {Fl_Box::draw();
+drawWaveform(this);} {}
+  }
+} 
+
+class LFO6gui {open : {public PAstuff}
+} {
+  decl {bool isAudio;} {}
+  decl {int tableIndex[3];} {}
+  Function {LFO6gui():PAstuff()} {open
+  } {
+    Fl_Window mainWindow {
+      label {Example of multiple LFOs with assignable tables}
+      xywh {92 61 812 659} type Double labelsize 12 align 0 hide
+      code0 {make_menu();}
+    } {
+      Fl_Box {joy[1]} {
+        label {LFO 1 (controls audio modulator freq.)}
+        callback {joy_callback(1);}
+        xywh {5 25 230 220} box DOWN_BOX color 44 selection_color 1 labelsize 12 align 130 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Box {joy[2]} {
+        label {LFO 2 (controls audio modulator amp.)}
+        callback {joy_callback(2);}
+        xywh {250 25 230 220} box DOWN_BOX color 44 selection_color 1 labelsize 12 align 130 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Box {joy[3]} {
+        label {LFO 3 (controls audio carrier freq.)}
+        callback {joy_callback(3);}
+        xywh {5 265 230 220} box DOWN_BOX color 44 selection_color 1 labelsize 12 align 130 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Box {joy[4]} {
+        label {Audio modulator base amp. and freq.}
+        callback {joy_callback(4);}
+        xywh {250 265 230 220} box DOWN_BOX color 44 selection_color 1 labelsize 12 align 130 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Slider CarrierFreq {
+        label {Audio carrier base freq.}
+        callback {carrier_freq_callback();}
+        xywh {135 625 500 20} type {Horz Knob} box FLAT_BOX selection_color 176 labelsize 12 labelcolor 0 align 4 value 0.3
+      }
+      Fl_Slider LFO4freq {
+        label {LFO 4 (controls audio carrier amplitude)}
+        callback {lfo4_freq_callback();}
+        xywh {10 530 470 25} type {Horz Knob} box ENGRAVED_BOX color 44 selection_color 128 labelsize 12
+      }
+      Fl_Box {tableShape[0]} {
+        label {Table 1}
+        xywh {490 10 315 115} box ENGRAVED_BOX color 54 align 21
+        class Fl_DrawShape
+      }
+      Fl_Box {tableShape[1]} {
+        label {Table 2}
+        xywh {490 130 315 115} box ENGRAVED_BOX color 54 align 21
+        class Fl_DrawShape
+      }
+      Fl_Box {tableShape[2]} {
+        label {Table 3}
+        xywh {490 250 315 115} box ENGRAVED_BOX color 54 align 21
+        class Fl_DrawShape
+      }
+      Fl_Box {tableShape[3]} {
+        label {Table 4}
+        xywh {490 370 315 115} box ENGRAVED_BOX color 54 align 21
+        class Fl_DrawShape
+      }
+      Fl_Group {} {
+        label {Define table shapes}
+        xywh {490 490 150 130} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelsize 16 labelcolor 39 align 21
+      } {
+        Fl_Choice {chTable[0]} {
+          label Table1
+          callback {tableShape_callback(o,0);} open
+          xywh {540 515 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {5 5 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {15 15 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {25 25 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Random
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Custom set}
+            xywh {65 65 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Step sequencer}
+            xywh {75 75 100 20} labelsize 12
+          }
+          menuitem {} {
+            label ADSR
+            xywh {75 75 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chTable[1]} {
+          label Table2
+          callback {tableShape_callback(o,1);} open
+          xywh {540 540 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {15 15 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {25 25 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Random
+            xywh {65 65 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Custom set}
+            xywh {75 75 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Step sequencer}
+            xywh {90 90 100 20} labelsize 12
+          }
+          menuitem {} {
+            label ADSR
+            xywh {85 85 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chTable[2]} {
+          label Table3
+          callback {tableShape_callback(o,2);} open
+          xywh {540 565 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {25 25 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {65 65 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Random
+            xywh {75 75 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Custom set}
+            xywh {85 85 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Step sequencer}
+            xywh {95 95 100 20} labelsize 12
+          }
+          menuitem {} {
+            label ADSR
+            xywh {95 95 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chTable[3]} {
+          label Table4
+          callback {tableShape_callback(o,3);} open
+          xywh {540 590 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {65 65 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {75 75 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Random
+            xywh {85 85 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Custom set}
+            xywh {95 95 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Step sequencer}
+            xywh {105 105 100 20} labelsize 12
+          }
+          menuitem {} {
+            label ADSR
+            xywh {105 105 100 20} labelsize 12
+          }
+        }
+      }
+      Fl_Group {} {
+        label {Assign tables}
+        xywh {645 490 160 160} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelsize 16 labelcolor 39 align 21
+      } {
+        Fl_Choice {chOscShape[0]} {
+          label LFO1
+          callback {oscTable_callback(o,0)} open
+          xywh {710 515 85 15} down_box DOWN_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Table1
+            xywh {5 5 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table2
+            xywh {15 15 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table3
+            xywh {25 25 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table4
+            xywh {35 35 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chOscShape[1]} {
+          label LFO2
+          callback {oscTable_callback(o,1)} open
+          xywh {710 535 85 15} down_box DOWN_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Table1
+            xywh {15 15 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table2
+            xywh {25 25 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table3
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table4
+            xywh {45 45 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chOscShape[2]} {
+          label LFO3
+          callback {oscTable_callback(o,2)} open
+          xywh {710 555 85 15} down_box DOWN_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Table1
+            xywh {25 25 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table2
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table3
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table4
+            xywh {55 55 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chOscShape[3]} {
+          label LFO4
+          callback {oscTable_callback(o,3)} open
+          xywh {710 575 85 15} down_box DOWN_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Table1
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table2
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table3
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table4
+            xywh {65 65 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chOscShape[4]} {
+          label modulator
+          callback {oscTable_callback(o,4)} open
+          xywh {710 605 85 15} down_box DOWN_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Table1
+            xywh {35 35 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table2
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table3
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table4
+            xywh {65 65 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chOscShape[5]} {
+          label carrier
+          callback {oscTable_callback(o,5)} open
+          xywh {710 625 85 15} down_box DOWN_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Table1
+            xywh {45 45 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table2
+            xywh {55 55 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table3
+            xywh {65 65 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Table4
+            xywh {75 75 100 20} labelsize 12
+          }
+        }
+      }
+    }
+  }
+  Function {customWave(int index)} {open return_type void
+  } {
+    code {tableIndex[0]=index;} {}
+    Fl_Window customWavWindow {
+      label {Custom set waveform} open
+      xywh {94 142 382 356} type Double visible
+    } {
+      Fl_Value_Input {numHarm[0]} {
+        label harm
+        xywh {165 265 30 25} labelsize 12 align 130 minimum 1 maximum 1000 step 0.5 value 1
+      }
+      Fl_Value_Input {numHarm[1]} {
+        label harm
+        xywh {200 265 30 25} labelsize 12 align 130 minimum 1 maximum 1000 step 0.5 value 2
+      }
+      Fl_Value_Input {numHarm[2]} {
+        label harm
+        xywh {235 265 30 25} labelsize 12 align 130 minimum 1 maximum 1000 step 0.5 value 3
+      }
+      Fl_Value_Input {numHarm[3]} {
+        label harm
+        xywh {270 265 30 25} labelsize 12 align 130 minimum 1 maximum 1000 step 0.5 value 4
+      }
+      Fl_Value_Input {numHarm[4]} {
+        label harm
+        xywh {305 265 30 25} labelsize 12 align 130 minimum 1 maximum 1000 step 0.5 value 5
+      }
+      Fl_Value_Input {numHarm[5]} {
+        label harm
+        xywh {340 265 30 25} labelsize 12 align 130 minimum 1 maximum 1000 step 0.5 value 6
+      }
+      Fl_Value_Slider {levelHarm[0]} {
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {165 5 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Slider {levelHarm[1]} {
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {200 5 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Slider {levelHarm[2]} {
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {235 5 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Slider {levelHarm[3]} {
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {270 5 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Slider {levelHarm[4]} {
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {305 5 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Slider {levelHarm[5]} {
+        callback {customWave_callback(tableIndex[0]);} selected
+        xywh {340 5 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 12 when 4 minimum 1 maximum 0
+      }
+      Fl_Button {} {
+        label Compute
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {10 325 70 25}
+      }
+      Fl_Return_Button {} {
+        label Exit
+        callback {delete o->parent();}
+        xywh {85 325 50 25}
+      }
+      Fl_Box {} {
+        label {Build your custom wave with a sum of 6 partials having various base shapes. You can redefine the shape, order number, amplitude and phase, independently for each partial, starting from the shapes chosen above}
+        xywh {5 215 155 100} labelsize 11 labelcolor 176 align 148
+      }
+      Fl_Group {} {
+        label {Select the base shape, please}
+        xywh {5 10 140 195} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelcolor 42 align 149
+      } {
+        Fl_Choice {chPartial[0]} {
+          label {part.1}
+          callback {customWave_callback(tableIndex[0]);} open
+          xywh {45 50 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {20 20 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {30 30 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {40 40 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {50 50 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {60 60 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Last waveform}
+            xywh {70 70 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chPartial[1]} {
+          label {part.2}
+          callback {customWave_callback(tableIndex[0]);} open
+          xywh {45 75 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {30 30 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {40 40 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {50 50 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {60 60 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {70 70 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Last waveform}
+            xywh {80 80 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chPartial[2]} {
+          label {part.3}
+          callback {customWave_callback(tableIndex[0]);} open
+          xywh {45 100 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {40 40 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {50 50 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {60 60 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {70 70 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {80 80 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Last waveform}
+            xywh {90 90 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chPartial[3]} {
+          label {part.4}
+          callback {customWave_callback(tableIndex[0]);} open
+          xywh {45 125 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {50 50 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {60 60 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {70 70 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {80 80 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {90 90 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Last waveform}
+            xywh {100 100 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chPartial[4]} {
+          label {part.5}
+          callback {customWave_callback(tableIndex[0]);} open
+          xywh {45 150 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {60 60 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {70 70 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {80 80 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {90 90 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {100 100 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Last waveform}
+            xywh {110 110 100 20} labelsize 12
+          }
+        }
+        Fl_Choice {chPartial[5]} {
+          label {part.6}
+          callback {customWave_callback(tableIndex[0]);} open
+          xywh {45 175 90 20} down_box BORDER_BOX labelsize 12
+        } {
+          menuitem {} {
+            label Sine
+            xywh {70 70 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Triangle
+            xywh {80 80 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Up Ramp}
+            xywh {90 90 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Down Ramp}
+            xywh {100 100 100 20} labelsize 12
+          }
+          menuitem {} {
+            label Square
+            xywh {110 110 100 20} labelsize 12
+          }
+          menuitem {} {
+            label {Last waveform}
+            xywh {120 120 100 20} labelsize 12
+          }
+        }
+      }
+      Fl_Value_Input {phsHarm[0]} {
+        label phs
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {165 310 30 25} box SHADOW_BOX labelsize 12 align 130 when 4 step 0.01
+      }
+      Fl_Value_Input {phsHarm[1]} {
+        label phs
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {200 310 30 25} box SHADOW_BOX labelsize 12 align 130 when 4 step 0.01
+      }
+      Fl_Value_Input {phsHarm[2]} {
+        label phs
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {235 310 30 25} box SHADOW_BOX labelsize 12 align 130 when 4 step 0.01
+      }
+      Fl_Value_Input {phsHarm[3]} {
+        label phs
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {270 310 30 25} box SHADOW_BOX labelsize 12 align 130 when 4 step 0.01
+      }
+      Fl_Value_Input {phsHarm[4]} {
+        label phs
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {305 310 30 25} box SHADOW_BOX labelsize 12 align 130 when 4 step 0.01
+      }
+      Fl_Value_Input {phsHarm[5]} {
+        label phs
+        callback {customWave_callback(tableIndex[0]);}
+        xywh {340 310 30 25} box SHADOW_BOX labelsize 12 align 130 when 4 step 0.01
+      }
+    }
+    code {customWavWindow->show();} {}
+  }
+  Function {stepSequencer(int index)} {open
+  } {
+    code {tableIndex[1]=index;} {}
+    Fl_Window stepSeqWindow {
+      label {Step sequencer} open
+      xywh {94 93 426 320} type Double hide resizable
+    } {
+      Fl_Value_Input numSteps {
+        label {Number of active steps}
+        callback {stepSequencerCompute(tableIndex[1]);}
+        xywh {15 50 80 25} labelsize 12 align 129 when 4 minimum 2 maximum 24 step 1 value 8
+      }
+      Fl_Button {} {
+        label Compute
+        callback {stepSequencerCompute(tableIndex[1]);}
+        xywh {5 245 105 30}
+      }
+      Fl_Return_Button {} {
+        label Exit
+        callback {delete o->parent();}
+        xywh {5 280 105 30}
+      }
+      Fl_Scroll {} {
+        xywh {115 5 302 305} box DOWN_BOX resizable
+      } {
+        Fl_Box {} {
+          xywh {115 125 20 25}
+        }
+        Fl_Value_Input {stepDur[0]} {
+          label dur
+          xywh {125 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[0]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {125 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[1]} {
+          label dur
+          xywh {160 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[1]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {160 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[2]} {
+          label dur
+          xywh {195 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[2]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {195 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[3]} {
+          label dur
+          xywh {230 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[3]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {230 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[4]} {
+          label dur
+          xywh {275 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[4]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {275 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[5]} {
+          label dur
+          xywh {310 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[5]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {310 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[6]} {
+          label dur
+          xywh {345 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[6]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {345 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[7]} {
+          label dur
+          xywh {380 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[7]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {380 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[8]} {
+          label dur
+          xywh {430 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[8]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {430 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[9]} {
+          label dur
+          xywh {465 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[9]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {465 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[10]} {
+          label dur
+          xywh {500 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[10]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {500 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[11]} {
+          label dur
+          xywh {535 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[11]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {535 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[12]} {
+          label dur
+          xywh {580 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[12]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {580 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[13]} {
+          label dur
+          xywh {615 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[13]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {615 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[14]} {
+          label dur
+          xywh {650 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[14]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {650 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[15]} {
+          label dur
+          xywh {685 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[15]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {685 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[16]} {
+          label dur
+          xywh {735 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[16]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {735 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[17]} {
+          label dur
+          xywh {770 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[17]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {770 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[18]} {
+          label dur
+          xywh {805 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[18]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {805 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[19]} {
+          label dur
+          xywh {840 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[19]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {840 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[20]} {
+          label dur
+          xywh {885 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[20]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {885 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[21]} {
+          label dur
+          xywh {920 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[21]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {920 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[22]} {
+          label dur
+          xywh {955 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[22]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {955 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+        Fl_Value_Input {stepDur[23]} {
+          label dur
+          xywh {990 255 30 25} labelsize 11 align 129 minimum 1 maximum 1000 step 0.25 value 1 textsize 11
+        }
+        Fl_Value_Slider {stepLevel[23]} {
+          callback {stepSequencerCompute(tableIndex[1]);}
+          xywh {990 10 30 230} type {Vert Knob} box FLAT_BOX selection_color 248 labelsize 12 when 4 minimum 1 maximum 0
+        }
+      }
+    }
+    code {stepSeqWindow->show();} {}
+  }
+  Function {adsr(int index)} {open
+  } {
+    code {tableIndex[2]=index;} {}
+    Fl_Window adsrWindow {
+      label ADSR open
+      xywh {494 301 286 314} type Double hide
+    } {
+      Fl_Value_Slider sldAttak {
+        label Attak
+        callback {adsrCompute(tableIndex[2]);}
+        xywh {20 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 11 when 4 minimum 1 maximum 0
+      }
+      Fl_Value_Slider sldDecay {
+        label Decay
+        callback {adsrCompute(tableIndex[2]);}
+        xywh {65 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 11 when 4 minimum 1 maximum 0 value 0.2
+      }
+      Fl_Value_Slider sldSustain {
+        label Sustain
+        callback {adsrCompute(tableIndex[2]);}
+        xywh {110 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 11 when 4 minimum 1 maximum 0 value 0.5
+      }
+      Fl_Value_Slider sldRelease {
+        label Release
+        callback {adsrCompute(tableIndex[2]);}
+        xywh {155 10 30 250} type {Vert Knob} box FLAT_BOX selection_color 216 labelsize 11 when 4 minimum 1 maximum 0 value 0.1
+      }
+      Fl_Value_Slider sldSustDur {
+        label {Sustain dur.}
+        callback {adsrCompute(tableIndex[2]);}
+        xywh {200 10 30 250} type {Vert Knob} box ENGRAVED_BOX color 53 selection_color 128 labelsize 11 align 130 when 4 minimum 1 maximum 0 value 0.5
+      }
+      Fl_Value_Slider sldPauseDur {
+        label {Pause dur.}
+        callback {adsrCompute(tableIndex[2]);}
+        xywh {240 10 30 250} type {Vert Knob} box ENGRAVED_BOX color 53 selection_color 128 labelsize 11 align 130 when 4 minimum 1 maximum 0 value 0.2
+      }
+      Fl_Return_Button {} {
+        label Exit
+        callback {delete o->parent();}
+        xywh {20 280 135 25}
+      }
+    }
+    code {adsrWindow->show();} {}
+  }
+  Function {show()} {} {
+    code {mainWindow->show();} {}
+  }
+  Function {bye()} {return_type void
+  } {
+    code {mainWindow->hide();} {}
+  }
+  Function {joy_callback(int i)} {return_type {virtual void}
+  } {}
+  Function {carrier_freq_callback()} {return_type {virtual void}
+  } {}
+  Function {lfo4_freq_callback()} {return_type {virtual void}
+  } {}
+  Function {customWave_callback(int tableIndex)} {return_type {virtual void}
+  } {}
+  Function {stepSequencerCompute(int tableIndex)} {return_type {virtual void}
+  } {}
+  Function {adsrCompute(int tableIndex)} {return_type {virtual void}
+  } {}
+  Function {tableShape_callback(Fl_Choice* o, int tableIndex)} {return_type {virtual void}
+  } {}
+  Function {oscTable_callback(Fl_Choice* o, int oscIndex)} {return_type {virtual void}
+  } {}
+} 

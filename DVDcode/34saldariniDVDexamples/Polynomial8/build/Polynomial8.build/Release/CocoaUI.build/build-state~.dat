@@ -1,0 +1,1337 @@
+TCocoaUI
+v7
+r0
+t299754519.521700
+cCheck dependencies
+cProcessInfoPlistFile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+cCopyTiffFile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif polynomialGUI.tif
+cCompileXIB /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+cCpResource build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png PolynomialKnobOn.png
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal x86_64
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal i386
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal ppc
+cCreateUniversalBinary /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal "x86_64 i386 ppc"
+cGenerateDSYMFile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+cTouch /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004A49A9E400000000000000EE
+t1246341604
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004864A73B000000000000095A
+t1214555963
+s2394
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AUCocoaUIView.h
+c000000004864A72E0000000000000811
+t1214555950
+s2065
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
+c000000004864A72E00000000000003CC
+t1214555950
+s972
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004A67CD070000000000000A22
+t1248316679
+s2594
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AUCocoaUIView.h
+c000000004A67CCF900000000000007E0
+t1248316665
+s2016
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
+c000000004A67CCF9000000000000041D
+t1248316665
+s1053
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004AD8432000000000004C9980
+t1255686944
+s5020032
+
+N/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000004AD8427F0000000000012150
+t1255686783
+s74064
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.h
+c000000004AA519FD0000000000000127
+t1252334077
+s295
+i<Cocoa/Cocoa.h>
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m
+c000000004AA519FD00000000000002A6
+t1252334077
+s678
+i"NSMatrixCustom.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.h
+c000000004AA519FD0000000000000147
+t1252334077
+s327
+i<Cocoa/Cocoa.h>
+i"NSSliderCustomCell.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m
+c000000004AA519FD000000000000029C
+t1252334077
+s668
+i"NSSliderCustom.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.h
+c000000004AA519FD0000000000000149
+t1252334077
+s329
+i<Cocoa/Cocoa.h>
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m
+c000000004AA519FD00000000000003DF
+t1252334077
+s991
+i"NSSliderCustomCell.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/PolynomialKnobOn.png
+c0000000048F164FE0000000000000E23
+t1223779582
+s3619
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.h
+c000000004AA519FD0000000000001519
+t1252334077
+s5401
+i<Cocoa/Cocoa.h>
+i<AudioUnit/AudioUnit.h>
+i<AudioToolbox/AudioToolbox.h>
+i"UseAndDisposeOf_Polynomial_GraphView.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+c000000004AA519FD00000000000046DE
+t1252334077
+s18142
+i"UseAndDisposeOf_Polynomial8_CocoaView.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+c000000004A9B3D2A000000000000C9AF
+t1251687722
+s51631
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.h
+c000000004AA519FD0000000000000F75
+t1252334077
+s3957
+i<Cocoa/Cocoa.h>
+i<AudioUnit/AUCocoaUIView.h>
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+c000000004AA519FD0000000000000F09
+t1252334077
+s3849
+i"UseAndDisposeOf_Polynomial8_CocoaViewFactory.h"
+i"UseAndDisposeOf_Polynomial8_CocoaView.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.h
+c000000004AA519FD00000000000001F0
+t1252334077
+s496
+i<Cocoa/Cocoa.h>
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+c000000004AA519FD0000000000001849
+t1252334077
+s6217
+i"UseAndDisposeOf_Polynomial_GraphView.h"
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o
+t1277179060
+s16364
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o
+t1277179060
+s14788
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o
+t1277179060
+s13916
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o
+t1277179060
+s43124
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1277179061
+s38264
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList
+c000000004C2034B2000000000000045D
+t1277179058
+s1117
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+t1277179059
+s18424
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o
+t1277179061
+s21040
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o
+t1277179061
+s16528
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o
+t1277179061
+s14952
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o
+t1277179062
+s14344
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o
+t1277179061
+s43232
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1277179062
+s36744
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList
+c000000004C2034B20000000000000457
+t1277179058
+s1111
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+t1277179061
+s18468
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o
+t1277179062
+s22232
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o
+t1277179059
+s18012
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o
+t1277179059
+s16444
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o
+t1277179059
+s17580
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o
+t1277179059
+s54332
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1277179060
+s48720
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList
+c000000004C2034B20000000000000469
+t1277179058
+s1129
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+t1277179059
+s22044
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o
+t1277179059
+s25692
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle.dSYM
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Info.plist
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources/UseAndDisposeOf_Polynomial8_CocoaView.nib
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif
+t2
+s0
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+t1277179062
+s102
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM
+t1277179062
+s102
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist
+t1277179058
+s593
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1277179062
+s130952
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png
+t1277179058
+s3619
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/UseAndDisposeOf_Polynomial8_CocoaView.nib
+t1277179058
+s13289
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif
+t1277179058
+s647352
+
+N/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/polynomialGUI.tif
+c000000004AA501E2000000000009E0B8
+t1252327906
+s647352
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.h
+c000000004AA519FD0000000000000127
+t1252334077
+s295
+i<Cocoa/Cocoa.h>
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m
+c000000004AA519FD00000000000002A6
+t1252334077
+s678
+i"NSMatrixCustom.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.h
+c000000004AA519FD0000000000000147
+t1252334077
+s327
+i<Cocoa/Cocoa.h>
+i"NSSliderCustomCell.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m
+c000000004AA519FD000000000000029C
+t1252334077
+s668
+i"NSSliderCustom.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.h
+c000000004AA519FD0000000000000149
+t1252334077
+s329
+i<Cocoa/Cocoa.h>
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m
+c000000004AA519FD00000000000003DF
+t1252334077
+s991
+i"NSSliderCustomCell.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/PolynomialKnobOn.png
+c0000000048F164FE0000000000000E23
+t1223779582
+s3619
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.h
+c000000004AA519FD0000000000001519
+t1252334077
+s5401
+i<Cocoa/Cocoa.h>
+i<AudioUnit/AudioUnit.h>
+i<AudioToolbox/AudioToolbox.h>
+i"UseAndDisposeOf_Polynomial_GraphView.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+c000000004AA519FD00000000000046DE
+t1252334077
+s18142
+i"UseAndDisposeOf_Polynomial8_CocoaView.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+c000000004C2DAC85000000000000D260
+t1278061701
+s53856
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.h
+c000000004AA519FD0000000000000F75
+t1252334077
+s3957
+i<Cocoa/Cocoa.h>
+i<AudioUnit/AUCocoaUIView.h>
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+c000000004AA519FD0000000000000F09
+t1252334077
+s3849
+i"UseAndDisposeOf_Polynomial8_CocoaViewFactory.h"
+i"UseAndDisposeOf_Polynomial8_CocoaView.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.h
+c000000004AA519FD00000000000001F0
+t1252334077
+s496
+i<Cocoa/Cocoa.h>
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+c000000004AA519FD0000000000001849
+t1252334077
+s6217
+i"UseAndDisposeOf_Polynomial_GraphView.h"
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o
+t1278061717
+s16316
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o
+t1278061717
+s14740
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o
+t1278061718
+s13864
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o
+t1278061717
+s43048
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1278061718
+s37964
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList
+c000000004C2DAC9300000000000003C7
+t1278061715
+s967
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+t1278061717
+s18372
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o
+t1278061718
+s20964
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o
+t1278061718
+s16476
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o
+t1278061719
+s14900
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o
+t1278061719
+s14296
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o
+t1278061718
+s43160
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1278061719
+s36444
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList
+c000000004C2DAC9300000000000003C1
+t1278061715
+s961
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+t1278061718
+s18416
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o
+t1278061719
+s22156
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o
+t1278061716
+s17964
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o
+t1278061716
+s16396
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o
+t1278061717
+s17532
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o
+t1278061716
+s54260
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1278061717
+s48424
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList
+c000000004C2DAC9300000000000003D3
+t1278061715
+s979
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+t1278061716
+s21996
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o
+t1278061717
+s25620
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+t1278061719
+s102
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM
+t1278061719
+s102
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist
+t1278061715
+s593
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+t1278061719
+s130652
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png
+t1278061715
+s3619
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/UseAndDisposeOf_Polynomial8_CocoaView.nib
+t1278061715
+s13289
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif
+t1278061715
+s647352
+
+N/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/polynomialGUI.tif
+c000000004AA501E2000000000009E0B8
+t1252327906
+s647352
+
+NUseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+c000000004A93E2250000000000000251
+t1251205669
+s593
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies299754515#299754515#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s298871859.830192
+e298871860.497275
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m298871859#298871860#0(0"0(0#0#106"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m4300911832#1403"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299754517.124644
+e299754517.864229
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m299754517#299754517#0(0"0(0#0#81"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m4300911832#1203"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSMatrixCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s298871859.939054
+e298871860.601238
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m298871859#298871860#0(0"0(0#0#106"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m4300911832#1403"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299754517.202665
+e299754517.954945
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m299754517#299754517#0(0"0(0#0#81"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m4300911832#1203"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s298871860.305678
+e298871860.999559
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@118"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m298871860#298871860#0(0"0(0#0#110"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m4300911832#1411"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299754517.306554
+e299754518.093460
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m299754517#299754518#0(0"0(0#0#85"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m4300911832#1211"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/NSSliderCustomCell.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s298871859.418335
+e298871860.305564
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@137"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m298871859#298871860#0(0"0(0#0#129"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m4300911832#1449"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299754516.720296
+e299754517.721287
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m299754516#299754517#0(0"0(0#0#104"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m4300911832#1249"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s298871859.166950
+e298871859.938937
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@144"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m298871859#298871859#0(0"0(0#0#136"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m4300911832#1463"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299754516.442161
+e299754517.306404
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m299754516#299754517#0(0"0(0#0#111"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m4300911832#1263"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s298871860.376372
+e298871861.091818
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@136"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m298871860#298871861#0(0"0(0#0#128"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m4300911832#1447"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299754517.721398
+e299754518.535172
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m299754517#299754518#0(0"0(0#0#103"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m4300911832#1247"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/i386 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial_GraphView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s298871860.999687
+e298871861.676405
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m298871861#298871861#0(0"0(0#0#106"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m4300911832#1410"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s299754518.093571
+e299754518.797528
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m299754518#299754518#0(0"0(0#0#81"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m4300911832#1210"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSMatrixCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s298871861.201998
+e298871861.851280
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m298871861#298871861#0(0"0(0#0#106"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m4300911832#1410"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s299754518.569133
+e299754519.247666
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m299754518#299754519#0(0"0(0#0#81"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m4300911832#1210"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s298871861.494828
+e298871862.107116
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@118"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m298871861#298871862#0(0"0(0#0#110"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m4300911832#1418"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s299754518.617858
+e299754519.285524
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m299754518#299754519#0(0"0(0#0#85"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m4300911832#1218"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/NSSliderCustomCell.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s298871860.601358
+e298871861.689410
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@137"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m298871860#298871861#0(0"0(0#0#129"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m4300911832#1456"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s299754517.955059
+e299754518.932119
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m299754517#299754518#0(0"0(0#0#104"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m4300911832#1256"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s298871860.497400
+e298871861.494619
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@144"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m298871860#298871861#0(0"0(0#0#136"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m4300911832#1470"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s299754517.864343
+e299754518.617733
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m299754517#299754518#0(0"0(0#0#111"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m4300911832#1270"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s298871861.676531
+e298871862.292273
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@136"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m298871861#298871862#0(0"0(0#0#128"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m4300911832#1454"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s299754518.797725
+e299754519.460560
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m299754518#299754519#0(0"0(0#0#103"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m4300911832#1254"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/ppc -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial_GraphView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s298871858.305513
+e298871859.164403
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m298871858#298871859#0(0"0(0#0#106"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m4300911832#1409"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSMatrixCustom.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s299754515.673802
+e299754516.381717
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m299754515#299754516#0(0"0(0#0#81"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m4300911832#1209"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSMatrixCustom.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSMatrixCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s298871858.306425
+e298871859.166008
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@114"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m298871858#298871859#0(0"0(0#0#106"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m4300911832#1409"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustom.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s299754515.674618
+e299754516.374943
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m299754515#299754516#0(0"0(0#0#81"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m4300911832#1209"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustom.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustom.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s298871859.164536
+e298871859.829982
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@118"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m298871859#298871859#0(0"0(0#0#110"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m4300911832#1417"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/NSSliderCustomCell.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s299754516.375079
+e299754517.124425
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m299754516#299754517#0(0"0(0#0#85"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m4300911832#1217"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/NSSliderCustomCell.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/NSSliderCustomCell.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s298871858.304642
+e298871859.417137
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@137"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m298871858#298871859#0(0"0(0#0#129"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m4300911832#1455"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s299754515.672980
+e299754516.720184
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m299754515#299754516#0(0"0(0#0#104"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m4300911832#1255"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s298871858.303468
+e298871859.165817
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@144"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m298871858#298871859#0(0"0(0#0#136"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m7019261819595877376#1469"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s299754515.671938
+e299754516.442009
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m299754515#299754516#0(0"0(0#0#111"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m7237112271363911680#1269"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s298871859.166083
+e298871859.869399
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@136"Compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m298871859#298871859#0(0"0(0#0#128"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m4300911832#1453"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o0#
+
+CCompileC build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s299754516.381829
+e299754517.166645
+r1
+xCompileC
+xbuild/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m299754516#299754517#0(0"0(0#0#103"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m4300911832#1253"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/UseAndDisposeOf_Polynomial8_CocoaViewFactory.hmap -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/include -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources/x86_64 -I/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/DerivedSources -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial_GraphView.m -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial_GraphView.o0#
+
+CCompileXIB /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+s298871858.121364
+e298871858.303090
+r1
+xCompileXIB
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib:100213: note: This view is clipping its content.
+lSLF07#2@52"CompileXIB UseAndDisposeOf_Polynomial8_CocoaView.xib298871858#298871858#0(221"/* com.apple.ibtool.document.notices *//Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib:100213: note: This view is clipping its content.1(13@34"This view is clipping its content.298871858#18446744073709551615#0#0(6@131"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib273380522#100213#0#100213#0#0"0(0#0#131"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib4300911832#552"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/UseAndDisposeOf_Polynomial8_CocoaView.nib /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib0#
+
+CCompileXIB /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+s299754515.476240
+e299754515.671830
+r1
+xCompileXIB
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib:100213: note: This view is clipping its content.
+lSLF07#2@52"CompileXIB UseAndDisposeOf_Polynomial8_CocoaView.xib299754515#299754515#0(196"/* com.apple.ibtool.document.notices *//Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib:100213: note: This view is clipping its content.1(13@34"This view is clipping its content.299754515#18446744073709551615#0#0(6@106"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib299754501#100213#0#100213#0#0"0(0#0#106"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib4300911832#477"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/UseAndDisposeOf_Polynomial8_CocoaView.nib /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaView.xib0#
+
+CCopyTiffFile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif polynomialGUI.tif
+s298667198.786688
+e298667198.807642
+r1
+xCopyTiffFile
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif
+xpolynomialGUI.tif
+lSLF07#2@22"Copy polynomialGUI.tif298667198#298667198#0(0"0(0#0#107"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/polynomialGUI.tif4300911832#361"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copytiff polynomialGUI.tif --outdir /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources0#
+
+CCopyTiffFile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif polynomialGUI.tif
+s298871858.111221
+e298871858.303395
+r1
+xCopyTiffFile
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif
+xpolynomialGUI.tif
+lSLF07#2@22"Copy polynomialGUI.tif298871858#298871858#0(0"0(0#0#107"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/polynomialGUI.tif4300911832#389"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copytiff polynomialGUI.tif --outdir /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources0#
+
+CCopyTiffFile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif polynomialGUI.tif
+s299754515.475374
+e299754515.502868
+r1
+xCopyTiffFile
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/polynomialGUI.tif
+xpolynomialGUI.tif
+lSLF07#2@22"Copy polynomialGUI.tif299754515#299754515#0(0"0(0#0#82"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/polynomialGUI.tif4300911832#339"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copytiff polynomialGUI.tif --outdir /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources0#
+
+CCpResource build/Release/CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png PolynomialKnobOn.png
+s298667198.788129
+e298667198.793538
+r1
+xCpResource
+xbuild/Release/CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png
+xPolynomialKnobOn.png
+lSLF07#2@25"Copy PolynomialKnobOn.png298667198#298667198#0(0"0(0#0#110"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/PolynomialKnobOn.png4300911832#524"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/PolynomialKnobOn.png /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Resources0#
+
+CCpResource build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png PolynomialKnobOn.png
+s299754515.476822
+e299754515.494743
+r1
+xCpResource
+xbuild/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources/PolynomialKnobOn.png
+xPolynomialKnobOn.png
+lSLF07#2@25"Copy PolynomialKnobOn.png299754515#299754515#0(0"0(0#0#85"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/PolynomialKnobOn.png4300911832#477"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/PolynomialKnobOn.png /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Resources0#
+
+CCreateUniversalBinary /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory normal "i386 ppc"
+r0
+
+CCreateUniversalBinary /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory normal "x86_64 i386 ppc"
+s298667202.949823
+e298667202.953188
+r1
+xCreateUniversalBinary
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@116"CreateUniversalBinary build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory normal "x86_64 i386 ppc"298667202#298667202#0(0"0(0#0#105"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/x86_64 i386 ppc4300911832#811"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /usr/bin/lipo -create /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory -output /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory0#
+
+CCreateUniversalBinary /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal "x86_64 i386 ppc"
+s298871862.411773
+e298871862.443933
+r1
+xCreateUniversalBinary
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@172"CreateUniversalBinary build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal "x86_64 i386 ppc"298871862#298871862#0(0"0(0#0#105"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/x86_64 i386 ppc4300911832#951"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /usr/bin/lipo -create /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory -output /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CCreateUniversalBinary /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal "x86_64 i386 ppc"
+s299754519.491468
+e299754519.494960
+r1
+xCreateUniversalBinary
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@172"CreateUniversalBinary build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal "x86_64 i386 ppc"299754519#299754519#0(0"0(0#0#80"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/x86_64 i386 ppc4300911832#826"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    /usr/bin/lipo -create /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory -output /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CGenerateDSYMFile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle.dSYM /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory
+s298667202.953287
+e298667202.976659
+r1
+xGenerateDSYMFile
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle.dSYM
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory
+lSLF07#2@129"GenerateDSYMFile build/Release/CocoaViewFactory.bundle.dSYM build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory298667202#298667202#0(0"0(0#0#159"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory4300911832#425"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /Developer/usr/bin/dsymutil /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/MacOS/CocoaViewFactory -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle.dSYM0#
+
+CGenerateDSYMFile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+s298871862.444021
+e298871862.495050
+r1
+xGenerateDSYMFile
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+lSLF07#2@213"GenerateDSYMFile build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory298871862#298871862#0(0"0(0#0#215"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory4300911832#509"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /Developer/usr/bin/dsymutil /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM0#
+
+CGenerateDSYMFile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+s299754519.495038
+e299754519.518691
+r1
+xGenerateDSYMFile
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+lSLF07#2@213"GenerateDSYMFile build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory299754519#299754519#0(0"0(0#0#190"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory4300911832#434"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    /Developer/usr/bin/dsymutil /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/MacOS/UseAndDisposeOf_Polynomial8_CocoaViewFactory -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle.dSYM0#
+
+CLd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory normal i386
+s298667201.821742
+e298667201.865293
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory
+xnormal
+xi386
+lSLF07#2@177"Link /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory298667201#298667201#0(0"0(0#0#0"4300911832#901"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal i386
+s298871861.091949
+e298871861.201874
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xi386
+lSLF07#2@205"Link /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory298871861#298871861#0(0"0(0#0#0"4300911832#957"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory normal ppc
+s298667202.918953
+e298667202.949746
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory
+xnormal
+xppc
+lSLF07#2@176"Link /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory298667202#298667202#0(0"0(0#0#0"4300911832#898"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal ppc
+s298871862.292383
+e298871862.411540
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xppc
+lSLF07#2@204"Link /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory298871862#298871862#0(0"0(0#0#0"4300911832#954"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory normal x86_64
+s298667200.633041
+e298667200.685155
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory
+xnormal
+xx86_64
+lSLF07#2@179"Link /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory298667200#298667200#0(0"0(0#0#0"4300911832#907"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -bundle -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal x86_64
+s298871859.869537
+e298871860.376219
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xx86_64
+lSLF07#2@207"Link /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory298871859#298871860#0(0"0(0#0#0"4300911832#963"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal i386
+s299754518.535295
+e299754518.568979
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xi386
+lSLF07#2@180"Link /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory299754518#299754518#0(0"0(0#0#0"4300911832#832"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/i386/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal ppc
+s299754519.460679
+e299754519.491367
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xppc
+lSLF07#2@179"Link /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory299754519#299754519#0(0"0(0#0#0"4300911832#829"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/ppc/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CLd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory normal x86_64
+s299754517.166770
+e299754517.202523
+r1
+xLd
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory
+xnormal
+xx86_64
+lSLF07#2@182"Link /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory299754517#299754517#0(0"0(0#0#0"4300911832#838"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -bundle -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -F/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release -filelist /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework AudioUnit -framework AudioToolbox -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Polynomial8.build/Release/CocoaUI.build/Objects-normal/x86_64/UseAndDisposeOf_Polynomial8_CocoaViewFactory0#
+
+CProcessInfoPlistFile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Info.plist UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+s298667198.783519
+e298667198.786598
+r1
+xProcessInfoPlistFile
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Info.plist
+xUseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+lSLF07#2@58"Process UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist298667198#298667198#0(0"0(0#0#140"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist4300911832#366"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    builtin-infoPlistUtility UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist -expandbuildsettings -platform macosx -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+s298871858.107770
+e298871858.111123
+r1
+xProcessInfoPlistFile
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist
+xUseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+lSLF07#2@58"Process UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist298871858#298871858#0(0"0(0#0#140"/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist32088624093986916#394"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    builtin-infoPlistUtility UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist -expandbuildsettings -platform macosx -o /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist0#
+
+CProcessInfoPlistFile /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+s299754515.468329
+e299754515.475276
+r1
+xProcessInfoPlistFile
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist
+xUseAndDisposeOf_Polynomial8_CocoaViewFactory.plist
+lSLF07#2@58"Process UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist299754515#299754515#0(0"0(0#0#115"/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist28429423624978528#344"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    builtin-infoPlistUtility UseAndDisposeOf_Polynomial8_CocoaViewFactory.plist -expandbuildsettings -platform macosx -o /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle/Contents/Info.plist0#
+
+CTouch /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle
+s298667202.976755
+e298667202.979558
+r1
+xTouch
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle
+lSLF07#2@133"Touch /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle298667202#298667202#0(0"0(0#0#0"4300911832#247"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /usr/bin/touch -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/CocoaViewFactory.bundle0#
+
+CTouch /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+s298871862.495163
+e298871862.512995
+r1
+xTouch
+x/Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+lSLF07#2@161"Touch /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle298871862#298871862#0(0"0(0#0#0"4300911832#275"    cd /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8    /usr/bin/touch -c /Users/saldavonschwartz/Desktop/4u2review/Code/DVDcode/34saldariniDVDexamples/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle0#
+
+CTouch /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+s299754519.518784
+e299754519.521658
+r1
+xTouch
+x/Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle
+lSLF07#2@136"Touch /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle299754519#299754519#0(0"0(0#0#0"4300911832#225"    cd /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8    /usr/bin/touch -c /Users/saldavonschwartz/Desktop/SaldariniDVD/DVDcode/Polynomial8/build/Release/UseAndDisposeOf_Polynomial8_CocoaViewFactory.bundle0#
+

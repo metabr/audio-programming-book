@@ -1,0 +1,167 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Spectral Template */ = {
+		activeExec = 0;
+		executables = (
+			236F681F0FFB502200DCA53B /* Spectral Template */,
+		);
+	};
+	236F681F0FFB502200DCA53B /* Spectral Template */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Spectral Template";
+		sourceDirectories = (
+		);
+	};
+	236F68340FFB507A00DCA53B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	236F68350FFB507A00DCA53B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	236F68FD0FFB535A00DCA53B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
+		name = "EAGLView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 43;
+		vrLoc = 0;
+	};
+	236F68FE0FFB535A00DCA53B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dB/Desktop/Spectral Template/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	236F68FF0FFB535A00DCA53B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dB/Desktop/Spectral Template/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	236F69000FFB535A00DCA53B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28FD14FC0DC6FC130079059D /* EAGLView.h */;
+		name = "EAGLView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 43;
+		vrLoc = 0;
+	};
+	236F69080FFB53A600DCA53B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/dB/Desktop/Spectral Template/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	28FD14FC0DC6FC130079059D /* EAGLView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 1482}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 43}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 236F681F0FFB502200DCA53B /* Spectral Template */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Spectral Template */;
+		codeSenseManager = 236F68350FFB507A00DCA53B /* Code sense */;
+		executables = (
+			236F681F0FFB502200DCA53B /* Spectral Template */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					596,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					202,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 268128290;
+			PBXWorkspaceStateSaveDate = 268128290;
+		};
+		perUserProjectItems = {
+			236F68FD0FFB535A00DCA53B /* PBXTextBookmark */ = 236F68FD0FFB535A00DCA53B /* PBXTextBookmark */;
+			236F68FE0FFB535A00DCA53B /* PlistBookmark */ = 236F68FE0FFB535A00DCA53B /* PlistBookmark */;
+			236F68FF0FFB535A00DCA53B /* PlistBookmark */ = 236F68FF0FFB535A00DCA53B /* PlistBookmark */;
+			236F69000FFB535A00DCA53B /* PBXTextBookmark */ = 236F69000FFB535A00DCA53B /* PBXTextBookmark */;
+			236F69080FFB53A600DCA53B /* PlistBookmark */ = 236F69080FFB53A600DCA53B /* PlistBookmark */;
+		};
+		sourceControlManager = 236F68340FFB507A00DCA53B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 246}, {978, 927}}";
+		};
+	};
+}

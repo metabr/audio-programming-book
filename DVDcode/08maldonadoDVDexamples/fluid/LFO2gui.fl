@@ -1,0 +1,117 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0104 
+header_name {.h} 
+code_name {.cpp}
+decl {\#include "PortAudioStuff.h"} {public
+} 
+
+class LFO2gui {open : {public PAstuff}
+} {
+  Function {LFO2gui():PAstuff()} {open
+  } {
+    Fl_Window mainWindow {
+      label {Wavetable LFO example} open selected
+      xywh {328 122 496 403} labelsize 12 align 0
+      code0 {make_menu();} visible
+    } {
+      Fl_Box joy {
+        label {LFO (X controls frequency, Y controls amplitude)}
+        callback {joy_callback();}
+        xywh {10 25 305 305} box DOWN_BOX color 44 selection_color 1 align 2 when 3
+        code0 {\#include <FL/Fl_Positioner.H>}
+        class Fl_Positioner
+      }
+      Fl_Group {} {
+        label {LFO shape} open
+        xywh {325 25 160 150} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelsize 18 labelcolor 42 align 21
+      } {
+        Fl_Round_Button {} {
+          label Sine
+          callback {LFO_radio_callback(0);}
+          xywh {350 45 85 25} type Radio down_box ROUND_DOWN_BOX value 1
+        }
+        Fl_Round_Button {} {
+          label Triangle
+          callback {LFO_radio_callback(1);}
+          xywh {350 65 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label {Up Ramp}
+          callback {LFO_radio_callback(2);}
+          xywh {350 85 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label {Down Ramp}
+          callback {LFO_radio_callback(3);}
+          xywh {350 105 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label Square
+          callback {LFO_radio_callback(4);}
+          xywh {350 125 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label Random
+          callback {LFO_radio_callback(5);}
+          xywh {350 145 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+      }
+      Fl_Group {} {
+        label {Carrier shape} open
+        xywh {325 180 160 150} box ENGRAVED_FRAME color 41 labeltype ENGRAVED_LABEL labelsize 18 labelcolor 42 align 21
+      } {
+        Fl_Round_Button {} {
+          label Sine
+          callback {carrier_radio_callback(0);}
+          xywh {350 200 85 25} type Radio down_box ROUND_DOWN_BOX value 1
+        }
+        Fl_Round_Button {} {
+          label Triangle
+          callback {carrier_radio_callback(1);}
+          xywh {350 220 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label {Up Ramp}
+          callback {carrier_radio_callback(2);}
+          xywh {350 240 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label {Down Ramp}
+          callback {carrier_radio_callback(3);}
+          xywh {350 260 85 25} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label Square
+          callback {carrier_radio_callback(4);}
+          xywh {350 285 85 15} type Radio down_box ROUND_DOWN_BOX
+        }
+        Fl_Round_Button {} {
+          label Random
+          callback {carrier_radio_callback(5);}
+          xywh {350 305 85 15} type Radio down_box ROUND_DOWN_BOX
+        }
+      }
+      Fl_Slider CarrierFreq {
+        label {Base frequency of the audio carrier:}
+        callback {carrier_freq_callback();}
+        xywh {10 350 475 25} type {Horz Knob} box FLAT_BOX selection_color 216 labelcolor 0 value 0.3
+      }
+    }
+  }
+  Function {show()} {open
+  } {
+    code {mainWindow->show();} {}
+  }
+  Function {bye()} {open return_type void
+  } {
+    code {mainWindow->hide();} {}
+  }
+  Function {joy_callback()} {return_type {virtual void}
+  } {}
+  Function {LFO_radio_callback(int i)} {return_type {virtual void}
+  } {}
+  Function {carrier_radio_callback(int i)} {return_type {virtual void}
+  } {}
+  Function {carrier_freq_callback()} {return_type {virtual void}
+  } {}
+} 

@@ -1,0 +1,10 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo ./vdelay ../../testvox.aif vdelay.aif 1.8 0.5  0.8 0.8 0.8 3
+
+echo
+echo
+./vdelay ../../testvox.aif vdelay.aif 1.8 0.5  0.8 0.8 0.8 3
+echo
+echo
+

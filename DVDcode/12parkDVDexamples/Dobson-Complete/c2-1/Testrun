@@ -1,0 +1,11 @@
+echo
+echo THE FOLLOWING COMMAND WAS EXECUTED
+echo ./sf2float ../testvox.aif sf2float.aif
+
+
+echo
+echo
+./sf2float ../testvox.aif sf2float.aif
+echo
+echo
+

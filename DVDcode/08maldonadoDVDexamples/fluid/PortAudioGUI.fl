@@ -1,0 +1,129 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0104 
+header_name {.h} 
+code_name {.cpp}
+decl {\#include <cstdio>} {public
+} 
+
+decl {\#include "portaudio.h"} {public
+} 
+
+decl {void bye();} {public
+} 
+
+class PortAudioGUI {open
+} {
+  decl {bool isInput;} {public
+  }
+  decl {int inDevNum;} {public
+  }
+  decl {int outDevNum;} {public
+  }
+  Function {PortAudioGUI()} {open
+  } {
+    code {inDevNum=-1;
+outDevNum=-1;} {}
+  }
+  Function {~PortAudioGUI()} {open
+  } {
+    code {bye();} {}
+  }
+  Function {make_menu()} {open return_type void
+  } {
+    Fl_Window AudioMenuBar {open
+      xywh {589 281 240 24} type Double hide
+      class Fl_Group
+    } {
+      Fl_Menu_Bar {} {open
+        xywh {0 0 235 20} box FLAT_BOX
+      } {
+        submenu {} {
+          label {Audio setup} open
+          xywh {5 5 100 20}
+        } {
+          menuitem mnuChooseInput {
+            label {Choose audio &input device}
+            callback {isInput = true;
+            chooseDevice();}
+            xywh {5 5 100 20}
+          }
+          menuitem mnuChooseOutput {
+            label {Choose audio &output device}
+            callback {isInput = false;
+            chooseDevice();}
+            xywh {5 5 100 20}
+          }
+          menuitem menuStart {
+            label {&Start playing}
+            callback {play();}
+            xywh {5 5 100 20}
+          }
+          menuitem menuStop {
+            label {Sto&p playing}
+            callback {stop();}
+            xywh {5 5 100 20}
+          }
+          menuitem menuExit {
+            label {E&xit}
+            callback {bye();}
+            xywh {5 5 100 20}
+          }
+        }
+        submenu {} {
+          label {Selected audio devs} open
+          xywh {0 0 100 20}
+        } {
+          menuitem inDevMenu {
+            label {No input device selected yet}
+            xywh {0 0 100 20}
+          }
+          menuitem outDevMenu {
+            label {No output device selected yet} selected
+            xywh {15 15 100 20}
+          }
+        }
+      }
+    }
+  }
+  Function {chooseDevice()} {open return_type void
+  } {
+    Fl_Window chooseDev {
+      label {Choose audio devices} open
+      xywh {186 273 476 427} type Double labelcolor 0 hide modal
+    } {
+      Fl_Browser brwDevSelect {
+        label {Select an audio input device and press "OK"}
+        callback {selectDevice(o->value(), (int) o->data(o->value()), o->text(o->value()));}
+        xywh {5 5 465 365} type Hold color 51 labelcolor 80 textsize 10
+        code0 {if (isInput){ chooseDev->label("Choose Audio Input"); o->label("Select an audio input device and press 'OK'"); }}
+        code1 {else {chooseDev->label("Choose Audio Output"); o->label("Select an audio output device and press 'OK'"); }}
+      }
+      Fl_Return_Button {} {
+        label OK
+        callback {if (isInput) openInput();
+else openOutput();
+delete chooseDev;}
+        xywh {195 390 90 30}
+      }
+    }
+    code {if (isInput) getAvailableInputs();
+  else getAvailableOutputs();
+  chooseDev->show();} {}
+  }
+  Function {getAvailableInputs()} {open return_type {virtual void}
+  } {}
+  Function {getAvailableOutputs()} {open return_type {virtual void}
+  } {}
+  Function {selectDevice(int i, int data, const char *text)} {open return_type {virtual void}
+  } {}
+  Function {openInput()} {open return_type {virtual void}
+  } {}
+  Function {openOutput()} {open return_type {virtual void}
+  } {}
+  Function {play()} {open return_type {virtual void}
+  } {}
+  Function {stop()} {open return_type {virtual void}
+  } {}
+  Function {bye()} {open return_type {virtual void}
+  } {}
+} 
