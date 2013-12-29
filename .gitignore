@@ -1,2 +1,4 @@
+*.o
+*.a
 Xtra_ClassicCode/
 Xtra_CurrentCode/
