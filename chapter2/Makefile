@@ -1,13 +1,13 @@
-INCLUDES = -I./include
-LIBS = -L./lib -lportsf -lm
+INCLUDES = -I/Users/br/src/portsf/include
+LIBS = -L/Users/br/src/portsf/lib -lportsf -lm
 PROGS = sf2float sf2float-loop sfprop
-PORTSF = ./lib/libportsf.a
+PORTSF = /Users/br/src/portsf/lib/libportsf.a
 CC = gcc
 
 all: $(PROGS)
 
 $(PORTSF):
-	cd portsf; make; make install
+	cd /Users/br/src/portsf/portsf; make; make install
 
 sf2float: sf2float.c $(PORTSF)
 	$(CC) -o sf2float sf2float.c $(INCLUDES) $(LIBS)
@@ -23,4 +23,4 @@ clean:
 	rm -f *.o
 
 veryclean: clean
-	cd portsf; make veryclean
+	cd /Users/br/src/portsf/portsf; make veryclean
