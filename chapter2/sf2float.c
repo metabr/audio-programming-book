@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <portsf.h>
 
 enum {ARG_PROGNAME, ARG_INFILE, ARG_OUTFILE, ARG_NARGS};
@@ -111,11 +112,13 @@ int main(int argc, char** argv)
 	if(psf_sndReadPeaks(ofd, peaks, NULL) > 0) {
 		long i;
 		double peaktime;
+		double peak_db;
 		printf("PEAK information:\n");
 		for (i = 0; i < props.chans; i++) {
 			peaktime = (double) peaks[i].pos / props.srate;
-			printf("CH: %ld:\t%.4f at %.4f secs\n",
-				i + 1, peaks[i].val, peaktime);
+			peak_db = 20.0 * log10(peaks[i].val);
+			printf("CH: %ld:\t%.4fdB at %.4f secs\n",
+				i + 1, peak_db, peaktime);
 		}
 	}
 
