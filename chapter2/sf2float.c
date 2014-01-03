@@ -3,7 +3,7 @@
 #include <math.h>
 #include <portsf.h>
 
-enum {ARG_PROGNAME, ARG_INFILE, ARG_OUTFILE, ARG_NARGS};
+enum {ARG_PROGNAME, ARG_INFILE, ARG_OUTFILE, ARG_FRAME_COUNT, ARG_NARGS};
 
 int main(int argc, char** argv)
 {
@@ -12,18 +12,30 @@ int main(int argc, char** argv)
 	// init all resource vars to default states
 	int ifd = -1, ofd = -1;
 	int error = 0;
+	int out_size = 0;
+	int in_size = 0;
 	psf_format outformat = PSF_FMT_UNKNOWN;
 	PSF_CHPEAK* peaks = NULL;
 	float* frame = NULL;
+	int chunk_size = 0;
 
 	const int buf_size = 512;
 
 	printf("SF2FLOAT: convert soundfile to floats format\n");
 
 	if (argc < ARG_NARGS) {
-		printf("insufficient arguments.\n"
-			"usage:\n\tsf2float infile outfile\n");
-		return 1;
+		if (argc == ARG_NARGS -1) {
+			// we don't have optional argument of quantity of
+			// samples to copy
+		} else {
+			printf("insufficient arguments.\n"
+					"usage:\n\tsf2float infile outfile [frames]\n"
+					"frames - number of frames to copy\n");
+			return 1;
+		}
+	} else if (argc == ARG_NARGS) {
+		// we have optional argument
+		out_size = atoi(argv[ARG_FRAME_COUNT]);
 	}
 
 	// startup portsf
@@ -63,6 +75,23 @@ int main(int argc, char** argv)
 		goto exit;
 	}
 
+	in_size = psf_sndSize(ifd);
+	if (in_size < 0) {
+		printf("Error: can't get file size\n");
+		error++;
+		goto exit;
+	}
+
+	if (out_size == 0) {
+		out_size = in_size;
+	}
+
+	if (out_size > in_size) {
+		printf("Error output file size cannot be bigger than input!\n");
+		error++;
+		goto exit;
+	}
+
 	// allocate space for sample frames of buf_size quantity
 	frame = (float *) malloc(props.chans * buf_size * sizeof(float));
 	if (frame == NULL) {
@@ -81,12 +110,14 @@ int main(int argc, char** argv)
 	printf("...copying\n");
 
 	// single-frame loop to do copy, report any errors
-	framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
+	chunk_size = buf_size < out_size ? buf_size : out_size;
+	framesread = psf_sndReadFloatFrames(ifd, frame, chunk_size);
 	totalread = 0;
 	printf("Progress: %ld samples copied to %s...",
 			totalread, argv[ARG_OUTFILE]);
 	while (framesread > 0) {
 		totalread += framesread;
+		out_size -= framesread;
 		if (psf_sndWriteFloatFrames(ofd, frame, framesread) != framesread) {
 			printf("Error writing to outfile\n");
 			error++;
@@ -95,7 +126,8 @@ int main(int argc, char** argv)
 		// --- do any processing here ---
 		printf("\rProgress: %ld samples copied to %s...",
 				totalread, argv[ARG_OUTFILE]);
-		framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
+		chunk_size = buf_size < out_size ? buf_size : out_size;
+		framesread = psf_sndReadFloatFrames(ifd, frame, chunk_size);
 	}
 
 	if (framesread < 0) {
