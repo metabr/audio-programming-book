@@ -1,6 +1,6 @@
 INCLUDES = -I./include
 LIBS = -L./lib -lportsf -lm
-PROGS = sf2float sfprop
+PROGS = sf2float sf2float-loop sfprop
 PORTSF = ./lib/libportsf.a
 CC = gcc
 
@@ -11,6 +11,9 @@ $(PORTSF):
 
 sf2float: sf2float.c $(PORTSF)
 	$(CC) -o sf2float sf2float.c $(INCLUDES) $(LIBS)
+
+sf2float-loop: sf2float-loop.c $(PORTSF)
+	$(CC) -o sf2float-loop sf2float-loop.c $(INCLUDES) $(LIBS)
 
 sfprop: sfprop.c $(PORTSF)
 	$(CC) -o sfprop sfprop.c $(INCLUDES) $(LIBS)
