@@ -82,6 +82,8 @@ int main(int argc, char** argv)
 	// single-frame loop to do copy, report any errors
 	framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
 	totalread = 0;
+	printf("Progress: %ld samples copied to %s...",
+			totalread, argv[ARG_OUTFILE]);
 	while (framesread > 0) {
 		totalread += framesread;
 		if (psf_sndWriteFloatFrames(ofd, frame, framesread) != framesread) {
@@ -90,6 +92,8 @@ int main(int argc, char** argv)
 			break;
 		}
 		// --- do any processing here ---
+		printf("\rProgress: %ld samples copied to %s...",
+				totalread, argv[ARG_OUTFILE]);
 		framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
 	}
 
@@ -98,7 +102,7 @@ int main(int argc, char** argv)
 		error++;
 	}
 	else {
-		printf("Done %ld sample frames copied to %s\n",
+		printf("\rDone: %ld sample frames copied to %s\n",
 			totalread,
 			argv[ARG_OUTFILE]);
 	}
