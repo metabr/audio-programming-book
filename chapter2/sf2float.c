@@ -15,6 +15,8 @@ int main(int argc, char** argv)
 	PSF_CHPEAK* peaks = NULL;
 	float* frame = NULL;
 
+	const int buf_size = 512;
+
 	printf("SF2FLOAT: convert soundfile to floats format\n");
 
 	if (argc < ARG_NARGS) {
@@ -60,8 +62,8 @@ int main(int argc, char** argv)
 		goto exit;
 	}
 
-	// allocate space for one sample frame
-	frame = (float *) malloc(props.chans * sizeof(float));
+	// allocate space for sample frames of buf_size quantity
+	frame = (float *) malloc(props.chans * buf_size * sizeof(float));
 	if (frame == NULL) {
 		printf("Error: no memory!\n");
 		error++;
@@ -78,17 +80,17 @@ int main(int argc, char** argv)
 	printf("...copying\n");
 
 	// single-frame loop to do copy, report any errors
-	framesread = psf_sndReadFloatFrames(ifd, frame, 1);
+	framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
 	totalread = 0;
-	while (framesread == 1) {
+	while (framesread > 0) {
 		totalread++;
-		if (psf_sndWriteFloatFrames(ofd, frame, 1) != 1) {
+		if (psf_sndWriteFloatFrames(ofd, frame, framesread) != framesread) {
 			printf("Error writing to outfile\n");
 			error++;
 			break;
 		}
 		// --- do any processing here ---
-		framesread = psf_sndReadFloatFrames(ifd, frame, 1);
+		framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
 	}
 
 	if (framesread < 0) {
