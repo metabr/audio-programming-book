@@ -83,7 +83,7 @@ int main(int argc, char** argv)
 	framesread = psf_sndReadFloatFrames(ifd, frame, buf_size);
 	totalread = 0;
 	while (framesread > 0) {
-		totalread++;
+		totalread += framesread;
 		if (psf_sndWriteFloatFrames(ofd, frame, framesread) != framesread) {
 			printf("Error writing to outfile\n");
 			error++;
