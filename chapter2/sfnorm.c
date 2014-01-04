@@ -37,12 +37,13 @@ int main(int argc, char** argv)
 	
 	const unsigned long nframes = 1024;
 
-	printf("%s: change level of soundfile\n", argv[ARG_PROGNAME]);
+	printf("sfnorm: change level of soundfile\n");
 
 	if (argc < ARG_NARGS) {
 		printf("insufficient arguments.\n"
 			"usage:\n\t%s infile outfile dBval\n"
-			"where dBval must be <= 0.0\n",
+			"where dBval must be <= 0.0\n"
+			"recommend to use values lower than -1.0 dB to avoid clipping\n",
 			argv[ARG_PROGNAME]);
 		return 1;
 	}
