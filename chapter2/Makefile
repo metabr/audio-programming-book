@@ -1,6 +1,6 @@
 INCLUDES = -I/Users/br/src/portsf/include
 LIBS = -L/Users/br/src/portsf/lib -lportsf -lm
-PROGS = sf2float sf2float-loop sfprop sfgain sfnorm
+PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak
 PORTSF = /Users/br/src/portsf/lib/libportsf.a
 CC = gcc
 
@@ -23,6 +23,9 @@ sfgain: sfgain.c $(PORTSF)
 
 sfnorm: sfnorm.c $(PORTSF)
 	$(CC) -o sfnorm sfnorm.c $(INCLUDES) $(LIBS)
+
+sfpeak: sfpeak.c $(PORTSF)
+	$(CC) -o sfpeak sfpeak.c $(INCLUDES) $(LIBS)
 
 clean:
 	rm -f $(PROGS)
