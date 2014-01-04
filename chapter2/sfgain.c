@@ -34,6 +34,11 @@ int main(int argc, char** argv)
 		return 1;
 	}
 
+	if (ampfac == 1.0) {
+		printf("Outfile will be identical to infile if ampfac = 1. Outfile not created.\n");
+		return 1;
+	}
+
 	// startup portsf
 	if (psf_init()) {
 		printf("unable to start portsf\n");
