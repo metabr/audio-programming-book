@@ -22,17 +22,17 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 */
 
-/* main.c :  generic soundfile processing main function */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <portsf.h>
+#include <breakpoints.h>
 
 /* set size of multi-channel frame-buffer */
 #define NFRAMES (1024)
 
 /* TODO define program argument list, excluding flags */
-enum { ARG_PROGNAME, ARG_INFILE, ARG_OUTFILE, ARG_PANPOS, ARG_NARGS };
+enum { ARG_PROGNAME, ARG_INFILE, ARG_OUTFILE, ARG_BRKFILE, ARG_NARGS };
 
 typedef struct panpos {
 	double left;
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 /* STAGE 1 */
 	PSF_PROPS inprops, outprops;
 	long framesread;
-	PANPOS thispos;
+	PANPOS pos;
 	/* init all dynamic resources to default states */
 	int infile = -1, outfile = -1;
 	int error = 0;
@@ -64,7 +64,9 @@ int main(int argc, char *argv[])
 	unsigned long nframes = NFRAMES;
 	float *inframe = NULL;
 	float *outframe = NULL;
-	double position = 0;
+	FILE* fp = NULL;
+	unsigned long size;
+	BREAKPOINT* points = NULL;
 	/* TODO: define an output frame buffer if channel width different */
 
 /* STAGE 2 */
@@ -91,9 +93,11 @@ int main(int argc, char *argv[])
 	/* check rest of commandline */
 	if (argc < ARG_NARGS) {
 		printf("insufficient arguments.\n"
-		       "usage: sfpan infile outfile panpos\n"
-		       "where panpos is position between -1 and 1\n"
-		       "-1 is full Left, 0 is Centre, 1 is full Right\n");
+		       "usage:\n"
+		       "\tsfpan infile outfile posfile.brk\n"
+		       "\tposfile.brk is breakpoint file "
+		       "with values in range -1.0 <= pos <= 1.0\n"
+		       "\twhere -1.0 = full Left, 0 = Centre, +1.0 = full Right\n");
 		return 1;
 	}
 	/*  always startup portsf */
@@ -102,14 +106,46 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 
-/* STAGE 3 */
-	position = atof(argv[ARG_PANPOS]);
-	if (position < -1.0 || position > 1.0) {
-		printf("Error: panpos value out of range -1 to +1");
+	/* read and verify breakpoint file */
+	fp = fopen(argv[ARG_BRKFILE], "r");
+	if (fp == NULL) {
+		printf("Error: unable to open breakpoint file %s\n",
+		       argv[ARG_BRKFILE]);
 		error++;
 		goto exit;
 	}
 
+	points = get_breakpoints(fp, &size);
+	if (points == NULL) {
+		printf("No breakpoints read.\n");
+		error++;
+		goto exit;
+	}
+
+	if (size < 2) {
+		printf("Error: at least two breakpoints required.\n");
+		free(points);
+		fclose(fp);
+		return 1;
+	}
+
+	/* we require breakpoints to start at 0 */
+	if (points[0].time != 0.0) {
+		printf("Error in breakpoint data:"
+		       "first time must be 0.0\n");
+		error++;
+		goto exit;
+	}
+
+	if (!inrange(points, -1, 1, size)) {
+		printf("Error in breakpoint data:"
+		       "values out of range -1 to +1\n");
+		error++;
+		goto exit;
+	}
+
+
+/* STAGE 3 */
 	infile = psf_sndOpen(argv[ARG_INFILE], &inprops, 0);
 	if (infile < 0) {
 		printf("Error: unable to open infile %s\n",
@@ -178,12 +214,19 @@ int main(int argc, char *argv[])
 	printf("processing....\n");
 	/* TODO: init any loop-related variables */
 
-	thispos = simplepan(position);
+	double timeincr = 1.0 / inprops.srate;
+	double sampletime = 0.0;
+
 	while ((framesread = psf_sndReadFloatFrames(infile, inframe, nframes)) > 0) {
 		long i, out_i;
+		double stereopos;
+
 		for (i = 0, out_i = 0; i < framesread; i++) {
-			outframe[out_i++] = (float) (inframe[i] * thispos.left);
-			outframe[out_i++] = (float) (inframe[i] * thispos.right);
+			stereopos = val_at_brktime(points, size, sampletime);
+			pos = simplepan(stereopos);
+			outframe[out_i++] = (float) (inframe[i] * pos.left);
+			outframe[out_i++] = (float) (inframe[i] * pos.right);
+			sampletime += timeincr;
 		}	
 
 		if (psf_sndWriteFloatFrames(outfile, outframe, framesread)

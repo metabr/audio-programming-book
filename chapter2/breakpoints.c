@@ -18,7 +18,7 @@ BREAKPOINT maxpoint(const BREAKPOINT * points, long npoints)
 	return point;
 }
 
-BREAKPOINT *get_breakpoints(FILE * fp, long *psize)
+BREAKPOINT *get_breakpoints(FILE * fp, unsigned long *psize)
 {
 	int got;
 
@@ -76,4 +76,47 @@ BREAKPOINT *get_breakpoints(FILE * fp, long *psize)
 	if (npoints)
 		*psize = npoints;
 	return points;
+}
+
+int inrange(const BREAKPOINT * points,
+	    double minval, double maxval, unsigned long npoints)
+{
+	unsigned long i;
+	int range_OK = 1;
+
+	for (i = 0; i < npoints; i++) {
+		if (points[i].value < minval || points[i].value > maxval) {
+			range_OK = 0;
+			break;
+		}
+	}
+
+	return range_OK;
+}
+
+double val_at_brktime(const BREAKPOINT* points, unsigned long npoints, double time)
+{
+	unsigned long i;
+	BREAKPOINT left, right;
+	double frac, val, width;
+
+	for (i = 1; i < npoints; i++) {
+		if (time <= points[i].time)
+			break;
+	}
+
+	if (i == npoints)
+		return points[i-1].value;
+
+	left = points[i-1];
+	right = points[i];
+
+	width = right.time - left.time;
+	if (width == 0.0)
+		return right.value;
+
+	frac = (time - left.time) / width;
+	val = left.value + ((right.value - left.value) * frac);
+
+	return val;
 }

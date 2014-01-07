@@ -1,4 +1,4 @@
-INCLUDES = -I/Users/br/src/portsf/include
+INCLUDES = -I/Users/br/src/portsf/include -I./include
 LIBS = -L/Users/br/src/portsf/lib -lportsf -lm
 PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak sfpan
 PORTSF = /Users/br/src/portsf/lib/libportsf.a
@@ -27,8 +27,8 @@ sfnorm: sfnorm.c $(PORTSF)
 sfpeak: sfpeak.c $(PORTSF)
 	$(CC) -o sfpeak sfpeak.c $(INCLUDES) $(LIBS)
 
-sfpan: sfpan.c $(PORTSF)
-	$(CC) -o sfpan sfpan.c $(INCLUDES) $(LIBS)
+sfpan: sfpan.c breakpoints.c $(PORTSF)
+	$(CC) -o sfpan sfpan.c breakpoints.c $(INCLUDES) $(LIBS)
 
 clean:
 	rm -f $(PROGS)
