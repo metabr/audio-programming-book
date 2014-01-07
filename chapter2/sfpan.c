@@ -39,13 +39,18 @@ typedef struct panpos {
 	double right;
 } PANPOS;
 
-PANPOS simplepan(double position)
+PANPOS constpower(double position)
 {
 	PANPOS pos;
 
-	position *= 0.5;
-	pos.left = position - 0.5;
-	pos.right = position + 0.5;
+	const double piovr2 = 4.0 * atan(1.0) * 0.5;
+	const double root2ovr2 = sqrt(2.0) * 0.5;
+
+	double thispos = position * piovr2;
+	double angle = thispos * 0.5;
+
+	pos.left  = root2ovr2 * (cos(angle) - sin(angle));
+	pos.right = root2ovr2 * (cos(angle) + sin(angle));
 
 	return pos;
 }
@@ -223,7 +228,7 @@ int main(int argc, char *argv[])
 
 		for (i = 0, out_i = 0; i < framesread; i++) {
 			stereopos = val_at_brktime(points, size, sampletime);
-			pos = simplepan(stereopos);
+			pos = constpower(stereopos);
 			outframe[out_i++] = (float) (inframe[i] * pos.left);
 			outframe[out_i++] = (float) (inframe[i] * pos.right);
 			sampletime += timeincr;
