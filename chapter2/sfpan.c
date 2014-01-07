@@ -238,13 +238,32 @@ int main(int argc, char *argv[])
 
 	double timeincr = 1.0 / inprops.srate;
 	double sampletime = 0.0;
+	unsigned long rp = 1; /* initial value of right point index */
 
 	while ((framesread = psf_sndReadFloatFrames(infile, inframe, nframes)) > 0) {
 		long i, out_i;
+		double width;
+		double frac;
 		double stereopos;
 
 		for (i = 0, out_i = 0; i < framesread; i++) {
-			stereopos = val_at_brktime(points, size, sampletime);
+			if (rp < size) {
+				if (sampletime > points[rp].time)
+					rp++;
+
+				width = points[rp].time - points[rp-1].time;
+
+				if (width != 0) {
+					frac = (sampletime - points[rp-1].time) / width;
+					stereopos = points[rp-1].value + ((points[rp].value - points[rp-1].value) * frac);
+
+				} else {
+					stereopos = points[rp].value;
+				}
+			} else {
+				stereopos = points[rp-1].value;
+			}
+
 			pos = constpower(stereopos);
 			outframe[out_i++] = (float) (inframe[i] * pos.left);
 			outframe[out_i++] = (float) (inframe[i] * pos.right);
