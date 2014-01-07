@@ -21,13 +21,13 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 */
-/* main.c :  generic soundfile processing main function*/
+
+/* main.c : generic soundfile processing main function */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <portsf.h>
 
-/* set size of multi-channel frame-buffer */
 #define NFRAMES (1024)
 
 /* TODO define program argument list, excluding flags */
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	unsigned long nframes = NFRAMES;
 	float *inframe = NULL;
 	float *outframe = NULL;
-	/* TODO: define an output frame buffer if channel width different       */
+	/* TODO: define an output frame buffer if channel width different */
 
 /* STAGE 2 */
 	printf("MAIN: generic process\n");
@@ -81,6 +81,7 @@ int main(int argc, char *argv[])
 		printf("unable to start portsf\n");
 		return 1;
 	}
+
 /* STAGE 3 */
 	infile = psf_sndOpen(argv[ARG_INFILE], &inprops, 0);
 	if (infile < 0) {
@@ -91,14 +92,14 @@ int main(int argc, char *argv[])
 	}
 	/* TODO: verify infile format for this application */
 
-	/* allocate space for  sample frame buffer ... */
-	inframe =
-	    (float *) malloc(nframes * inprops.chans * sizeof(float));
+	/* allocate space for sample frame buffer */
+	inframe = (float *) malloc(nframes * inprops.chans * sizeof(float));
 	if (inframe == NULL) {
 		puts("No memory!\n");
 		error++;
 		goto exit;
 	}
+
 	/* check file extension of outfile name, so we use correct output file format */
 	outformat = psf_getFormatExt(argv[ARG_OUTFILE]);
 	if (outformat == PSF_FMT_UNKNOWN) {
@@ -110,9 +111,10 @@ int main(int argc, char *argv[])
 	}
 	inprops.format = outformat;
 	outprops = inprops;
+
 /* STAGE 4 */
 	/* TODO: any other argument processing and setup of variables,               
-	   output buffer, etc., before creating outfile
+	 * output buffer, etc., before creating outfile
 	 */
 
 	/* handle outfile */
@@ -127,26 +129,23 @@ int main(int argc, char *argv[])
 
 	/* TODO: if outchans != inchans, allocate outframe, and modify main loop accordingly */
 
-	outfile =
-	    psf_sndCreate(argv[ARG_OUTFILE], &outprops, 0, 0,
-			  PSF_CREATE_RDWR);
+	outfile = psf_sndCreate(argv[ARG_OUTFILE], &outprops, 0, 0, PSF_CREATE_RDWR);
 	if (outfile < 0) {
 		printf("Error: unable to create outfile %s\n",
 		       argv[ARG_OUTFILE]);
 		error++;
 		goto exit;
 	}
+
 /* STAGE 5 */
 	printf("processing....\n");
 	/* TODO: init any loop-related variables */
 
-	while ((framesread =
-		psf_sndReadFloatFrames(infile, inframe, nframes)) > 0) {
+	while ((framesread = psf_sndReadFloatFrames(infile, inframe, nframes)) > 0) {
 
 		/* <--------  add buffer processing here ------>  */
 
-		if (psf_sndWriteFloatFrames(outfile, inframe, framesread)
-		    != framesread) {
+		if (psf_sndWriteFloatFrames(outfile, inframe, framesread) != framesread) {
 			printf("Error writing to outfile\n");
 			error++;
 			break;
@@ -156,8 +155,10 @@ int main(int argc, char *argv[])
 	if (framesread < 0) {
 		printf("Error reading infile. Outfile is incomplete.\n");
 		error++;
-	} else
+	} else {
 		printf("Done: %d errors\n", error);
+	}
+
 /* STAGE 6 */
 	/* report PEAK values to user */
 	if (psf_sndReadPeaks(outfile, peaks, NULL) > 0) {
@@ -165,23 +166,21 @@ int main(int argc, char *argv[])
 		double peaktime;
 		printf("PEAK information:\n");
 		for (i = 0; i < inprops.chans; i++) {
-			peaktime =
-			    (double) peaks[i].pos / (double) inprops.srate;
-			printf("CH %ld:\t%.4f at %.4f secs\n", i + 1,
-			       peaks[i].val, peaktime);
+			peaktime = (double) peaks[i].pos / (double) inprops.srate;
+			printf("CH %ld:\t%.4f at %.4f secs\n", i + 1, peaks[i].val, peaktime);
 		}
 	}
+
 /* STAGE 7 */
 	/* do all cleanup  */
       exit:
+
 	if (infile >= 0)
 		if (psf_sndClose(infile))
-			printf("%s: Warning: error closing infile %s\n",
-			       argv[ARG_PROGNAME], argv[ARG_INFILE]);
+			printf("%s: Warning: error closing infile %s\n", argv[ARG_PROGNAME], argv[ARG_INFILE]);
 	if (outfile >= 0)
 		if (psf_sndClose(outfile))
-			printf("%s: Warning: error closing outfile %s\n",
-			       argv[ARG_PROGNAME], argv[ARG_OUTFILE]);
+			printf("%s: Warning: error closing outfile %s\n", argv[ARG_PROGNAME], argv[ARG_OUTFILE]);
 	if (inframe)
 		free(inframe);
 	if (peaks)
