@@ -30,9 +30,6 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <math.h>
 #include <portsf.h>
 
-/* set size of multi-channel frame-buffer */
-#define NFRAMES (1024)
-
 #define DEFAULT_WINDOW_MSECS (15)
 
 #define max(x, y) ((x) > (y) ? (x) : (y))
@@ -58,11 +55,8 @@ int main(int argc, char *argv[])
 	PSF_PROPS inprops;
 	long framesread;
 	/* init all dynamic resources to default states */
-	int infile = -1, outfile = -1;
+	int infile = -1;
 	int error = 0;
-	PSF_CHPEAK *peaks = NULL;
-	psf_format outformat = PSF_FMT_UNKNOWN;
-	unsigned long nframes = NFRAMES;
 	float *inframe = NULL;
 	FILE* fp = NULL;
 	double windur = DEFAULT_WINDOW_MSECS;
@@ -126,7 +120,7 @@ int main(int argc, char *argv[])
 	windur /= 1000; 
 	unsigned long winsize = (unsigned long)(windur * inprops.srate);
 
-	inframe = (float *) malloc(winsize * inprops.chans * sizeof(float));
+	inframe = (float *) malloc(winsize * inprops.chans * sizeof(*inframe));
 	if (inframe == NULL) {
 		puts("No memory!\n");
 		error++;

@@ -23,14 +23,15 @@ double maxsamp(float* buf, unsigned long blocksize)
 int main(int argc, char** argv)
 {
 	PSF_PROPS props;
-	long framesread, totalread, blocksize;
+	long blocksize;
 
 	// init all resource vars to default states
 	int ifd = -1;
 	int error = 0;
-	double dbval, inpeak = 0.0;
+	double inpeak = 0.0;
 	PSF_CHPEAK* peaks = NULL;
 	float* frame = NULL;
+	long framesread = 0;
 	
 	const unsigned long nframes = 1024;
 
