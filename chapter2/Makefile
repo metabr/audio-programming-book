@@ -30,8 +30,8 @@ sfpeak: sfpeak.c $(PORTSF)
 sfpan: sfpan.c breakpoints.c $(PORTSF)
 	$(CC) -o sfpan sfpan.c breakpoints.c $(INCLUDES) $(LIBS)
 
-envx: envx.c $(PORTSF)
-	$(CC) -o envx envx.c $(INCLUDES) $(LIBS)
+envx: envx.c breakpoints.c $(PORTSF)
+	$(CC) -o envx envx.c breakpoints.c $(INCLUDES) $(LIBS)
 
 sfenv: sfenv.c breakpoints.c $(PORTSF)
 	$(CC) -o sfenv sfenv.c breakpoints.c $(INCLUDES) $(LIBS)

@@ -29,6 +29,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <stdlib.h>
 #include <math.h>
 #include <portsf.h>
+#include <breakpoints.h>
 
 #define DEFAULT_WINDOW_MSECS (15)
 
@@ -60,6 +61,9 @@ int main(int argc, char *argv[])
 	float *inframe = NULL;
 	FILE* fp = NULL;
 	double windur = DEFAULT_WINDOW_MSECS;
+	BREAKPOINT *breakpoints = NULL;
+	int normalize = 0;
+	unsigned long npoints, winsize;
 
 /* STAGE 2 */
 	printf("ENVX: extract amplitude envelope from mono soundfile\n");
@@ -74,6 +78,9 @@ int main(int argc, char *argv[])
 			case ('\0'):
 				printf("Error: missing flag name\n");
 				return 1;
+			case ('n'):
+				normalize = 1;
+				break;
 			case ('w'):
 				windur = atof(&argv[1][2]);
 				if (windur < 0.0) {
@@ -94,14 +101,17 @@ int main(int argc, char *argv[])
 	if (argc < ARG_NARGS) {
 		printf("insufficient arguments.\n"
 		       "usage: envx [-wN] insndfile outfile.brk\n"
+		       "\t-n: enable output normalization"
 		       "\t-wN: set extraction windows size to N msecs (default: 15)\n");
 		return 1;
 	}
+
 	/*  always startup portsf */
 	if (psf_init()) {
 		printf("unable to start portsf\n");
 		return 1;
 	}
+
 /* STAGE 3 */
 	infile = psf_sndOpen(argv[ARG_INFILE], &inprops, 0);
 	if (infile < 0) {
@@ -117,15 +127,32 @@ int main(int argc, char *argv[])
 		goto exit;
 	}
 
-	windur /= 1000; 
-	unsigned long winsize = (unsigned long)(windur * inprops.srate);
+	int infile_size = psf_sndSize(infile);
+	if (infile_size < 0) {
+		printf("Error: cannot get infile size\n");
+		error++;
+		goto exit;
+	}
 
-	inframe = (float *) malloc(winsize * inprops.chans * sizeof(*inframe));
+	windur /= 1000; 
+	winsize = (unsigned long) (windur * inprops.srate);
+	npoints = (unsigned long) ((infile_size / winsize) + 1);
+
+	inframe = malloc(npoints * sizeof(*inframe));
 	if (inframe == NULL) {
 		puts("No memory!\n");
 		error++;
 		goto exit;
 	}
+
+	breakpoints = malloc(npoints * sizeof(*breakpoints));
+	if (breakpoints == NULL) {
+		puts("No memory!\n");
+		error++;
+		goto exit;
+	}
+	printf("%ld breakpoints allocated\n", npoints);
+
 /* STAGE 4 */
 	/* create output breakpoint file */
 	fp = fopen(argv[ARG_OUTFILE], "w");
@@ -140,15 +167,20 @@ int main(int argc, char *argv[])
 	printf("processing....\n");
 
 	double brktime = 0.0;
-	unsigned long npoints = 0;
+	npoints = 0;
 	while ((framesread = psf_sndReadFloatFrames(infile, inframe, winsize)) > 0) {
 		double amp;
 		amp = maxsamp(inframe, framesread);
 
-		if (fprintf(fp, "%f\t%f\n", brktime, amp) < 2) {
-			printf("Failed to write to breakpoint file %s\n", argv[ARG_OUTFILE]);
-			error++;
-			break;
+		if (normalize) {
+			breakpoints[npoints].time = brktime;
+			breakpoints[npoints].value = amp;
+		} else {
+			if (fprintf(fp, "%f\t%f\n", brktime, amp) < 2) {
+				printf("Failed to write to breakpoint file %s\n", argv[ARG_OUTFILE]);
+				error++;
+				break;
+			}
 		}
 		brktime += windur;
 		npoints++;
@@ -157,19 +189,37 @@ int main(int argc, char *argv[])
 	if (framesread < 0) {
 		printf("Error reading infile. Outfile is incomplete.\n");
 		error++;
-	} else
+	} else {
 		printf("Done: %d errors\n", error);
+	}
+
+	if (normalize) {
+		BREAKPOINT max = maxpoint(breakpoints, npoints);
+		double normscale = 1.0 / max.value;
+		unsigned long i;
+		for (i = 0; i < npoints; i++) {
+			if (fprintf(fp, "%f\t%f\n", breakpoints[i].time, (breakpoints[i].value * normscale)) < 2) {
+				printf("Failed to write to breakpoint file %s\n", argv[ARG_OUTFILE]);
+				error++;
+				break;
+			}
+		}
+	}
+
 /* STAGE 6 */
 	printf("%ld breakpoints written to %s\n", npoints, argv[ARG_OUTFILE]);
+
 /* STAGE 7 */
 	/* do all cleanup  */
-      exit:
+exit:
 	if (infile >= 0)
 		if (psf_sndClose(infile))
 			printf("%s: Warning: error closing infile %s\n",
 			       argv[ARG_PROGNAME], argv[ARG_INFILE]);
 	if (inframe)
 		free(inframe);
+	if (breakpoints)
+		free(breakpoints);
 	if (fp)
 		if (fclose(fp))
 			printf("%s: Warning: error closing ourfile %s\n",
