@@ -2,7 +2,7 @@ INCLUDES = -I/Users/br/src/portsf/include -I./include
 LIBS = -L/Users/br/src/portsf/lib -lportsf -lm
 PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak sfpan envx sfenv
 PORTSF = /Users/br/src/portsf/lib/libportsf.a
-CC = gcc
+CC = gcc -Wall
 
 all: $(PROGS)
 
