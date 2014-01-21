@@ -17,3 +17,7 @@ typedef struct t_oscil
 
 OSCIL* new_oscil(unsigned long srate);
 double sinetick(OSCIL *p_osc, double freq);
+double squaretick(OSCIL *p_osc, double freq);
+double sawdowntick(OSCIL *p_osc, double freq);
+double sawuptick(OSCIL *p_osc, double freq);
+double tritick(OSCIL *p_osc, double freq);

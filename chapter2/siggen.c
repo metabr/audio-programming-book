@@ -31,7 +31,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 #define NFRAMES (1024)
 
-enum { ARG_PROGNAME, ARG_OUTFILE, ARG_DUR, ARG_SRATE, ARG_AMP, ARG_FREQ, ARG_NARGS };
+enum { ARG_PROGNAME, ARG_OUTFILE, ARG_TYPE, ARG_DUR, ARG_SRATE, ARG_AMP, ARG_FREQ, ARG_NARGS };
+
+enum { WAVE_SINE, WAVE_TRIANGLE, WAVE_SQUARE, WAVE_SAWUP, WAVE_SAWDOWN, WAVE_NTYPES };
 
 int main(int argc, char *argv[])
 {
@@ -45,7 +47,9 @@ int main(int argc, char *argv[])
 	int error = 0;
 	float *outframe = NULL;
 	OSCIL *p_osc = NULL;
+	double (*tickfunc)(OSCIL*, double);
 	
+	int wavetype;
 	float dur;
 	float srate;
 	float amp;
@@ -74,18 +78,26 @@ int main(int argc, char *argv[])
 	/* check rest of commandline */
 	if (argc < ARG_NARGS) {
 		printf("insufficient arguments.\n"
-		       "usage: siggen outfile dur srate amp freq\n");
+		       "usage: siggen outfile wavetype dur srate amp freq\n"
+		       "where wavetype:\n"
+		       "0 - sine\n"
+		       "1 - triangle\n"
+		       "2 - saw up\n"
+		       "3 - saw down\n"
+		       "4 - square\n");
 		return 1;
 	}
-
-	/* always startup portsf */
-	if (psf_init()) {
-		printf("unable to start portsf\n");
-		return 1;
-	}
-
 
 	/* Reading user supplied arguments */
+	wavetype = atoi(argv[ARG_TYPE]);
+	if (wavetype < WAVE_SINE || wavetype > WAVE_NTYPES) {
+		printf("Error: incorrect value for waveform type\n");
+		return 1;
+	}
+
+	dur = atof(argv[ARG_DUR]);
+	printf("Duration: %f\n", dur);
+
 	srate = atof(argv[ARG_SRATE]);
 	printf("Sample rate: %f\n", srate);
 
@@ -95,8 +107,11 @@ int main(int argc, char *argv[])
 	freq = atof(argv[ARG_FREQ]);
 	printf("Frequency: %f\n", freq);
 
-	dur = atof(argv[ARG_DUR]);
-	printf("Duration: %f\n", dur);
+	/* always startup portsf */
+	if (psf_init()) {
+		printf("unable to start portsf\n");
+		return 1;
+	}
 
 	outformat = psf_getFormatExt(argv[ARG_OUTFILE]);
 	if (outformat == PSF_FMT_UNKNOWN) {
@@ -135,6 +150,24 @@ int main(int argc, char *argv[])
                 goto exit;
         }
 
+	switch (wavetype) {
+	case (WAVE_SINE):
+		tickfunc = sinetick;
+		break;
+	case (WAVE_TRIANGLE):
+		tickfunc = tritick;
+		break;
+	case (WAVE_SAWUP):
+		tickfunc = sawuptick;
+		break;
+	case (WAVE_SAWDOWN):
+		tickfunc = sawdowntick;
+		break;
+	case (WAVE_SQUARE):
+		tickfunc = squaretick;
+		break;
+	}
+
 	printf("processing....\n");
 
 	p_osc = new_oscil(srate);
@@ -151,7 +184,7 @@ int main(int argc, char *argv[])
 			nframes = remainder;
 
 		for (int j = 0; j < nframes; j++)
-			outframe[j] = (float) (amp * sinetick(p_osc, freq));
+			outframe[j] = (float) (amp * tickfunc(p_osc, freq));
 
 		if (psf_sndWriteFloatFrames(outfile, outframe, nframes) != nframes) {
 			printf("Error writing to outfile\n");
