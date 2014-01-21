@@ -1,6 +1,6 @@
 INCLUDES = -I/Users/br/src/portsf/include -I./include
 LIBS = -L/Users/br/src/portsf/lib -lportsf -lm
-PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak sfpan envx sfenv
+PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak sfpan envx sfenv siggen
 PORTSF = /Users/br/src/portsf/lib/libportsf.a
 CC = gcc -Wall
 
@@ -35,6 +35,9 @@ envx: envx.c breakpoints.c $(PORTSF)
 
 sfenv: sfenv.c breakpoints.c $(PORTSF)
 	$(CC) -o sfenv sfenv.c breakpoints.c $(INCLUDES) $(LIBS)
+
+siggen: siggen.c wave.c $(PORTSF)
+	$(CC) -o siggen siggen.c wave.c $(INCLUDES) $(LIBS)
 
 clean:
 	rm -f $(PROGS)
