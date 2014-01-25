@@ -1,9 +1,0 @@
-echo
-echo THE FOLLOWING COMMAND WAS EXECUTED
-echo ./oscgen oscgen.aif 3 44100 1 0.5 240 4 2
-echo
-echo
-./oscgen oscgen.aif 3 44100 1 0.5 240 4 2
-echo
-echo
-

@@ -1,9 +1,0 @@
-echo
-echo THE FOLLOWING COMMAND WAS EXECUTED
-echo  ./filtsf ../../testvox.aif filtsf.aif 2 2500 3  0.8
-echo
-echo
- ./filtsf ../../testvox.aif filtsf.aif 2 2500 3  0.8
-echo
-echo
-

@@ -1,5 +1,0 @@
-//
-// Prefix header for all source files of the 'Waveform synthesis' target in the 'Waveform synthesis' project.
-//
-
-#include <Carbon/Carbon.h>

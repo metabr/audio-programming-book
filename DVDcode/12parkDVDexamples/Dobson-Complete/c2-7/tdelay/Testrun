@@ -1,9 +1,0 @@
-echo
-echo THE FOLLOWING COMMAND WAS EXECUTED
-echo  ./tdelay ../../testvox.aif tdelay.aif tap.txt 0.7 0.5 3
-echo
-echo
- ./tdelay ../../testvox.aif tdelay.aif tap.txt 0.7 0.5 3
-echo
-echo
-
