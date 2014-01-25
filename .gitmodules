@@ -1,0 +1,3 @@
+[submodule "portsf"]
+	path = portsf
+	url = git@github.com:daniel-murray/portsf.git
