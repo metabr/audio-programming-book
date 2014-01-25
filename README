@@ -1,0 +1,2 @@
+To build programs you first need to update portsf submodule and then to create
+lib directory in submodule's root.
