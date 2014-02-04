@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 	float *outframe = NULL;
 	OSCIL *p_osc = NULL;
 	double (*tickfunc)(OSCIL*, double);
-	
+
 	int wavetype;
 	float dur;
 	float srate;
@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 		error++;
 		goto exit;
 	}
-	
+
 	outprops.srate = srate;
 	outprops.chans = 1;
 	outprops.samptype = PSF_SAMP_16;
