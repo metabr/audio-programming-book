@@ -29,11 +29,25 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <portsf.h>
 #include <wave.h>
 
+#include "breakpoints.h"
+
 #define NFRAMES (1024)
 
-enum { ARG_PROGNAME, ARG_OUTFILE, ARG_TYPE, ARG_DUR, ARG_SRATE, ARG_AMP, ARG_FREQ, ARG_NARGS };
+enum { 	ARG_PROGNAME,
+	ARG_OUTFILE,
+	ARG_TYPE,
+	ARG_DUR,
+	ARG_SRATE,
+	ARG_AMP,
+	ARG_FREQ,
+	ARG_NARGS };
 
-enum { WAVE_SINE, WAVE_TRIANGLE, WAVE_SQUARE, WAVE_SAWUP, WAVE_SAWDOWN, WAVE_NTYPES };
+enum {  WAVE_SINE,
+	WAVE_TRIANGLE,
+	WAVE_SQUARE,
+	WAVE_SAWUP,
+	WAVE_SAWDOWN,
+	WAVE_NTYPES };
 
 int main(int argc, char *argv[])
 {
@@ -48,6 +62,11 @@ int main(int argc, char *argv[])
 	float *outframe = NULL;
 	OSCIL *p_osc = NULL;
 	double (*tickfunc)(OSCIL*, double);
+
+	BRKSTREAM *ampstream = NULL;
+	FILE *fpamp = NULL;
+	unsigned long brk_amp_size = 0;
+	double minval, maxval;
 
 	int wavetype;
 	float dur;
@@ -101,9 +120,6 @@ int main(int argc, char *argv[])
 	srate = atof(argv[ARG_SRATE]);
 	printf("Sample rate: %f\n", srate);
 
-	amp = atof(argv[ARG_AMP]);
-	printf("Amplitude: %f\n", amp);
-
 	freq = atof(argv[ARG_FREQ]);
 	printf("Frequency: %f\n", freq);
 
@@ -150,6 +166,41 @@ int main(int argc, char *argv[])
                 goto exit;
         }
 
+	/* open breakpoint file, or set constant */
+	fpamp = fopen(argv[ARG_AMP], "r");
+	if (fpamp == NULL) {
+		amp = atof(argv[ARG_AMP]);
+		printf("Amplitude: %f\n", amp);
+		if (amp <= 0.0 || amp > 1.0) {
+			printf("Error: amplitude value out of range: "
+			       "0.0 < amp < 1.0\n");
+			error++;
+			goto exit;
+		}
+	} else {
+		ampstream = bps_newstream(fpamp, outprops.srate, &brk_amp_size);
+		if (ampstream == NULL) {
+			printf("Error reading ampstream from file %s\n", argv[ARG_AMP]);
+			error++;
+			goto exit;
+		}
+
+		if (bps_getminmax(ampstream, &minval, &maxval) != 0) {
+			printf("Error reading range of breakpoints file %s\n",
+			       argv[ARG_AMP]);
+			error++;
+			goto exit;
+		}
+		if (minval < 0.0 || minval > 1.0 || maxval < 0.0 || maxval > 1.0) {
+			printf("Error: amplitude values out of range in file %s: "
+			       "0.0 < amp < 1.0\n",
+			       argv[ARG_AMP]);
+			error++;
+			goto exit;
+		}
+
+	}
+
 	switch (wavetype) {
 	case (WAVE_SINE):
 		tickfunc = sinetick;
@@ -179,12 +230,16 @@ int main(int argc, char *argv[])
 	if (remainder > 0)
 		nbufs++;
 
+	/* main processing loop */
 	for (int i = 0; i < nbufs; i++) {
 		if (i == nbufs-1)
 			nframes = remainder;
 
-		for (int j = 0; j < nframes; j++)
+		for (int j = 0; j < nframes; j++) {
+			if (ampstream)
+				amp = bps_tick(ampstream);
 			outframe[j] = (float) (amp * tickfunc(p_osc, freq));
+		}
 
 		if (psf_sndWriteFloatFrames(outfile, outframe, nframes) != nframes) {
 			printf("Error writing to outfile\n");
@@ -212,6 +267,10 @@ exit:
 		free(peaks);
 	if (p_osc)
 		free(p_osc);
+	if (ampstream)
+		free(ampstream);
+	if (fpamp)
+		fclose(fpamp);
 
 	psf_finish();
 	return error;

@@ -36,8 +36,8 @@ envx: envx.c breakpoints.c $(PORTSF)
 sfenv: sfenv.c breakpoints.c $(PORTSF)
 	$(CC) -o sfenv sfenv.c breakpoints.c $(INCLUDES) $(LIBS)
 
-siggen: siggen.c wave.c $(PORTSF)
-	$(CC) -o siggen siggen.c wave.c $(INCLUDES) $(LIBS)
+siggen: siggen.c wave.c breakpoints.c $(PORTSF)
+	$(CC) -o siggen siggen.c wave.c breakpoints.c $(INCLUDES) $(LIBS)
 
 clean:
 	rm -f $(PROGS)
