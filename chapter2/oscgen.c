@@ -213,7 +213,7 @@ int main(int argc, char *argv[])
 	printf("processing....\n");
 
 	double freq_fac = 1.0;
-	double amp_scale = 0.0;
+	double amp_fac = 1.0;
 	double amp_adjust = 0.0;
 	switch (wavetype) {
 	case (WAVE_SQUARE):
