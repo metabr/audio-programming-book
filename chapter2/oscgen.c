@@ -218,30 +218,30 @@ int main(int argc, char *argv[])
 	switch (wavetype) {
 	case (WAVE_SQUARE):
 		for (int i = 0; i < osc_number; i++) {
-			amp_scale = 1.0 / freq_fac;
-			osc_amps[i] = amp_scale;
+			amp_fac = 1.0 / freq_fac;
+			osc_amps[i] = amp_fac;
 			osc_freqs[i] = freq_fac;
 			freq_fac += 2.0;
-			amp_adjust += amp_scale;
+			amp_adjust += amp_fac;
 		}
 		break;
 	case (WAVE_TRIANGLE):
 		for (int i = 0; i < osc_number; i++) {
-			amp_scale = 1.0 / (freq_fac * freq_fac);
-			osc_amps[i] = amp_scale;
+			amp_fac = 1.0 / (freq_fac * freq_fac);
+			osc_amps[i] = amp_fac;
 			osc_freqs[i] = freq_fac;
 			freq_fac += 2.0;
-			amp_adjust += amp_scale;
+			amp_adjust += amp_fac;
 		}
 		break;
 	case (WAVE_SAWUP):
 	case (WAVE_SAWDOWN):
 		for (int i = 0; i < osc_number; i++) {
-			amp_scale = 1.0 / freq_fac;
-			osc_amps[i] = amp_scale;
+			amp_fac = 1.0 / freq_fac;
+			osc_amps[i] = amp_fac;
 			osc_freqs[i] = freq_fac;
 			freq_fac += 1.0;
-			amp_adjust += amp_scale;
+			amp_adjust += amp_fac;
 		}
 		if (wavetype == WAVE_SAWUP) {
 			amp_adjust = -amp_adjust; // iverting waveform;
