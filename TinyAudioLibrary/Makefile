@@ -28,4 +28,6 @@ install:	libtiny.a
 #
 tinyAudioLib.o:	tinyAudioLib.h
 
-
+clean:
+	rm -f *.a
+	rm -f *.o
