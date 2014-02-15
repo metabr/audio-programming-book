@@ -270,7 +270,7 @@ int main(int argc, char *argv[])
 				amp = bps_tick(ampstream);
 			double val = 0.0;
 			for (int k = 0; k < osc_number; k++) {
-				val += osc_amps[k] * sinetick(osc_bank[k], freq * osc_freqs[k]);
+				val += osc_amps[k] * cosinetick(osc_bank[k], freq * osc_freqs[k]);
 			}
 			outframe[j] = (float) (amp * val);
 		}
