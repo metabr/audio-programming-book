@@ -1,6 +1,6 @@
 INCLUDES = -I../portsf/include -I./include
 LIBS = -L../portsf/lib -lportsf -lm
-PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak sfpan envx sfenv oscgen
+PROGS = sf2float sf2float-loop sfprop sfgain sfnorm sfpeak sfpan envx sfenv siggen oscgen
 PORTSF = ../portsf/lib/libportsf.a
 CC = gcc -Wall -std=c99
 
