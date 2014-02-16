@@ -1,6 +1,9 @@
 INCLUDES = -I../portsf/include -I../TinyAudioLibrary -I./include
-LIBS = -L../portsf/lib -L../TinyAudioLibrary -ltiny -lportsf -lm -lportaudio
-PROGS = hellotable
+LIBS = -lm
+LPORTSF = -L../portsf/lib -lportsf
+LTINYAUDIO = -L../TinyAudioLibrary -ltiny
+LPORTAUDIO = -lportaudio
+PROGS = hellotable ring-modulator
 PORTSF = ../portsf/lib/libportsf.a
 TINYAUDIO = ../TinyAudioLibrary/libtiny.a
 CC = gcc -Wall -std=c99
@@ -14,7 +17,10 @@ $(TINYAUDIO):
 	cd ../TinyAudioLibrary; make; make install
 
 hellotable: hellotable.c $(TINYAUDIO)
-	$(CC) -o hellotable hellotable.c $(INCLUDES) $(LIBS)
+	$(CC) -o hellotable hellotable.c $(INCLUDES) $(LIBS) $(LTINYAUDIO) $(LPORTAUDIO)
+
+ring-modulator: ring-modulator.c
+	$(CC) -o ring-modulator ring-modulator.c $(LPORTAUDIO)
 
 clean:
 	rm -f $(PROGS)
