@@ -21,7 +21,7 @@ int audio_callback(const void *input_buf, void *output_buf,
 	for (unsigned long i = 0; i < framesPerBuffer; i++) {
 		float sine = sin(phase);
 		*out++ = *in++ * sine; // left channel
-		*out++ = *in++ *sine; // right channel
+		*out++ = *in++ * sine; // right channel
 		phase += si;
 	}
 	return paContinue;
