@@ -47,4 +47,4 @@ clean:
 	rm -f *.o
 
 veryclean: clean
-	cd /Users/br/src/portsf/portsf; make veryclean
+	cd ../portsf/portsf; make veryclean
