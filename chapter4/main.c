@@ -12,6 +12,13 @@ int formula = -1;
 enum ARG_RESE { WAVEFORM_GIVEN, FORMULA_GIVEN };
 typedef enum ARG_RESE ARG_RES;
 
+void usage()
+{
+	printf("Usage:\n");
+	printf("./waveform (-w waveworm.txt | -f formula) [-s speed] [-t duration] -o output.wav\n");
+	exit(1);
+}
+
 ARG_RES decode_arguments(int argc, char **argv)
 {
 	int i = 1;
@@ -23,7 +30,7 @@ ARG_RES decode_arguments(int argc, char **argv)
 			case 'w': /* waveform */
 				if (0 == argc) {
 					printf("No waveform argument\n");
-					exit(1);
+					usage();
 				}
 				wavename = argv[i+1];
 				argc--;
@@ -32,7 +39,7 @@ ARG_RES decode_arguments(int argc, char **argv)
 			case 'f': /* formula name */
 				if (0 == argc) {
 					printf("No waveform argument\n");
-					exit(1);
+					usage();
 				}
 				if (strcmp(argv[i+1], "sine") == 0) {
 					formula = SINE;
@@ -40,7 +47,7 @@ ARG_RES decode_arguments(int argc, char **argv)
 					formula = COSINE;
 				} else {
 					printf("No valid formula name\n");
-					exit(1);
+					usage();
 				}
 				argc--;
 				i += 2;
@@ -48,7 +55,7 @@ ARG_RES decode_arguments(int argc, char **argv)
 			case 's': /* speed */
 				if (0 == argc) {
 					printf("No speed given\n");
-					exit(1);
+					usage();
 				}
 				speed = atof(argv[i+1]);
 				argc--;
@@ -57,7 +64,7 @@ ARG_RES decode_arguments(int argc, char **argv)
 			case 't':
 				if (0 == argc) {
 					printf("No duration given\n");
-					exit(1);
+					usage();
 				}
 				duration = atof(argv[i+1]);
 				argc--;
@@ -66,7 +73,7 @@ ARG_RES decode_arguments(int argc, char **argv)
 			case 'o':
 				if (0 == argc) {
 					printf("No output argument\n");
-					exit(1);
+					usage();
 				}
 				output = argv[i+1];
 				argc--;
@@ -76,23 +83,23 @@ ARG_RES decode_arguments(int argc, char **argv)
 		}
 		else {
 			printf("No tag found\n");
-			exit(1);
+			usage();
 		}
 	}
 
 	if (NULL == output) {
 		printf("No output given\n");
-		exit(1);
+		usage();
 	}
 
 	if (NULL == wavename && -1 == formula) {
 		printf("Neither waveform nor formula specified\n");
-		exit(1);
+		usage();
 	}
 
 	if (NULL != wavename && -1 != formula) {
 		printf("Both waveform and formula specified\n");
-		exit(1);
+		usage();
 	}
 
 	if (NULL == wavename) {
