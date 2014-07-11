@@ -13,6 +13,12 @@ tables.o: tables.cpp
 env.o: env.cpp
 	g++ -c env.cpp
 
+filter.o: filter.cpp
+	g++ -c filter.cpp
+
+butterworth.o: butterworth.cpp
+	g++ -c butterworth.cpp
+
 clean:
 	rm -f *.o
 	rm -f env_test

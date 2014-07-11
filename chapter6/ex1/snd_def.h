@@ -102,4 +102,11 @@ float exp_env(float pos1, float dur, float pos2, int *cnt, float crate=default_c
 float interp_env(float pos1, float dur, float pos2, double alpha, int *cnt, float crate=default_crate);
 float adsr(float maxamp, float dur, float at, float dt, float sus, float rt, int *cnt, float crate=default_crate);
 
+float lowpass(float *sig, float freq, float *del, int vsize=default_vsize, float srate=default_srate);
+float highpass(float *sig, float freq, float *del, int vsize=default_vsize, float srate=default_srate);
+float resonator(float *sig, float freq, float bw, float *del, int vsize=default_vsize, float srate=default_srate);
+float bandpass(float *sig, float freq, float bw, float *del, int vsize=default_vsize, float srate=default_srate);
+float balance(float *sig, float *cmp, float *del, float freq, int vsize=default_vsize, float srate=default_srate);
+float butterwoth(float *sig, float freq, float bw, float *del, int mode, int vsize=default_vsize, float srate=default_srate);
+
 #endif
