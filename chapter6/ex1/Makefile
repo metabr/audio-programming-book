@@ -1,6 +1,9 @@
 env_test: soundio.o tables.o env.o oscil.o env_test.cpp
 	g++ env_test.cpp soundio.o tables.o env.o oscil.o -o env_test -lsndfile
 
+filter_test: soundio.o tables.o env.o oscil.o filter.o env_test.cpp
+	g++ filter_test.cpp soundio.o tables.o filter.o env.o oscil.o -o filter_test -lsndfile
+
 soundio.o: soundio.cpp
 	g++ -c soundio.cpp
 
@@ -22,3 +25,4 @@ butterworth.o: butterworth.cpp
 clean:
 	rm -f *.o
 	rm -f env_test
+	rm -f filter_test

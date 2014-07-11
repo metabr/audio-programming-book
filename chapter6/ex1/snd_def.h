@@ -106,7 +106,7 @@ float lowpass(float *sig, float freq, float *del, int vsize=default_vsize, float
 float highpass(float *sig, float freq, float *del, int vsize=default_vsize, float srate=default_srate);
 float resonator(float *sig, float freq, float bw, float *del, int vsize=default_vsize, float srate=default_srate);
 float bandpass(float *sig, float freq, float bw, float *del, int vsize=default_vsize, float srate=default_srate);
-float balance(float *sig, float *cmp, float *del, float freq, int vsize=default_vsize, float srate=default_srate);
+float balance(float *sig, float *cmp, float *del, float freq=10.0, int vsize=default_vsize, float srate=default_srate);
 float butterwoth(float *sig, float freq, float bw, float *del, int mode, int vsize=default_vsize, float srate=default_srate);
 
 #endif

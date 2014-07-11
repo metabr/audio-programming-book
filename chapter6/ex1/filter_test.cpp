@@ -7,7 +7,9 @@ int main(int argc, char **argv)
 	SNDFILE *psf;
 	float *buffer;
 	int smps, cnt1=0, cnt2=0;
-	float dur, amp, freq, *wave, ndx=0;
+	int bytes = sizeof(float) * default_vsize;
+
+	float dur, amp, freq, *wave, *comp, ndx=0;
 
 	if (argc == 5) {
 		amp = (float)atof(argv[2]);
@@ -16,6 +18,8 @@ int main(int argc, char **argv)
 		smps = (int)(dur * default_crate);
 
 		buffer = new float[default_vsize];
+		comp = new float[default_vsize];
+		float del[2] = {0.0, 0.0}, del1[2] = {0.0, 0.0};
 		wave = saw_table(30);
 
 		if (!(psf = soundout_open(argv[1]))) {
@@ -25,10 +29,13 @@ int main(int argc, char **argv)
 
 		for (int i = 0; i < smps; i++) {
 			oscc(buffer,
-				amp * adsr(1.0, dur, 0.05, 0.1, 0.7, 0.2, &cnt1),
-				exp_env(freq, dur / 2, freq * 2, &cnt2),
+				amp * adsr(1.0, dur, 0.05, 0.1, amp * 0.7, 0.2, &cnt1),
+				freq,
 				wave,
 				&ndx);
+			mempcpy(comp, buffer, bytes);
+			resonator(buffer, exp_env(freq * 8, dur, freq * 4, &cnt2), 50, del);
+			balance(buffer, comp, del1);
 			soundout(psf, buffer);
 		}
 
@@ -38,7 +45,7 @@ int main(int argc, char **argv)
 
 		return 0;
 	} else {
-		printf("usage: env_test sndfile.wav amp freq dur\n");
+		printf("usage: filter_test sndfile.wav amp freq dur\n");
 		return 1;
 	}
 }
