@@ -68,4 +68,33 @@ int soundin(SNDFILE *psf_in, float *buffer, int vsize=default_vsize);
  */
 long dataframs(SNDFILE *psf);
 
+float osc(float *output, float amp, float freq,
+		float *table, float *index,
+		int length=default_length,
+		int vsize=default_vsize,
+		float srate=default_srate);
+
+float osci(float *output, float amp, float freq,
+		float *table, float *index,
+		float phase = 0.0,
+		int length=default_length,
+		int vsize=default_vsize,
+		float srate=default_srate);
+
+float oscc(float *output, float amp, float freq,
+		float *table, float *index,
+		float phase=0.0,
+		int length=default_length,
+		int vsize=default_vsize,
+		float srate=default_srate);
+
+float *line_table(int brk_points, float *points, int length=default_length);
+float *exp_table(int brk_points, float *points, int length=default_length);
+float *sinus_table(int brk_points, float *points, int length=default_length);
+float *fourier_table(int harms, float *amps=0, int length = default_length, float phase = 0.0);
+float *saw_table(int harms, int length);
+float *sqr_table(int harms, int length);
+float *triangle_table(int harms, int length);
+void normalise_table(float *table, int length=default_length, float scale=1.0);
+
 #endif
