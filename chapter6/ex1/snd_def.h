@@ -92,9 +92,14 @@ float *line_table(int brk_points, float *points, int length=default_length);
 float *exp_table(int brk_points, float *points, int length=default_length);
 float *sinus_table(int brk_points, float *points, int length=default_length);
 float *fourier_table(int harms, float *amps=0, int length = default_length, float phase = 0.0);
-float *saw_table(int harms, int length);
-float *sqr_table(int harms, int length);
-float *triangle_table(int harms, int length);
+float *saw_table(int harms, int length=default_length);
+float *sqr_table(int harms, int length=default_length);
+float *triangle_table(int harms, int length=default_length);
 void normalise_table(float *table, int length=default_length, float scale=1.0);
+
+float line_env(float pos1, float dur, float pos2, int *cnt, float crate=default_crate);
+float exp_env(float pos1, float dur, float pos2, int *cnt, float crate=default_crate);
+float interp_env(float pos1, float dur, float pos2, double alpha, int *cnt, float crate=default_crate);
+float adsr(float maxamp, float dur, float at, float dt, float sus, float rt, int *cnt, float crate=default_crate);
 
 #endif
