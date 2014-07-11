@@ -8,6 +8,10 @@ myplug.vst: myplug
 myplug: myplug.cpp myplug.h
 	g++ -bundle -m32 -o myplug myplug.cpp vstsdk2.4/public.sdk/source/vst2.x/audioeffect.cpp vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.cpp vstsdk2.4/public.sdk/source/vst2.x/vstplugmain.cpp -I vstsdk2.4
 
+myplug.so: myplug.cpp myplug.h
+	g++ -shared -fPIC -o myplug.so myplug.cpp vstsdk2.4/public.sdk/source/vst2.x/audioeffect.cpp vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.cpp vstsdk2.4/public.sdk/source/vst2.x/vstplugmain.cpp -D__cdecl="" -I vstsdk2.4
+
 clean:
 	rm -f myplug
+	rm -f myplug.so
 	rm -rf myplug.vst
